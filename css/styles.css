@@ -110,3 +110,9 @@
     margin-top: 20px;
     max-width: 270px;
 }
+.error{
+    background: rgb(233, 189, 189);
+    color: red;
+    border: 1px solid red;
+    padding: 5px;
+}

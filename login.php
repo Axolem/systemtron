@@ -8,6 +8,9 @@ include('config/navbar.php'); ?>
                 <h2>
                     <center>LOGIN</center>
                 </h2>
+                <?php if (!empty($errors)){
+                    echo "<p class='error'> <!--this is where the errors will be displayed--></p> ";
+                } ?>                
                 <form class="login-form" action="" method="post">
                     <label for="email">Email:</label>
                     <input type="email" name="email" required>
@@ -89,7 +92,11 @@ include('config/navbar.php'); ?>
                             <label for="agree">I agree to the BOB <a href="">Privacy Policy </a>and<a href=""> Terms of Use</a> .</label>
                         </div>
 
-                        <!-- <p class="error">this is where the errors will be displayed</p> -->
+                        <?php if (!empty($errors)){
+                            echo "<p class='error'> <!--this is where the errors will be displayed--></p> ";
+                        } ?>
+
+                        
 
                         <button class="btn reg-btn" type="submit">Register</button>
                     </div>
