@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-body {
-  color: white;
-}
-
 header a {
   text-decoration: none;
 }
@@ -21,6 +17,7 @@ nav{
     padding: 0 20px;
     background-color: #1d1f1d;
     height: 80px;
+    color: white;
 }
 .page-links{
     justify-content: space-between;

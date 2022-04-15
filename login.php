@@ -2,7 +2,9 @@
 include('config/navbar.php'); ?>
 
 <main>
-    
+    <div class="login-container">
+        
+    </div>
 </main>
 
 
