@@ -11,8 +11,7 @@
         </div>
         <div class="login-links">
             <ul>
-                <li id="login"><a href="/login">Login</a></li>
-                <li id="signup"><a href="/signup">Signup</a></li>
+                <li id="login"><a href="/login"><i class="bi bi-person"></i></a></li>
             </ul>
         </div>
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -24,8 +23,7 @@
                 <li><a href="/products">About Us</a></li>
                 <li><a href="/about">Our Blog</a></li>
                 <li><a href="/about">Contact</a></li>
-                <li id="login"><a href="/login">Login</a></li>
-                <li id="signup"><a href="/signup">Signup</a></li>
+                <li id="login"><a href="/login"><i class="bi bi-person"></i></a></li>
             </ul>
         </div>
     </nav>
