@@ -12,11 +12,11 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Tab Icon -->
-    <link rel="shortcut icon" href="../images/tabs.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/tabs.png" type="image/x-icon">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/dash.css">
-    <link rel="stylesheet" href="../css/profiles.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/dash.css">
+    <link rel="stylesheet" href="css/profiles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <!-- Do not add any content below this line. -->
