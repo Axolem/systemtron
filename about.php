@@ -1,4 +1,5 @@
-<?php include('config/header.php') ?>
+<?php include('config/header.php'); 
+include('config/navbar.php'); ?>
 
 
     <!-- You code goes here. -->
