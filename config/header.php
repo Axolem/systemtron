@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/dash.css">
     <link rel="stylesheet" href="css/profiles.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 <!-- Do not add any content below this line. -->
