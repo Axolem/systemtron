@@ -2,7 +2,7 @@
 include('config/navbar.php'); ?>
 
 
-    <!-- You code goes here. -->
+   <h1>Axole</h1>
 
 
 
