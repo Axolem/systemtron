@@ -2,7 +2,8 @@
 include('config/navbar.php'); ?>
 
 
-   <h1>Axole</h1>
+   <h1>Axole <i class="bi bi-person"></i></h1>
+
 
 
 
