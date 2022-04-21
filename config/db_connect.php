@@ -2,7 +2,7 @@
 
 <?php
 
-   $db  = mysqli_connect('localhost','root','','database name here?');
+   $db  = mysqli_connect('localhost','root','','project');
    if(!$db)
    {
       echo "Database connection Error contact Admin";
