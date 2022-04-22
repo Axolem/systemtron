@@ -115,8 +115,11 @@ html {
 .error{
     background: rgb(233, 189, 189);
     color: red;
-    border: 1px solid red;
+    font-size: 12px;
+    border: 0.1px solid red;
     padding: 5px;
+    margin: 10px auto;
+
 }
 
 /* --------------- Confirm email Page----------*/
@@ -259,4 +262,10 @@ html {
     transition: all 1s;
     width: 100%;
     margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+    .row{
+        display: inline;
+        justify-content: space-between;
+    }
 }
