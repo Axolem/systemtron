@@ -11,12 +11,17 @@ include('config/navbar.php'); ?>
                 <?php if (!empty($errors)) {
                     echo "<p class='error'> <!--this is where the errors will be displayed--></p> ";
                 } ?>
-                <form class="login-form" action="" method="post">
+                <form class="login-form" action="manual/login.php" method="post">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" required value=<?php if (!empty($_GET['email'])) {echo $_GET['email'];} ?>>
                     <label for="password">Password:</label>
                     <input type="password" name="password" required>
                     <a class="small-link" href="">Forgot your password?</a>
+                    <?php 
+                        
+                        if (!empty($_GET['loginErr'])) {
+                            echo "<p class='error'>".$_GET['loginErr']."</p> ";
+                        } ?>
                     <button class="login-btn btn" type="submit">Login</button>
                 </form>
                 <div class="fb-goog">
@@ -41,32 +46,32 @@ include('config/navbar.php'); ?>
                 <h2>
                     <center>REGISTER</center>
                 </h2>
-                <form class="reg-form" action="" method="post">
+                <form class="reg-form" action="manual/signup.php" method="post">
                     <div class="reg-container">
                         <div class="row">
                             <div class="col reg-col">
                                 <label for="fname">First name:</label>
-                                <input type="text" name="fname" id="" required>
+                                <input type="text" name="fname" id="" required value=<?php if (!empty($_GET['name'])) {echo $_GET['name'];} ?>>
                             </div>
                             <div class="col reg-col">
                                 <label for="lname">Last name:</label>
-                                <input type="text" name="lname" id="" required>
+                                <input type="text" name="lname" required value=<?php if (!empty($_GET['lname'])) {echo $_GET['lname'];} ?>>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col reg-col">
                                 <label for="email">Email:</label>
-                                <input type="email" name="email" id="" required>
+                                <input type="email" name="email" required value=<?php if (!empty($_GET['email'])) {echo $_GET['email'];} ?>>
                             </div>
                             <div class="col reg-col">
                                 <label for="email">Confirm email:</label>
-                                <input type="email" name="confirmEmail" id="" required>
+                                <input type="email" name="confirmEmail" required value=<?php if (!empty($_GET['cemail'])) {echo $_GET['cemail'];} ?>>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col reg-col">
                                 <label for="color">Ethnic group:</label>
-                                <select name="color" required>
+                                <select name="color"required value=<?php if (!empty($_GET['color'])) {echo $_GET['color'];} ?>>
                                     <option value="african">African</option>
                                     <option value="coloured">Coloured</option>
                                     <option value="white">White</option>
@@ -76,7 +81,7 @@ include('config/navbar.php'); ?>
                             </div>
                             <div class="col reg-col">
                                 <label for="gender">Gender group:</label>
-                                <select name="color" required>
+                                <select name="gender" required value=<?php if (!empty($_GET['gender'])) {echo $_GET['gender'];} ?>>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="other">Prefer not to say</option>
@@ -98,12 +103,11 @@ include('config/navbar.php'); ?>
                             <label for="agree">I agree to the BOB <a href="">Privacy Policy </a>and<a href=""> Terms of Use</a> .</label>
                         </div>
 
-                        <?php if (!empty($errors)) {
-                            echo "<p class='error'> <!--this is where the errors will be displayed--></p> ";
+                        <?php 
+                        
+                        if (!empty($_GET['inputErr'])) {
+                            echo "<p class='error'>".$_GET['inputErr']."</p> ";
                         } ?>
-
-
-
                         <button class="btn reg-btn" type="submit">Register</button>
                     </div>
                 </form>

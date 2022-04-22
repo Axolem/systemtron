@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+
 ?>
 <head>
      <title>Login with Facebook</title>

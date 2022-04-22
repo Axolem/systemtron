@@ -52,7 +52,8 @@ if (isset($accessToken)) {
         $profile = $profile_request->getGraphUser();
         $fbid = $profile->getProperty('id');           // To Get Facebook ID
         $fbfullname = $profile->getProperty('name');   // To Get Facebook full name
-        $fbemail = $profile->getProperty('email');    //  To Get Facebook email
+        $fbemail = $profile->getProperty('email');
+          //  To Get Facebook email
         $fbpic = "<img src='" . $picture['url'] . "' class='img-rounded'/>";
         # save the user nformation in session variable
         $_SESSION['fb_id'] = $fbid . '</br>';
