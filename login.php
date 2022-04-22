@@ -22,8 +22,14 @@ include('config/navbar.php'); ?>
                 <div class="fb-goog">
                     <p>- Or login with -</p>
                     <div class="row">
-                        <div class="col fb-goog-col"><i class="bi bi-google"></i></div>
-                        <div class="col fb-goog-col"><i class="bi bi-facebook"></i></div>
+
+                        <a class="col fb-goog-col" href="https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=232368183727-6k65oja7spelkrt3ebd34v1qcgus23i4.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%2Fproject%2Fsystemtron%2Fgoogle%2Fg_login.php&state&scope=profile%20email&approval_prompt=auto">
+                            <div class="col "><i class="bi bi-google"></i></div>
+                        </a>
+                        <a class="col fb-goog-col" href="facebook/fb_login.php">
+                            <div class="col "><i class="bi bi-facebook"></i></div>
+                        </a>
+
                     </div>
                 </div>
                 <div class="small-text">
