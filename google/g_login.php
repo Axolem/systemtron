@@ -37,5 +37,5 @@ require_once "../dashboard/google/vendor/autoload.php";
         echo $accountInfo->gender.'<br>';
         echo $accountInfo->picture.'<br>';
     } else {
-        header("Location: http://localhost/project/systemtron/login.php ");
+        header("Location: http://localhost/project/systemtron/login.php?massage=Something went wrong!");
     }

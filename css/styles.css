@@ -118,7 +118,25 @@ html {
     border: 1px solid red;
     padding: 5px;
 }
-
+/* --------------- Fabebook login Page----------*/
+.fb-holder{
+    margin: 10% auto;
+    text-align: center;
+    padding: 0 30%;
+}
+.fb-wapper{
+    padding: auto;
+    box-shadow: 0 1px 2px rgba(128, 128, 128, 0.63);
+    padding: 5%;
+}
+.fb-wapper > p{
+    margin: 10% auto 10px auto;
+    text-align: center;
+}
+.fb-wapper > a > img{
+    text-align: center;
+    width: 50%;
+}
 /* --------------- Blog page ----------------- */
 .cards-wrapper{
     margin-bottom: 20px;
