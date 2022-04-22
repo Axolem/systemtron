@@ -118,6 +118,24 @@ html {
     border: 1px solid red;
     padding: 5px;
 }
+
+/* --------------- Confirm email Page----------*/
+.conf-form{
+    margin: auto;
+}
+.conf-btn{
+    margin: 35px auto;
+}
+.confirm-email{
+    margin: 5% 30%;
+    padding: 2%;
+    box-shadow: 0 1px 2px rgba(128, 128, 128, 0.63);
+}
+.conf-form > input{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
 /* --------------- Fabebook login Page----------*/
 .fb-holder{
     margin: 10% auto;

@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		sendEmail($email, $code);
 		$_SESSION['email'] = $email;
-		header("Location: confirmAccount.php");
+		header("Location: index.php");
 
 		die;
 	} else {
