@@ -6,17 +6,20 @@
         <div class="social-links">
         <a href="facebook"><i class="bi bi-facebook"></i></a>
         <a href="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="instagram"><i class="bi bi-intagram"></i></a>
-        <a href="Be your own boss" 18 Falcon Street Auckland Park Johannesburg ><i class="bi bi-intagram"></i></a>
+        <a href="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="Be your own boss" 18 Falcon Street Auckland Park Johannesburg ><i class="bbi bi-geo-alt"></i></a>
     </div>
-        <ul>
-            <li><a href="/About Us">About us</a></li>
-            <li><a href="/Our services">our services</a></li>
-            <li><a href="/Privacy Policy">privacy policy</a></li>
-            <li><a href="/T&Cs">T&Cs</a></li>
-            <li><a href="#">FAQ</a>
-        <li><a href="#">Apply</a>
-        <li><a href="#"></a>
+</div>
+<div>
+        <ul id="more-info">
+            
+            <li><a href="/SUPPORT">SUPPORT</a></li>
+            <li><a href="BLOG">BLOG</a>
+            <li><a href="/Privacy Policy/Terms of use">privacy policy and Terms of use</a></li><br>
+            <li><a href="/About Us">About BOB</a></li>
+            <li><a href="/FAQ">FAQ</a>
+            <li><a href="Apply">Apply</a>
+            
         </ul>
 </div>
 <p> &copy <?php echo date('Y')?> Be your own boss</p>
