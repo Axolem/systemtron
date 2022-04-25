@@ -4,7 +4,7 @@ include('config/navbar.php'); ?>
 
     <!-- You code goes here. -->
 
-<div span="about">
+<div span="us">
 <h2>ABOUT US</h2>
 <br>
     <p>
