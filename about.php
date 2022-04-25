@@ -25,7 +25,7 @@ include('config/navbar.php'); ?>
     <p>
         Our head offices are in Gauteng Johannesburg. But we can also help in any ways online unless if there is something that will need the person to be present.
     </p>
-    <img class="image" src="mapppp.png" alt="">
+    <img class="image" src="images/mapppp.png" alt="">
     <br>
     <br>
     <h2>CUSTOMER SERVICE</h2>
@@ -34,7 +34,7 @@ include('config/navbar.php'); ?>
         You may have questions but we have got you covered. Our team of customer service professionals can communicate with you in the following languages:
         English, Xitsonga, isiZulu, Sesotho and Tshivenda.
     </p>
-    <img src="receptionist.png" alt="">
+    <img src="images/receptionist.png" alt="">
 </div>
 
 
