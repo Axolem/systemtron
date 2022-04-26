@@ -123,6 +123,58 @@ body, ul, li, h1, h3, a{
   section.register h2{
     font-size: 36px;
   }
+  section.home{
+    height:auto;
+    width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    left: 80px;
+    color:#4B4B4B;
+    font-size:48px;
+    top:50px;
+    
+  }
+  section div.home2{
+    position: relative;
+    left:550px;
+    bottom: 240px;
+    color:#4B4B4B;
+    font-size: 48px;
+   
+  }
+  .imsh{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+  
+  }
+  .imsh li{
+    display: inline-block;
+    list-style-type: none;
+    width: 40%;
+    margin: 20px 5%;
+    position: relative;
+    right: 20px;
+    bottom: 200px;
+  }
+  .imsh li img{
+    max-width: 90%;
+  }
+  
+  div.home3 h2{
+    text-align: center;
+    font-weight: bold;
+    color:black;
+  }
+  div.home3{
+    text-align: center;
+    color:#4B4B4B;
+  }
+  div.home3 li{
+   list-style: none;
+  }
+  
   /* the login form in the end */
   form input{
     margin: 20px 0;
