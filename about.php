@@ -25,7 +25,7 @@ include('config/navbar.php'); ?>
     <p>
         Our head offices are in Gauteng Johannesburg. But we can also help in any ways online unless if there is something that will need the person to be present.
     </p>
-    <img class="image" src="images/mapppp.png" alt="">
+    <img class="image" src="images/map.png" alt="">
     <br>
     <br>
     <h2>CUSTOMER SERVICE</h2>
