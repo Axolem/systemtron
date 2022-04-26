@@ -14,7 +14,7 @@ include('config/navbar.php'); ?>
     </p>
     <br>
     <h2>OUR MISSION</h2>
-    <br>
+    <br>kjj
     <p>
         Be Your Own Boss prides itself on offering business ideas and funds to start a business of your choice. It adheres to the concept that "everyone can run a business".
         Be Your Own Boss is able to stay on top while bringing these opportunities to people. It aims to promptly offer outstanding ideas to those that meet the requirements. 
