@@ -2,27 +2,10 @@
 include('config/navbar.php'); ?>
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+
   
-<body>
-  <header>
-    <h1>BOB</h1>
-  </header>
-  <section class="background">
-    <img src="images/backgrd.jpg" alt="background">
-    <div class="welcome">
-      <h2>BE YOUR OWN BOSS <br><span>Time is limited, Learn here ,Lead anywhere</span></h2>
-    </div>
-  </section>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="/sign.html" class="sign">Sign In </a></li>
-      <li><a href="/help.html">Help</a></li>
-      <li><a href="/about.html">About Us</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-    </ul>
-  </nav>
+
+ 
   <main>
     <article>
       <h3>Want to start your own business?</h3>
@@ -45,8 +28,8 @@ include('config/navbar.php'); ?>
     </form>
   </section>
  
-</body>
-</html>
+
+
 
 
 
