@@ -3,9 +3,14 @@ include('config/navbar.php'); ?>
 
 
 
-  
-
  
+  <section class="background">
+    <img src="images/backgrd.jpg" alt="background">
+    <div class="welcome">
+      <h2>BE YOUR OWN BOSS <br><span>Time is limited, Learn here ,Lead anywhere</span></h2>
+    </div>
+  </section>
+
   <main>
     <article>
       <h3>Want to start your own business?</h3>
@@ -28,9 +33,6 @@ include('config/navbar.php'); ?>
     </form>
   </section>
  
-
-
-
 
 
 

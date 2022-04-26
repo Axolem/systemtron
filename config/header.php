@@ -14,10 +14,12 @@
     <!-- Tab Icon -->
     <link rel="shortcut icon" href="http://localhost/project/systemtron/images/tabs.png" type="image/x-icon">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="http://localhost/project/systemtrons/css/dash.css">
+    <link rel="stylesheet" href="http://localhost/project/systemtron/css/dash.css">
     <link rel="stylesheet" href="http://localhost/project/systemtron/css/profiles.css">
-    <link rel="stylesheet" href="http://localhost/project/systemtron/css/styles.css">
-    <link rel="stylesheet" href="http://localhost/project/systemtron/css/navbar.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+
 </head>
 <body>
 <!-- Do not add any content below this line. -->
