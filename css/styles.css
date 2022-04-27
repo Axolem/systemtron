@@ -269,3 +269,14 @@ html {
         justify-content: space-between;
     }
 }
+.image{height: 6cm;
+width: 7cm;}
+
+.about-body{
+    background-color: rgb(131, 131, 131);
+}
+.about-h2{
+    color: darkslateblue;
+}
+
+  

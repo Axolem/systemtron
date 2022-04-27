@@ -2,8 +2,37 @@
 include('config/navbar.php'); ?>
 
 
-   <h1>Axole <i class="bi bi-person"></i></h1>
 
+ 
+  <section class="background">
+    <img src="images/backgrd.jpg" alt="background">
+    <div class="welcome">
+      <h2>BE YOUR OWN BOSS <br><span>Time is limited, Learn here ,Lead anywhere</span></h2>
+    </div>
+  </section>
+
+  <main>
+    <article>
+      <h3>Want to start your own business?</h3>
+      <p>Be your own boss is the website to be at.<br>We provide essential tools and information on how one can start and maintain their business.
+        We provide full support and learnership programs on starting your own business with full support from the government.
+         The learnership program includes how to write a business plan and how to grow it once opened, how the funding from the government goes and the registering of the business.
+        We offer various kinds of support programs to anyone whose interested.We offer our services at no cost to people between the age 18 and 25.
+        </p>
+    </article>
+    <ul class="img">
+      <li><img src="images/growth.jpg" alt="bob-growth"></li>
+      <li><img src="images/growth2.jpg" alt="bob-growth2"></li>
+    </ul>
+  </main>
+  <section class="register">
+    <h2>Register to Join Today!</h2>
+    <p>From small to big and many more youll discover a effortless way to stay on top of the game.</p>
+    <form>
+      <input type="email" name="email" placeholder="Login" required>
+    </form>
+  </section>
+ 
 
 
 
