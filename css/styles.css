@@ -329,8 +329,16 @@ select {
     width: 7cm;
 }
 .heads{text-align: center;
-text-decoration:dotted}
+color: darkgoldenrod;}
 
+.mine{border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(237, 89, 118);
+    margin: 8px;
+    height: 6cm;
+    width: 20cm;
+    padding: 15px;}
+    
 /* if you see this comment you can continue*/
 
 .about-body {
@@ -338,5 +346,5 @@ text-decoration:dotted}
 }
 
 .about-h2 {
-    color: darkslateblue;
+    color: rgb(89, 81, 145);
 }
