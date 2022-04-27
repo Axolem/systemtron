@@ -328,10 +328,8 @@ select {
     height: 6cm;
     width: 7cm;
 }
-
-#heads {
-    text-align: center;
-}
+.heads{text-align: center;
+text-decoration:dotted}
 
 /* if you see this comment you can continue*/
 
