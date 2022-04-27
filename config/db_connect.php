@@ -2,11 +2,14 @@
 
 <?php
 
-   $db  = mysqli_connect('localhost','root','','project');
-   if(!$db)
-   {
-      echo "Database connection Error contact Admin";
-   }
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "project";
 
+if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
+{
+
+	die("failed to connect!");
+}
 ?>
-

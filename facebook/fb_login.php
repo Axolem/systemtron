@@ -3,6 +3,7 @@
 require '../dashboard/facebook/vendor/autoload.php';
 include('../config/header.php');
 include('../config/navbar.php');
+include('../config/db_connect.php');
 session_start();
 $fb = new Facebook\Facebook([
     'app_id' => '439479227947560',
@@ -51,15 +52,19 @@ if (isset($accessToken)) {
         $picture = $requestPicture->getGraphUser();
         $profile = $profile_request->getGraphUser();
         $fbid = $profile->getProperty('id');           // To Get Facebook ID
-        $fbfullname = $profile->getProperty('name');   // To Get Facebook full name
-        $fbemail = $profile->getProperty('email');
-          //  To Get Facebook email
-        $fbpic = "<img src='" . $picture['url'] . "' class='img-rounded'/>";
-        # save the user nformation in session variable
-        $_SESSION['fb_id'] = $fbid . '</br>';
-        $_SESSION['fb_name'] = $fbfullname . '</br>';
-        $_SESSION['fb_email'] = $fbemail . '</br>';
-        $_SESSION['fb_pic'] = $fbpic . '</br>';
+        $fname = $profile->getProperty('first_name');   // To Get Facebook first name
+        $lname = $profile->getProperty('last_name'); // To Get Facebook Last name
+        $gender = $profile->getProperty('gender'); // To Get Facebook user gender
+        $email = $profile->getProperty('email'); //  To Get Facebook email
+        $fbpic = $picture['url'];
+        $password = $_SESSION['facebook_access_token'];
+        $date = date('Y-m-d');
+
+        # save the user nformation database
+        $query = "INSERT INTO `users`(`id`, `oauth_provider`, `oauth_id`, `first_name`, `last_name`, `email`, `picture`, `created_at`, `gender`, `verified`) 
+				VALUES (' ','facebook','$password','$fname','$lname','$email', '$fbpic' ,'$date','$gender','yes')";
+        //Send  the query to the database
+        mysqli_query($con, $query);
     } catch (Facebook\Exceptions\FacebookResponseException $e) {
         // When Graph returns an error
         echo 'Graph returned an error: ' . $e->getMessage();
