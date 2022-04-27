@@ -274,15 +274,9 @@ html {
 
 .image{height: 6cm;
 width: 7cm;}
-#heads{text-align: center;}
 
-body{background-color: aliceblue;}
+h2{text-align: center;}
 
-.about-body{
-    background-color: rgb(131, 131, 131);
-}
-.about-h2{
-    color: darkslateblue;
-}
-
+#us p1{background-color: bisque;
+color: blueviolet;}
   

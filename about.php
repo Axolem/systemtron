@@ -5,13 +5,13 @@ include('config/navbar.php'); ?>
     <!-- Your code goes here. -->
 
 <div id="us">
-<h2 class=heads>ABOUT US</h2>
+<h2 class="heads">ABOUT US</h2>
 <br>
-    <p>
+    <p1>
         Be Your Own Boss is a national B2C company. The company mainly focuses on helping individuals who are over 18 with educational background to start their own businesses.
         Be Your Own Boss mainly targets South African people. The brand was founded in 2022, and since then it has been upholding the philosophy that 
         "everyone can start their businesses and fight poverty". The business covers all the nine provinces of South Africa.
-    </p>
+    </p1>
     <img src="images/about.jfif" alt="">
     <br>
     <h2>OUR MISSION</h2>
