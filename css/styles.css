@@ -269,8 +269,14 @@ html {
         justify-content: space-between;
     }
 }
+
+/* -------ABOUT US PAGE-------*/
+
 .image{height: 6cm;
 width: 7cm;}
+#heads{text-align: center;}
+
+body{background-color: aliceblue;}
 
 .about-body{
     background-color: rgb(131, 131, 131);
