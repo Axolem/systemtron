@@ -275,7 +275,7 @@ html {
 .image{height: 6cm;
 width: 7cm;}
 
-h2{text-align: center;}
+#us h2{text-align: center;}
 
 #us p1{background-color: bisque;
 color: blueviolet;}
