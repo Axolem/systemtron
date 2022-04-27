@@ -324,16 +324,6 @@ select {
 
 /* -------ABOUT US PAGE-------*/
 
-<<<<<<< HEAD
-.image{height: 6cm;
-width: 7cm;}
-
-#us h2{text-align: center;}
-
-#us p1{background-color: bisque;
-color: blueviolet;}
-  
-=======
 .image {
     height: 6cm;
     width: 7cm;
@@ -352,4 +342,3 @@ color: blueviolet;}
 .about-h2 {
     color: darkslateblue;
 }
->>>>>>> 1bfd1ab4764e3ac95b22f5713798dc5fc01fb425
