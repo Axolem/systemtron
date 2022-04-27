@@ -51,20 +51,38 @@ if (isset($accessToken)) {
         $requestPicture = $fb->get('/me/picture?redirect=false&height=200'); //getting user picture
         $picture = $requestPicture->getGraphUser();
         $profile = $profile_request->getGraphUser();
-        $fbid = $profile->getProperty('id');           // To Get Facebook ID
+        $id = $profile->getProperty('id');           // To Get Facebook ID
         $fname = $profile->getProperty('first_name');   // To Get Facebook first name
         $lname = $profile->getProperty('last_name'); // To Get Facebook Last name
         $gender = $profile->getProperty('gender'); // To Get Facebook user gender
         $email = $profile->getProperty('email'); //  To Get Facebook email
-        $fbpic = $picture['url'];
+        $pic = $picture['url'];
         $password = $_SESSION['facebook_access_token'];
         $date = date('Y-m-d');
 
-        # save the user nformation database
-        $query = "INSERT INTO `users`(`id`, `oauth_provider`, `oauth_id`, `first_name`, `last_name`, `email`, `picture`, `created_at`, `gender`, `verified`) 
-				VALUES (' ','facebook','$password','$fname','$lname','$email', '$fbpic' ,'$date','$gender','yes')";
-        //Send  the query to the database
-        mysqli_query($con, $query);
+        $sql = "SELECT email FROM users WHERE oauth_provider = 'facebook'";
+        $result = $con->query($sql);
+
+        if ($result->num_rows > 0) {
+            $query = "UPDATE `users` SET `id`='$id',`oauth_provider`='facebook',`oauth_id`='$password',`first_name`='$fname',`last_name`='$lname',
+        `email`='$email',`picture`='$pic',`modified_at`='$date',`gender`='$gender' WHERE 'email' = $email";
+            mysqli_query($con, $query);
+
+            $_SESSION["loggedin"] = true;
+            $_SESSION["username"] = $email;
+            header('Location: ../dashboard/index.php');
+        } else {
+
+            # save the user nformation database
+            $query = "INSERT INTO `users`(`id`, `oauth_provider`, `oauth_id`, `first_name`, `last_name`, `email`, `picture`, `created_at`, `gender`, `verified`) 
+        VALUES ('$id','google','$password','$fname','$lname','$email', '$pic' ,'$date','$gender','yes')";
+            //Send  the query to the database
+            mysqli_query($con, $query);
+
+            $_SESSION["loggedin"] = true;
+            $_SESSION["username"] = $email;;
+            header('Location: ../dashboard/index.php');
+        }
     } catch (Facebook\Exceptions\FacebookResponseException $e) {
         // When Graph returns an error
         echo 'Graph returned an error: ' . $e->getMessage();

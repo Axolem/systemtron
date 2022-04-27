@@ -1,34 +1,31 @@
 <?php
+// Initialize the session
 session_start();
 
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+   header("location: ../login.php");
+   exit;
+} else {
+   include('../config/db_connect.php');
 
+   $sql = "SELECT  `first_name`, `last_name`, `email`, `picture`, `created_at`, `modified_at`, `ethnic_group`, 
+   `emplopment_status`, `phone`, `gender`, `code`, `verified` FROM users WHERE email = '".$_SESSION['username']."'";
+   $result = $con->query($sql);
+
+   if ($result->num_rows > 0) {
+      // output data of each row
+      while ($row = $result->fetch_assoc()) {
+         $name = $row['first_name'];
+         $surname =$row['last_name'];
+         $email = $row['email'];
+         $picture = $row['picture'];
+      }
+   }
+}
 ?>
-<head>
-     <title>Login with Facebook</title>
-     <link
-        href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        rel = "stylesheet">
-  </head>
-  <body>     
-  <?php if($_SESSION['fb_id']) {?>
-        <div class = "container">
-           <div class = "jumbotron">
-              <h1>Hello <?php echo $_SESSION['fb_name']; ?></h1>
-              <p>Welcome to Cloudways</p>
-           </div>
-              <ul class = "nav nav-list">
-                 <h4>Image</h4>
-                 <li><?php echo $_SESSION['fb_pic']?></li>
-                 <h4>Facebook ID</h4>
-                 <li><?php echo  $_SESSION['fb_id']; ?></li>
-                 <h4>Facebook fullname</h4>
-                 <li><?php echo $_SESSION['fb_name']; ?></li>
-                 <h4>Facebook Email</h4>
-                 <li><?php echo $_SESSION['fb_email']; ?></li>
-              </ul>
-          </div>
-<?php } ?>
 
-    <a href="logout.php">Out!</a>
-  </body>
-</html>
+<h1>Welcome! <?php echo $name;?></h1>
+<p></p>
+
+<a href="logout.php">Out!</a>

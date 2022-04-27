@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once "../dashboard/google/vendor/autoload.php";
 include "../config/db_connect.php";
 
@@ -36,19 +36,28 @@ if (isset($_GET['code'])) {
     $pic = $accountInfo->picture;
     $date = date('Y-m-d');
 
-    
+    $sql = "SELECT id FROM users WHERE oauth_provider ='google'";
+    $result = $con->query($sql);
 
-    # save the user nformation database
-    $query = "INSERT INTO `users`(`id`, `oauth_provider`, `oauth_id`, `first_name`, `last_name`, `email`, `picture`, `created_at`, `gender`, `verified`) 
-				VALUES ('$id','google','$id','$fname','$lname','$email', '$pic' ,'$date','$gender','yes')";
-    //Send  the query to the database
-    mysqli_query($con, $query);
-    echo $email . '<br>';
-    echo $accountInfo->family_name . '<br>';
-    echo $accountInfo->id . '<br>';
-    echo $accountInfo->email . '<br>';
-    echo $accountInfo->gender . '<br>';
-    echo $accountInfo->picture . '<br>';
+    if ($result->num_rows > 0) {
+        $query = "UPDATE `users` SET `id`='$id',`oauth_provider`='google',`oauth_id`='$id',`first_name`='$fname',`last_name`='$lname',
+        `email`='$email',`picture`='$pic',`modified_at`='$date',`gender`='$gender' WHERE 'id' = $id";
+        mysqli_query($con, $query);
+ 
+        $_SESSION["loggedin"] = true;
+        $_SESSION["username"] = $email;
+        header('Location: ../dashboard/index.php');
+    } else {
+        # save the user nformation database
+        $query = "INSERT INTO `users`(`id`, `oauth_provider`, `oauth_id`, `first_name`, `last_name`, `email`, `picture`, `created_at`, `gender`, `verified`) 
+        VALUES ('$id','google','$id','$fname','$lname','$email', '$pic' ,'$date','$gender','yes')";
+        //Send  the query to the database
+        mysqli_query($con, $query);
+
+        $_SESSION["loggedin"] = true;
+        $_SESSION["username"] = $email;;
+        header('Location: ../dashboard/index.php');
+    }
 } else {
     header("Location: http://localhost/project/systemtron/login.php?massage=Something went wrong!");
 }

@@ -18,7 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 if ($row['code'] == $code) {
                     $sql = "UPDATE users SET verified='yes' WHERE email= '$email'";
                     if ($con->query($sql) === TRUE) {
-                        $_SESSION["email"] = $email;
+                        $_SESSION["login"] = "OK";
+                        $_SESSION["username"] = $email;
                         header("Location: ../dashbord.php");
                     }
                 } else {
