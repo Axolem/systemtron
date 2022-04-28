@@ -68,7 +68,7 @@ include('../config/header.php')
             <form action="handlers/imageUpload.php" method="post">
                <input type="file" id="upload" name='image' hidden />
                <label id="upload-label" for="upload">Choose file</label> <br>
-               <input class="dash-btn green" type="submit" value="Upload">
+               <button class="dash-btn green" name="submit" type="submit">Upload</button>
             </form>
          </div>
 
@@ -136,7 +136,7 @@ include('../config/header.php')
                      <td><input type="checkbox" name="newsletters" checked></td>
                   </tr>
                   <tr>
-                     <td><button class="dash-btn green" type="submit">Update!</button></td>
+                     <td><button class="dash-btn green" name="submit" type="submit">Update!</button></td>
                   </tr>
                </table>
             </form>
@@ -152,7 +152,7 @@ include('../config/header.php')
                         you will be taken to home page. This action can not be reversed!</p>
                   </tr>
                   <tr>
-                     <td><button class="dash-btn danger" type="submit">Delete!</button></td>
+                     <td><button name="submit" class="dash-btn danger" type="submit">Delete!</button></td>
                   </tr>
                </table>
 
