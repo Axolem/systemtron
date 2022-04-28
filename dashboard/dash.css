@@ -170,3 +170,54 @@ body {
 .green:hover{
     background-color: green;
 }
+
+/*-------For smaller screens--------*/
+@media (max-width: 780px) {
+    *{
+        font-size: 0.9rem;
+    }
+    .dash-links {
+        width: 15%;
+        display: inline-flex;
+        margin: 0 auto;
+    }
+    .dash-brand {
+        margin: auto 10px;
+        width: 50%;
+    }
+    .dash-row p,
+.dash-row a {
+    margin: auto;
+}
+.bi-box-arrow-right{
+    font-size: 20px !important;
+}
+    #Settings {
+        background-color: blue;
+        padding-left: 2%;
+        padding-top: 5vh;
+    }
+    .img-holder {
+        justify-content: center;
+        width: 100%;
+    }
+    .dash-image {
+        margin: auto;
+    }
+    
+    #upload-label {
+        margin: auto;
+    }
+    
+    .dash-btn {
+        margin: 20px auto;
+    }
+    .dash-table tr td input {
+        height: 25px;
+        width: 150px;
+    }
+    .dash-table tr td select{
+        height: 35px;
+        width: 160px;
+    }
+}

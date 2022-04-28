@@ -34,7 +34,7 @@ include('../config/header.php')
       <div class="dash-links">
          <img src="person.svg" class="dash-icon">
          <p class="dash-user-name">Axole</p>
-         <a href="logout.php" class="dash-btn">LOGOUT</a>
+         <a href="logout.php" class="dash-btn"><i class="bi bi-box-arrow-right"></i></a>
       </div>
    </div>
 
