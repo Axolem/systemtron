@@ -7,3 +7,8 @@ Facebook login:
 Documentation: https://developers.facebook.com/docs/graph-api/reference/user/
 Templete: https://www.cloudways.com/blog/add-facebook-login-in-php/
 Button: https://i.stack.imgur.com/oL5c2.png
+
+
+Email for the project
+Email: beyourownbossdsw@gmail.com
+password: connection.php
