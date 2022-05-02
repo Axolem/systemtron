@@ -324,21 +324,31 @@ select {
 
 /* -------ABOUT US PAGE-------*/
 
-.image {padding-left: 80%;
-    padding-bottom: 2cm;
+.about-image {
+    margin: auto;
 }
-.heads{text-align: center;
-color: darkgoldenrod;}
 
-.mine{border-style: solid;
+.heads {
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.map {
+    border: 1px solid rgb(237, 89, 118);
     border-radius: 5px;
-    border-color: rgb(237, 89, 118);
     margin: 8px;
-    height: 6cm;
-    width: 20cm;
-    padding: 15px;}
-    
-/* if you see this comment you can continue*/
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.map > iframe{
+    margin: auto;
+    text-align: center;
+}
+
+.mine{
+    width: 50%;
+}
 
 .about-body {
     background-color: rgb(131, 131, 131);
