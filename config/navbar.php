@@ -11,7 +11,7 @@
         </div>
         <div class="login-links">
             <ul>
-                <li id="login"><a href="/login"><i class="bi bi-person"></i></a></li>
+                <li id="login"><a href="login.php"><i class="bi bi-person"></i></a></li>
             </ul>
         </div>
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
