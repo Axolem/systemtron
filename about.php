@@ -33,13 +33,14 @@ include('config/navbar.php'); ?>
     <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.241453914132!2d28.013953514982486!3d-26.18882268344465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950bf441bb28e7%3A0xa2f3fb63313a8e59!2sUJ%20Bunting%20Road%20Campus!5e0!3m2!1sen!2sza!4v1651498850826!5m2!1sen!2sza" 
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        </div>
 
     <h2  class="heads">CUSTOMER SERVICE</h2>
     <div class="row about-row">
         <p class="mine">
         You may have questions but we have got you covered. Our team of customer service professionals can communicate with you in the following languages:
-        English, Xitsonga, isiZulu, Sesotho and Tshivenda.
+        English, Xitsonga, isiZulu, and Sesotho. Be Your Own Boss is a national managed hosting provider, serving over 1,000 customers of varied sizes.
+        The company strongly focuses on the commitment to their customer experience strategy.
     </p>
 
     <img class="about-image" src="images/receptionist.png" alt="">
