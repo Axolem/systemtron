@@ -1,17 +1,15 @@
 /* -----------Home page -------------*/
-body, ul, li, h1, h3, a ,main,section.home4{
+section.home4{
   margin: 0;
   padding: 0;
-  font-family: serif;
-  background:#F4F4F4;
 }
 
-p{
+/* p{
   font-size: 20px;
-}
+} */
 
 /* header .......*/
-header{
+/* header{
    background-color:lightgrey;
   padding: 10px 0;
   text-align: center;
@@ -20,7 +18,7 @@ header{
   top: 0;
   left: 0;
   z-index: 1;
-}
+} */
 header h1{
   color: white;
   display: inline-block;
@@ -48,14 +46,14 @@ header h1{
 }
 
 /* main part of the homepage*/
-main{
+/* main{
 
   width: 1250px;
   margin: 80px auto;
   padding: 0 0px;
   box-sizing: border-box;
   display: inline-block;
-}
+} */
 /* */
 article h3{
   color: #4B4B4B;
@@ -185,18 +183,18 @@ div.home3 li{
 }
 
 /* the login form in the end */
-form input{
+/* form input{
   margin: 20px 0;
   padding: 10px 20px;
   font-size: 24px;
   border-radius: 28px;
   border: 4px solid white;
-}
-form input:focus{
+} */
+/* form input:focus{
   border: 4px dashed #4B4B4B;
   outline: none;
-}
+} */
 form input:valid{
-  border: 4px solid #71d300;
+  border: 1px solid #71d300;
 }
 
