@@ -14,7 +14,7 @@
     <!-- Tab Icon -->
     <link rel="shortcut icon" href="http://localhost/project/systemtron/images/tabs.png" type="image/x-icon">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="dash.scss">
     <link rel="stylesheet" href="css/profiles.css">
     <link rel="stylesheet" href="css/styles.css"> <!--other pages stylesheet -->
     <link rel="stylesheet" href="css/navbar.css"> <!-- nav stylesheet-->

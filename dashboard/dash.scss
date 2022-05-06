@@ -99,6 +99,7 @@ body {
     padding: 20px;
     overflow: hidden;
 }
+
 .toggler {
     color: black;
     width: 100%;
@@ -109,18 +110,19 @@ body {
     cursor: pointer;
     background: transparent;
 }
+
 .home-options {
     height: 0;
-    padding: 20px;
     overflow: hidden;
     max-height: fit-content !important;
 }
 
-.options-h2 > h2 > .bi {
+.options-h2>h2>.bi {
     margin: auto 15px;
     padding: auto;
     font-size: 30px;
 }
+
 .dash-option-icon {
     margin: auto 15px;
     padding: auto;
@@ -213,6 +215,62 @@ body {
     background-color: green;
 }
 
+.card-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1.5rem;
+    max-width: 100vw;
+    width: 100%h;
+}
+
+.dash-card {
+    display: grid;
+    justify-items: center;
+    height: 52vh;
+    width: 100%;
+    margin: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: #444;
+    margin: 0 auto;
+    background-color: #e1faf1;
+}
+.dash-card > img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    max-height: max(10rem, 30vh);
+    aspect-ratio: 4/3;
+    mix-blend-mode: var(--card-blend-mode);
+}
+.dash-card a {
+    color: inherit;
+    text-decoration: none;
+}
+.dash-card p {
+    font-size: 14px;
+    padding: 0 10px;
+    margin: 0;
+}
+.dash-card a:hover {
+    color: red;
+}
+.home-options > .row{
+    justify-content: space-around;
+}
+.left-text li a{
+    text-align: left !important;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
 /*-------For smaller screens--------*/
 @media (max-width: 780px) {
     * {
@@ -270,5 +328,13 @@ body {
     .dash-table tr td select {
         height: 35px;
         width: 160px;
+    }
+    .card-wrapper {
+        max-width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .card-wrapper {
+        max-width: 100%;
     }
 }
