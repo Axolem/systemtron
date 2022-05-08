@@ -335,7 +335,7 @@ select {
 
 .map {
     border: 1px solid rgb(233, 20, 194);
-    border-radius: 5px;
+    border-radius: 3%;
     height: 32%;
     width: 40%;
     margin-left: 29%;
