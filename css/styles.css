@@ -207,6 +207,7 @@ select {
     outline: none;
     cursor: pointer;
     background: transparent;
+    transition: all 2s ease-in-out;
 }
 
 .bi-arrow-down-right {
