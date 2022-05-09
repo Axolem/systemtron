@@ -358,3 +358,68 @@ select {
 .about-h2 {
     color: rgb(89, 81, 145);
 }
+
+/*-------footer-----*/
+.container ul a{
+    margin: 5px;
+    padding: 5px;
+    color: blue;
+}
+
+
+.social-links a i{
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+.rig{
+    text-align: center;
+}
+
+
+/*----------contact page-------*/
+.bc{
+    background-color: rgb(218, 131, 17);
+}
+.contact{
+    margin: auto;
+    padding: auto;
+}
+
+.fields{
+    border: 1px lightslategray;
+    width: 40%;
+}
+
+.E-mail{
+    border: 1px lightslategray;
+    width: 40%;
+}
+
+.button{
+    background-color: black;
+    color: white;
+}
+
+.info h2 p{
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+}
+/*---Footer style---*/
+.container{
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.more-info li a{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    color: blue;
+}
+.Nes{
+    color: aqua;
+}
+
