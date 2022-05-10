@@ -31,12 +31,11 @@ function test_input($data)
 	return $data;
 }
 
-
 function sendEmail($email, $subject, $massage)
 {
-	require_once "PHPMailer/PHPMailer.php";
-	require_once "PHPMailer/SMTP.php";
-	require_once "PHPMailer/Exception.php";
+	require_once "../../manual/PHPMailer/PHPMailer.php";
+	require_once "../../manual/PHPMailer/SMTP.php";
+	require_once "../../manual/PHPMailer/Exception.php";
 
 	$mail = new PHPMailer();
 

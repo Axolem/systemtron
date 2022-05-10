@@ -5,6 +5,16 @@
 body {
     height: 100%;
     margin: 0;
+    --level-one: translateZ(1rem);
+    --level-two: translateZ(2rem);
+    --level-three: translateZ(3rem);
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --whiteColor: white;
+    --waterBlue: #b7c9e5;
+    --tabsColor: green;
+    --danger: rgb(178, 34, 34);
 }
 
 .dash-row,
@@ -13,9 +23,7 @@ body {
 .dash,
 .tabs {
     z-index: 1000;
-
 }
-
 /* this is the css for nav */
 .dash-row {
     display: flex;
@@ -24,7 +32,7 @@ body {
     position: fixed;
     top: 0;
     height: 10vh;
-    background: white;
+    background: var(--whiteColor);
 }
 
 .dash-brand {
@@ -43,7 +51,18 @@ body {
     margin: auto 5%;
 }
 
-.dash-row img,
+.dash-user-name {
+    font-size: 12px;
+}
+
+.dash-icon{
+    height: 30px;
+    width: 30px;
+    margin: auto 10%;
+    flex-basis: 10% 10% 10%;
+    border-radius: 50%;
+}
+
 .dash-row p,
 .dash-row a {
     margin: auto 10%;
@@ -62,7 +81,7 @@ body {
     top: 10vh;
     width: 100%;
     height: 5vh;
-    background: white;
+    background: var(--whiteColor);
 }
 
 /* Style tab links */
@@ -83,7 +102,7 @@ body {
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-    color: white;
+    color: var(--whiteColor);
     display: none;
     padding: 20px;
     max-height: fit-content;
@@ -94,12 +113,12 @@ body {
 }
 
 #Home {
-    background-color: red;
+    background-color: var(--tabsColor);
     text-align: center;
 }
 
 #Tools {
-    background-color: green;
+    background-color: var(--tabsColor);
 }
 
 /*Home tab content */
@@ -145,7 +164,7 @@ body {
 
 /*Setting tab*/
 #Settings {
-    background-color: blue;
+    background-color: var(--tabsColor);
     padding-left: 20%;
 }
 
@@ -156,15 +175,20 @@ body {
 
 .dash-image {
     height: 200px;
-    width: auto;
+    width: 200px;
     border-radius: 50%;
     margin-top: 2%;
+    transition: transform .2s;
+    background-position: center;
+}
+.dash-image:hover {
+    transform: scale(1.1);
 }
 
 #upload-label {
     display: inline-block;
     background-color: indigo;
-    color: white;
+    color: var(--whiteColor);
     padding: 0.5rem;
     font-family: sans-serif;
     border-radius: 0.3rem;
@@ -173,7 +197,7 @@ body {
 }
 
 .dash-btn {
-    background-color: white;
+    background-color: var(--whiteColor);
     color: black;
     outline: none;
     border: none;
@@ -217,11 +241,11 @@ body {
 }
 
 .danger:hover {
-    background-color: red;
+    background-color: var(--danger);
 }
 
-.green:hover {
-    background-color: green;
+.green:hover{
+    background-color: var(--tabsColor);
 }
 
 .card-wrapper {
@@ -268,7 +292,7 @@ body {
 }
 
 .dash-card a:hover {
-    color: red;
+    color: var(--danger);
 }
 
 .home-options>.row {
@@ -286,14 +310,6 @@ body {
     width: 100%;
     height: 50vh;
     margin: 23px;
-    --level-one: translateZ(1rem);
-    --level-two: translateZ(2rem);
-    --level-three: translateZ(3rem);
-
-    --fw-normal: 400;
-    --fw-bold: 700;
-
-    --clr: #b7c9e5;
 }
 
 .card__content {
@@ -325,7 +341,7 @@ body {
 }
 
 .card__front {
-    background-color: var(--clr);
+    background-color: var(--waterBlue);
     background-size: cover;
     background-blend-mode: overlay;
     color: #333;
@@ -370,13 +386,13 @@ body {
 .card__body li a {
     transform: var(--level-two);
     text-decoration: none;
-    color: white;
+    color: var(--whiteColor);
     transition: 0.5s ease-in-out;
     text-transform: capitalize;
 }
 
 .card__body li a:hover {
-    color: red;
+    color: var(--danger);
     font-weight: 900;
     font-size: 1.3rem;
 }
@@ -388,7 +404,7 @@ body {
 
 .card__back {
     transform: rotateY(.5turn);
-    color: var(--clr);
+    color: var(--waterBlue);
     background: #333;
 }
 
@@ -434,7 +450,8 @@ body {
         display: inline-flex;
         margin: 0 auto;
     }
-    .dash-h2{
+
+    .dash-h2 {
         padding: 25px 0 0 0;
     }
 
@@ -472,7 +489,7 @@ body {
     }
 
     .dash-btn {
-        margin: 20px auto ;
+        margin: 20px auto;
         padding: 10px;
     }
 
@@ -502,13 +519,16 @@ body {
     .card__back {
         position: absolute;
         width: 100%;
-        padding: 0em 0em;}
-        .more-tools{
-            padding: 0 25px;
-        }
-        .more-tools-h2{
-            margin-top: 25px;
-        }
+        padding: 0em 0em;
+    }
+
+    .more-tools {
+        padding: 0 25px;
+    }
+
+    .more-tools-h2 {
+        margin-top: 25px;
+    }
 }
 
 @media (max-width: 1200px) {

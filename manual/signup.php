@@ -59,7 +59,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			mysqli_query($con, $query);
 		}
 
-		sendEmail($email, $code);
+		$subject = "Hey boss! You are one-step away";
+		$massage = "Your OTP is:".$code;
+
+		sendEmail($email, $subject, $massage);
 		$_SESSION['email'] = $email;
 		header("Location: index.php");
 

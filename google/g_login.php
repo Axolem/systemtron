@@ -36,14 +36,15 @@ if (isset($_GET['code'])) {
     $pic = $accountInfo->picture;
     $date = date('Y-m-d');
 
-    $sql = "SELECT id FROM users WHERE oauth_provider ='google'";
+    $sql = "SELECT id, email FROM users WHERE email = '$email' and oauth_provider = 'google'";
     $result = $con->query($sql);
-
+    
     if ($result->num_rows > 0) {
-        $query = "UPDATE `users` SET `id`='$id',`oauth_provider`='google',`oauth_id`='$id',`first_name`='$fname',`last_name`='$lname',
-        `email`='$email',`picture`='$pic',`modified_at`='$date',`gender`='$gender' WHERE 'id' = $id";
+        $query = "UPDATE users SET oauth_id = '$id' , first_name = '$fname', last_name = '$lname',
+       picture= '$pic', modified_at =  '$date' WHERE email = '$email' ";
+
         mysqli_query($con, $query);
- 
+
         $_SESSION["loggedin"] = true;
         $_SESSION["username"] = $email;
         header('Location: ../dashboard/index.php');

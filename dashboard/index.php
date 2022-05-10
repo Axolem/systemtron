@@ -1,28 +1,37 @@
 <?php
-// // Initialize the session
-// session_start();
+// Initialize the session
+session_start();
 
-// // Check if the user is logged in, if not then redirect him to login page
-// if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-//    header("location: ../login.php");
-//    exit;
-// } else {
-//    include('../config/db_connect.php');
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+   header("location: ../login.php");
+   exit;
+} else {
+   include('handlers/connection.php');
 
-//    $sql = "SELECT  `first_name`, `last_name`, `email`, `picture`, `created_at`, `modified_at`, `ethnic_group`, 
-//    `emplopment_status`, `phone`, `gender`, `code`, `verified` FROM users WHERE email = '".$_SESSION['username']."'";
-//    $result = $con->query($sql);
+   $sql = "SELECT  `id`, `first_name`, `last_name`, `email`, `picture`, `created_at`, `modified_at`, `ethnic_group`, 
+   `emplopment_status`, `phone`, `gender`, `code`, `verified` FROM users WHERE email = '" . $_SESSION['username'] . "'";
+   $result = $con->query($sql);
 
-//    if ($result->num_rows > 0) {
-//       // output data of each row
-//       while ($row = $result->fetch_assoc()) {
-//          $name = $row['first_name'];
-//          $surname =$row['last_name'];
-//          $email = $row['email'];
-//          $picture = $row['picture'];
-//       }
-//    }
-// }
+   if ($result->num_rows > 0) {
+      // output data of each row
+      while ($row = $result->fetch_assoc()) {
+         $id = $row['id'];
+         $name = $row['first_name'];
+         $surname = $row['last_name'];
+         $email = $row['email'];
+         $phone = $row['phone'];
+         $color = '';
+         $gender = '';
+         $status = $row['emplopment_status'];
+         $picture = $row['picture'];
+         $phoneNotes = 'yes';
+         $emailNotes = 'no';
+         $newsLetters = 'yes';
+         $_SESSION['user_id'] = $id;
+      }
+   }
+}
 include('../config/header.php')
 ?>
 <main class="dash">
@@ -31,17 +40,23 @@ include('../config/header.php')
          B.O.B
       </div>
       <div class="dash-links">
-         <img src="person.svg" class="dash-icon">
-         <p class="dash-user-name">Axole</p>
-         <a href="logout.php" class="dash-btn"><i class="bi bi-box-arrow-right"></i></a>
+         <img src="<?php if (!empty($picture)) {
+                        echo $picture;
+                     } else {
+                        echo 'person.svg';
+                     }
+                     ?> " class="dash-icon">
+         <p class="dash-user-name"><?php echo $name . " " . $surname; ?></p>
+         <a href="logout.php" class="dash-btn"><i class="bi bi-box-arrow-right"></i>
+         </a>
       </div>
    </div>
 
    <div class="dash-container">
       <div class="tabs">
-         <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-         <button class="tablink" onclick="openPage('Tools', this, 'green')" id="defaultOpen">Tools</button>
-         <button class="tablink" onclick="openPage('Settings', this, 'blue')">Settings</button>
+         <button class="tablink" onclick="openPage('Home', this, 'green')">Home</button>
+         <button class="tablink" onclick="openPage('Tools', this, 'green')">Tools</button>
+         <button class="tablink" onclick="openPage('Settings', this, 'green')" id="defaultOpen">Settings</button>
       </div>
       <!----------------------------------------------------------------------------------------------------------------
                                  Home
@@ -719,13 +734,23 @@ include('../config/header.php')
                                  SETTINGS
 ----------------------------------------------------------------------------->
       <div id="Settings" class="tabcontent">
-         <h2 class="dash-h2">Settings</h2>
+         <h2 class="dash-h2">Settings </h2>
+         <span> <?php if(isset($_Get['response'])){
+            if($_Get['response']==1){
+               echo $_GET['msg'];}
+            else{echo $_GET['msg'];
+         }} ?></span>
          <div class="img-holder">
-            <img src="../images/SomeDudeBlack-01.png" class="dash-image">
-            <form action="handlers/imageUpload.php" method="post">
+            <img src="<?php if (!empty($picture)) {
+                           echo $picture;
+                        } else {
+                           echo 'person.svg';
+                        }
+                        ?> " class="dash-image">
+            <form action="handlers/imageUpload.php" method="post" enctype="multipart/form-data">
                <input type="file" id="upload" name='image' hidden />
                <label id="upload-label" for="upload">Choose file</label> <br>
-               <button class="dash-btn green" name="submit" type="submit">Upload</button>
+               <button class="dash-btn green" name="uploadfile" type="submit">Upload</button>
             </form>
          </div>
 
@@ -736,45 +761,55 @@ include('../config/header.php')
                <table class="dash-table">
                   <tr>
                      <td><label for="fname">First Name:</label></td>
-                     <td><input type="text" name="fname"></td>
+                     <td><input type="text" name="fname" value="<?php echo $name; ?>"></td>
                   </tr>
                   <tr>
                      <td><label for="lname">Last Name:</label></td>
-                     <td><input type="text" name="lname"></td>
+                     <td><input type="text" name="lname" value="<?php echo $surname; ?>"></td>
                   </tr>
                   <tr>
                      <td><label for="name">Email:</label></td>
-                     <td><input type="text" name="email" disabled></td>
+                     <td><input type="text" name="email" disabled value="<?php echo $email; ?>"></td>
                   </tr>
                   <tr>
                      <td><label for="name">Phone:</label></td>
-                     <td><input type="tel" name="phone"></td>
+                     <td><input type="tel" name="phone" value="<?php if (!empty($phone)) {
+                                                                  echo $phone;
+                                                               } ?>"></td>
                   </tr>
                   <tr>
                      <td><label for="name">Gender:</label></td>
-                     <td> <select name="gender" required value=<?php if (!empty($_GET['gender'])) {
-                                                                  echo $_GET['gender'];
-                                                               } ?>>
+                     <td> <?php if (!empty($gender)) {
+                              echo '<input disabled type="text" name="gender" value="' . $gender . '"></td>';
+                           } else {
+                              echo ' <select name="gender">
                            <option value="male">Male</option>
                            <option value="female">Female</option>
                            <option value="other">Prefer not to say</option>
-                        </select></td>
+                        </select>';
+                           } ?></td>
                   </tr>
                   <tr>
                      <td><label for="name">Colour:</label></td>
-                     <td><select name="color" required value=<?php if (!empty($_GET['color'])) {
-                                                                  echo $_GET['color'];
-                                                               } ?>>
+                     <td> <?php if (!empty($color)) {
+                              echo '<input disabled type="text" name="color" value="' . $color . '"></td>';
+                           } else {
+                              echo ' <select name="color" required value=  >
                            <option value="african">African</option>
                            <option value="coloured">Coloured</option>
                            <option value="white">White</option>
                            <option value="indian">Indian</option>
                            <option value="other">Prefer not to say</option>
-                        </select></td>
+                        </select>';
+                           } ?>
+
+                     </td>
                   </tr>
                   <tr>
                      <td><label for="name">Employment Status:</label></td>
-                     <td><input type="text" name="empStatus"></td>
+                     <td><input type="text" name="empStatus" value="<?php if (!empty($status)) {
+                                                                        echo $status;
+                                                                     } ?>"></td>
                   </tr>
 
                </table>
@@ -782,23 +817,29 @@ include('../config/header.php')
                <table class="dash-table">
                   <tr>
                      <td><label for="phoneN">Recieve phone notifications:</label></td>
-                     <td><input type="checkbox" name="phoneN"></td>
+                     <td><input type="checkbox" name="phoneN" <?php if ($phoneNotes == 'yes') {
+                                                                  echo "checked";
+                                                               } ?>></td>
                   </tr>
                   <tr>
                      <td><label for="emailN">Recieve email notifications:</label></td>
-                     <td><input type="checkbox" name="emailN" checked></td>
+                     <td><input type="checkbox" name="emailN" <?php if ($emailNotes == 'yes') {
+                                                                  echo "checked";
+                                                               } ?>></td>
                   </tr>
                   <tr>
                      <td><label for="subcribe">Subscribe to newsletters:</label></td>
-                     <td><input type="checkbox" name="newsletters" checked></td>
+                     <td><input type="checkbox" name="newsletters" <?php if ($newsLetters == 'yes') {
+                                                                        echo "checked";
+                                                                     } ?>></td>
                   </tr>
                   <tr>
-                     <td><button class="dash-btn green" name="submit" type="submit">Update!</button></td>
+                     <td><button class="dash-btn green" name="updatePerson" type="submit">Update!</button></td>
                   </tr>
                </table>
             </form>
             <h3 class="dash-delete">Account Deletion</h3>
-            <form class="dash-table" action="handlers/deleteAccount.php" method="post">
+            <form class="dash-table" action="handlers/deleteAccount.php" method="POST">
                <table>
                   <tr>
                      <td><label for="email">Confirm Your email:</label></td>
@@ -809,7 +850,7 @@ include('../config/header.php')
                         you will be taken to home page. This action can not be reversed!</p>
                   </tr>
                   <tr>
-                     <td><button name="submit" class="dash-btn danger" type="submit">Delete!</button></td>
+                     <td><button name="delete" class="dash-btn danger" type="submit">Delete!</button></td>
                   </tr>
                </table>
             </form>
@@ -818,7 +859,5 @@ include('../config/header.php')
    </div>
 </main>
 <script src="dash.js"></script>
-
-
 
 <?php include('../config/footer.php'); ?>
