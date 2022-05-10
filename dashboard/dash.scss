@@ -6,7 +6,12 @@ body {
     height: 100%;
     margin: 0;
 }
-.dash-row, .dash-container, .tablink, .dash, .tabs{
+
+.dash-row,
+.dash-container,
+.tablink,
+.dash,
+.tabs {
     z-index: 1000;
 
 }
@@ -280,7 +285,7 @@ body {
 .card__ {
     width: 100%;
     height: 50vh;
-    margin: 20px;
+    margin: 23px;
     --level-one: translateZ(1rem);
     --level-two: translateZ(2rem);
     --level-three: translateZ(3rem);
@@ -294,7 +299,6 @@ body {
 .card__content {
     text-align: center;
     position: relative;
-    padding: 15em 5em;
     transition: transform 1s;
     transform-style: preserve-3d;
     height: 50vh;
@@ -362,19 +366,22 @@ body {
     line-height: 2;
     text-align: left;
 }
-.card__body li a{
+
+.card__body li a {
     transform: var(--level-two);
     text-decoration: none;
     color: white;
     transition: 0.5s ease-in-out;
     text-transform: capitalize;
 }
-.card__body li a:hover{
+
+.card__body li a:hover {
     color: red;
     font-weight: 900;
     font-size: 1.3rem;
 }
-.card__back h4{
+
+.card__back h4 {
     text-transform: uppercase;
     text-decoration: underline;
 }
@@ -385,24 +392,32 @@ body {
     background: #333;
 }
 
-.more-tools-h2{
+.more-tools-container {
+    border-radius: 10px;
+    margin: 25px 0;
+    padding: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.more-tools-h2 {
     margin-top: 100px;
 }
-.more-tools{
+
+.more-tools {
     padding: 50px;
 }
-.tools-icons{
-    margin-top: 50px;
-}
-.more-tools-link a{
+
+.more-tools-link a {
     color: #444;
     text-decoration: none;
 }
-.more-tools-link a:hover{
+
+.more-tools-link a:hover {
     color: black;
     font-size: 18px;
 }
-.more-tools-p{
+
+.more-tools-p {
     font-size: 14px;
     color: black;
 }
@@ -418,6 +433,9 @@ body {
         width: 15%;
         display: inline-flex;
         margin: 0 auto;
+    }
+    .dash-h2{
+        padding: 25px 0 0 0;
     }
 
     .dash-brand {
@@ -454,7 +472,8 @@ body {
     }
 
     .dash-btn {
-        margin: 20px auto;
+        margin: 20px auto ;
+        padding: 10px;
     }
 
     .dash-table tr td input {
@@ -470,6 +489,26 @@ body {
     .card-wrapper {
         max-width: 100%;
     }
+
+    .card__content {
+        padding: 0;
+    }
+
+    .card__ {
+        margin: 30px 0 !important;
+    }
+
+    .card__front,
+    .card__back {
+        position: absolute;
+        width: 100%;
+        padding: 0em 0em;}
+        .more-tools{
+            padding: 0 25px;
+        }
+        .more-tools-h2{
+            margin-top: 25px;
+        }
 }
 
 @media (max-width: 1200px) {
