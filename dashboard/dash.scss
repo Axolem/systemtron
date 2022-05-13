@@ -1,0 +1,538 @@
+/* this is the css for logged in users */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,700;1,200;1,300;1,400&display=swap');
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body {
+    height: 100%;
+    margin: 0;
+    --level-one: translateZ(1rem);
+    --level-two: translateZ(2rem);
+    --level-three: translateZ(3rem);
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --whiteColor: white;
+    --waterBlue: #b7c9e5;
+    --tabsColor: green;
+    --danger: rgb(178, 34, 34);
+}
+
+.dash-row,
+.dash-container,
+.tablink,
+.dash,
+.tabs {
+    z-index: 1000;
+}
+/* this is the css for nav */
+.dash-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    background: var(--whiteColor);
+}
+
+.dash-brand {
+    margin: auto 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #09c372;
+    font-size: 2em;
+    width: 25%;
+}
+
+.dash-links {
+    width: 15%;
+    display: inline-flex;
+    margin: auto 5%;
+}
+
+.dash-user-name {
+    font-size: 12px;
+}
+
+.dash-icon{
+    height: 30px;
+    width: 30px;
+    margin: auto 10%;
+    flex-basis: 10% 10% 10%;
+    border-radius: 50%;
+}
+
+.dash-row p,
+.dash-row a {
+    margin: auto 10%;
+    width: max-content;
+    flex-basis: 10% 10% 10%;
+}
+
+.dash-container {
+    margin-top: 10vh;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10vh;
+    width: 100%;
+    height: 5vh;
+    background: var(--whiteColor);
+}
+
+/* Style tab links */
+.tablink {
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto 10px;
+    width: max-content;
+
+}
+
+.tablink:hover {
+    background-color: rgba(119, 119, 119, 0.755);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: var(--whiteColor);
+    display: none;
+    padding: 20px;
+    max-height: fit-content;
+}
+
+.dash-h2 {
+    text-decoration: underline;
+}
+
+#Home {
+    background-color: var(--tabsColor);
+    text-align: center;
+}
+
+#Tools {
+    background-color: var(--tabsColor);
+}
+
+/*Home tab content */
+.home-main-options {
+    height: max-content;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.toggler {
+    color: black;
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.home-options {
+    height: 0;
+    overflow: hidden;
+    max-height: fit-content !important;
+}
+
+.options-h2>h2>.bi {
+    margin: auto 15px;
+    padding: auto;
+    font-size: 30px;
+}
+
+.dash-option-icon {
+    margin: auto 15px;
+    padding: auto;
+    font-size: 20px;
+}
+
+.options-h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*Setting tab*/
+#Settings {
+    background-color: var(--tabsColor);
+    padding-left: 20%;
+}
+
+.img-holder {
+    text-align: center;
+    width: max-content;
+}
+
+.dash-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 2%;
+    transition: transform .2s;
+    background-position: center;
+}
+.dash-image:hover {
+    transform: scale(1.1);
+}
+
+#upload-label {
+    display: inline-block;
+    background-color: indigo;
+    color: var(--whiteColor);
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.dash-btn {
+    background-color: var(--whiteColor);
+    color: black;
+    outline: none;
+    border: none;
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.personal {
+    margin-top: 50px;
+}
+
+.personal form {
+    margin: auto;
+    justify-content: center;
+}
+
+.dash-table {
+    padding-left: 2.5%;
+}
+
+.dash-table tr {
+    margin: 5% 0;
+}
+
+.dash-table tr td {
+    margin: 0 55%;
+}
+
+.dash-table tr td input {
+    height: 25px;
+    width: 200px;
+    padding: 3px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.dash-delete {
+    margin-top: 100px;
+}
+
+.danger:hover {
+    background-color: var(--danger);
+}
+
+.green:hover{
+    background-color: var(--tabsColor);
+}
+
+.card-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1.5rem;
+    max-width: 100vw;
+    width: 100%h;
+}
+
+.dash-card {
+    display: grid;
+    justify-items: center;
+    height: 52vh;
+    width: 100%;
+    margin: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: #444;
+    margin: 0 auto;
+    background-color: #e1faf1;
+}
+
+.dash-card>img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    max-height: max(10rem, 30vh);
+    aspect-ratio: 4/3;
+    mix-blend-mode: var(--card-blend-mode);
+}
+
+.dash-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.dash-card p {
+    font-size: 14px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.dash-card a:hover {
+    color: var(--danger);
+}
+
+.home-options>.row {
+    justify-content: space-around;
+}
+
+.left-text li a {
+    text-align: left !important;
+    font-size: 14px;
+}
+
+/*Hover cards*/
+
+.card__ {
+    width: 100%;
+    height: 50vh;
+    margin: 23px;
+}
+
+.card__content {
+    text-align: center;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    height: 50vh;
+}
+
+.card__:hover .card__content {
+    transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 0.5em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+}
+
+.card__front {
+    background-color: var(--waterBlue);
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+}
+
+.card__front::before {
+    content: '';
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    bottom: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid currentColor;
+    transform: var(--level-one);
+}
+
+.card__title {
+    font-size: 30px;
+    transform: var(--level-three);
+    order: 2;
+    text-transform: uppercase;
+}
+
+.card__subtitle {
+    transform: var(--level-two);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .75rem;
+    font-weight: var(--fw-bold);
+    opacity: .7;
+}
+
+.card__body {
+    transform: var(--level-two);
+    font-weight: var(fw-normal);
+    font-size: 1rem;
+    line-height: 2;
+    text-align: left;
+}
+
+.card__body li a {
+    transform: var(--level-two);
+    text-decoration: none;
+    color: var(--whiteColor);
+    transition: 0.5s ease-in-out;
+    text-transform: capitalize;
+}
+
+.card__body li a:hover {
+    color: var(--danger);
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.card__back h4 {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.card__back {
+    transform: rotateY(.5turn);
+    color: var(--waterBlue);
+    background: #333;
+}
+
+.more-tools-container {
+    border-radius: 10px;
+    margin: 25px 0;
+    padding: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.more-tools-h2 {
+    margin-top: 100px;
+}
+
+.more-tools {
+    padding: 50px;
+}
+
+.more-tools-link a {
+    color: #444;
+    text-decoration: none;
+}
+
+.more-tools-link a:hover {
+    color: black;
+    font-size: 18px;
+}
+
+.more-tools-p {
+    font-size: 14px;
+    color: black;
+}
+
+
+/*-------For smaller screens--------*/
+@media (max-width: 780px) {
+    * {
+        font-size: 0.9rem;
+    }
+
+    .dash-links {
+        width: 15%;
+        display: inline-flex;
+        margin: 0 auto;
+    }
+
+    .dash-h2 {
+        padding: 25px 0 0 0;
+    }
+
+    .dash-brand {
+        margin: auto 10px;
+        width: 50%;
+    }
+
+    .dash-row p,
+    .dash-row a {
+        margin: auto;
+    }
+
+    .bi-box-arrow-right {
+        font-size: 20px !important;
+    }
+
+    #Settings {
+        background-color: blue;
+        padding-left: 2%;
+        padding-top: 5vh;
+    }
+
+    .img-holder {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dash-image {
+        margin: auto;
+    }
+
+    #upload-label {
+        margin: auto;
+    }
+
+    .dash-btn {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .dash-table tr td input {
+        height: 25px;
+        width: 150px;
+    }
+
+    .dash-table tr td select {
+        height: 35px;
+        width: 160px;
+    }
+
+    .card-wrapper {
+        max-width: 100%;
+    }
+
+    .card__content {
+        padding: 0;
+    }
+
+    .card__ {
+        margin: 30px 0 !important;
+    }
+
+    .card__front,
+    .card__back {
+        position: absolute;
+        width: 100%;
+        padding: 0em 0em;
+    }
+
+    .more-tools {
+        padding: 0 25px;
+    }
+
+    .more-tools-h2 {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-wrapper {
+        max-width: 100%;
+    }
+}

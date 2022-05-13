@@ -32,7 +32,7 @@ function test_input($data)
 }
 
 
-function sendEmail($email, $code)
+function sendEmail($email, $subject, $massage)
 {
 	require_once "PHPMailer/PHPMailer.php";
 	require_once "PHPMailer/SMTP.php";
@@ -53,8 +53,8 @@ function sendEmail($email, $code)
 	$mail->isHTML(true);
 	$mail->setFrom($email, "B.O.B");
 	$mail->addAddress($email); //enter you email address
-	$mail->Subject = ("Be the BOSS | Verification Code");
-	$mail->Body = "Here is your key: ".$code;
+	$mail->Subject = ($subject);
+	$mail->Body = $massage;
 
 	if ($mail->send()) {
 		$response = "Email is sent!";
