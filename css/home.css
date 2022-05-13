@@ -46,7 +46,7 @@ section.home4{
 }
 
 /* main part of the homepage*/
- main.sectionmain{
+.sectionmain{
 
   width: 1250px;
   margin: 80px auto;
