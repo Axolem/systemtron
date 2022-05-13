@@ -47,27 +47,31 @@ section.home4{
 
 /* main part of the homepage*/
 .sectionmain{
-
-  width: 1250px;
   margin: 80px auto;
-  padding: 0 0px;
-  box-sizing: border-box;
-  display: inline-block;
+  padding: 0 30px;
+  
 } 
- 
-article h3{
-  color: #4B4B4B;
-  font-size: 48px;
+ .row2{
+   margin:100px auto;
 
+ }
+ .row2 p{
+   margin:auto;
+   text-align:center;
+   font-size:24px;
+   width:50%;
+ }
+ .image2{
+   margin:auto;
+ }
+.sectionmain div h3{
+  font-weight:bold;
+  text-align:center;
+  margin-bottom:30px;
+  font-size:30px;
 }
-article p{
-  line-height: 2em;
-  color: #4B4B4B;
-
-}
-article p::first-line{
-  font-weight: bold;
-  font-size: 1.2em;
+.sectionmain div p{
+  text-align:center;
 }
 /* for the images in the end */
 .img{
@@ -89,31 +93,17 @@ article p::first-line{
   max-width: 70%;
 }
 /* the last section on the page*/
-section.register{
+section .register{
   background:white;
   text-align: center;
   padding: 60px 20px;
   color: #4B4B4B;
 }
-section.register h2{
+section .register h2{
   font-size: 36px;
 }
-section.hpage{
- 
-  padding-top: 20px ;
-  
-}
-section div.home{
-  display:inline block;
-  height:auto;
-  width: 400px;
-  text-align: center;
-  line-height:27px;
-  position: relative;
-  left: 180px;
-  color:#4B4B4B;
-  font-size:60px;
-}
+
+
 section div.home2 {
   display:inline block;
   text-align: center;
@@ -130,37 +120,12 @@ section.home4{
  
 }
 
-img.homeimg {
-  text-align: center;
-  margin: 70px 0;
- 
-}
-img.homeimg{
-  display: inline-block;
-  width: 27%;
-  margin: 20px 3%;
-  position: relative;
-  right: -750px;
-  bottom: 480px;
-}
-img.homeimg{
-  max-width: 70%;
-}
-img.homeigm {
-  text-align: center;
-  margin: 70px 0;
- 
-}
-img.homeigm{
-  display: inline-block;
-  width: 27%;
-  margin: 20px 3%;
-  position: relative;
-  right: 250px;
-  top: -160px;
-}
-img.homeigm{
-  max-width: 80%;
+.homeimage{
+  height:250px;
+  width:auto;
+
+  
+  
 }
 section.home4 img{
    position:relative;
