@@ -8,7 +8,7 @@ include('config/navbar.php'); ?>
       <h2>BE YOUR OWN BOSS <br><span>Time is limited, Learn here ,Lead anywhere</span></h2>
     </div>
   </section>
-  <main>
+  <main class="sectionmain" >
     <article>
       <h3>Want to start your own business?</h3>
       <p>Be your own boss is the website to be at.<br>-We provide essential tools and information on how one can start and maintain their business.<br>

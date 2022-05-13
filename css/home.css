@@ -46,15 +46,15 @@ section.home4{
 }
 
 /* main part of the homepage*/
-/* main{
+ main.sectionmain{
 
   width: 1250px;
   margin: 80px auto;
   padding: 0 0px;
   box-sizing: border-box;
   display: inline-block;
-} */
-/* */
+} 
+ 
 article h3{
   color: #4B4B4B;
   font-size: 48px;
