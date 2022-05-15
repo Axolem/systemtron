@@ -22,7 +22,7 @@ html {
 .login-row {
     margin: 0 10%;
     padding: 5%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0);
+    box-shadow: rgba(255, 255, 255, 0.804) 0px 5px 15px 0px;
     border-radius: 5px;
 }
 

@@ -1,31 +1,9 @@
 /* -----------Home page -------------*/
-section.home4{
-  margin: 0;
-  padding: 0;
-}
-
-/* p{
-  font-size: 20px;
-} */
-
-/* header .......*/
-/* header{
-   background-color:lightgrey;
-  padding: 10px 0;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-} */
-/* header h1{
+body{
+  background: black;
   color: white;
-  display: inline-block;
-  padding: 6px 12px;
-  
-} */
-/* background image*/
+}
+/* backgrod imunage*/
 .background{
   position: relative;
 }
@@ -34,6 +12,7 @@ section.home4{
 }
 .background .welcome{
   text-align: center;
+  background: transparent !important;
   color: white;
   padding: 5px;
   font-size: 40px;
@@ -42,7 +21,7 @@ section.home4{
   top: 20%;
 } 
 .background .welcome span{
-  font-size: 1.2em;
+  font-size: 1.2em;background: transparent !important;
 }
 
 /* main part of the homepage*/
@@ -123,9 +102,7 @@ section.home4{
 .homeimage{
   height:250px;
   width:auto;
-
-  
-  
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 5px 15px 0px;
 }
 section.home4 img{
    position:relative;
