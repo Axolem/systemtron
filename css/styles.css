@@ -331,11 +331,10 @@ select {
 
 .heads {
     text-align: center;
-    color: rgb(157, 72, 199);
 }
 
 .map {
-    border: 1px solid rgb(233, 20, 194);
+    border: 1px solid rgb(165, 50, 144);
     border-radius: 3%;
     height: 32%;
     width: 40%;
