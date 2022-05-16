@@ -73,15 +73,16 @@ if (isset($accessToken)) {
         if ($result->num_rows > 0) {
             $query = "UPDATE user_details SET first_name = '$fname', last_name = '$lname',
             picture = '$pic' WHERE usersemail = '$email' ";
+            if (mysqli_query($con, $query)) {
+                $subject = "Hey boss! New login";
+                $message = "There was a login into you account at $date";
 
-            $subject = "Hey boss! New login";
-            $message = "There was a login into you account at $date";
+                sendEmail($email, $subject, $message);
 
-            sendEmail($email, $subject, $message);
-
-            $_SESSION["loggedin"] = true;
-            $_SESSION["username"] = $email;
-            header('Location: ../dashboard/index.php');
+                $_SESSION["loggedin"] = true;
+                $_SESSION["username"] = $email;
+                header('Location: ../dashboard/index.php');
+            }
         } else {
 
             # save the user information database

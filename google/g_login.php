@@ -47,11 +47,16 @@ if (isset($_GET['code'])) {
         $query = "UPDATE user_details SET first_name = '$fname', last_name = '$lname',
        picture = '$pic' WHERE usersemail = '$email' ";
 
-        mysqli_query($con, $query);
+        if (mysqli_query($con, $query)) {
+            $subject = "Hey boss! New login";
+            $message = "There was a login into you account at $date";
 
-        $_SESSION["loggedin"] = true;
-        $_SESSION["username"] = $email;
-        header('Location: ../dashboard/index.php');
+            sendEmail($email, $subject, $message);
+
+            $_SESSION["loggedin"] = true;
+            $_SESSION["username"] = $email;
+            header('Location: ../dashboard/index.php');
+        }
     } else {
         # save the user information database
         $query = "INSERT INTO users (`id`, `oath_provider`, `oath_id`, `email`, `created`, `verified`) 
@@ -68,14 +73,21 @@ if (isset($_GET['code'])) {
 
 
         //Send  the query to the database
-        mysqli_query($con, $query);
-        mysqli_query($con, $query2);
-        mysqli_query($con, $query3);
-        mysqli_query($con, $query4);
+        if (
+            mysqli_query($con, $query) &&
+            mysqli_query($con, $query2) &&
+            mysqli_query($con, $query3) &&
+            mysqli_query($con, $query4)
+        ) {
 
-        $_SESSION["loggedin"] = TRUE;
-        $_SESSION["username"] = $email;
-        header('Location: ../dashboard/index.php');
+            $subject = "Hey boss! Welcome";
+            $message = "Welcome to BOB $name";
+            sendEmail($email, $subject, $message);
+
+            $_SESSION["loggedin"] = true;
+            $_SESSION["username"] = $email;;
+            header('Location: ../dashboard/index.php');
+        }
     }
 } else {
     header("Location: http://localhost/project/systemtron/login.php?massage=Something went wrong!");
