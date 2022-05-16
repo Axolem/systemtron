@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			$query3 = "INSERT INTO `user_setting`(`usersemail`) VALUES ('$email')";
 
 			//isert user doe email notifications
-			$query4 = "INSERT INTO `newsletters`(`id`, `email_id`, `name`, `email`) VALUES ('$id','$email_id','$name','$email')";
+			$query4 = "INSERT INTO `newsletters`(`id`, `email_id`, `name`, `email`) VALUES ('$id','$email_id','$fname','$email')";
 
 			//Send  the queries to the database
 			mysqli_query($con, $query);

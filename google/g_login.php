@@ -27,6 +27,7 @@ if (isset($_GET['code'])) {
     //Get user information from google account
     $gauth = new Google_Service_Oauth2($client);
     $accountInfo = $gauth->userinfo->get();
+
     $email = $accountInfo->email;
     $fname = $accountInfo->given_name;
     $lname = $accountInfo->family_name;
@@ -34,14 +35,16 @@ if (isset($_GET['code'])) {
     $email = $accountInfo->email;
     $gender = $accountInfo->gender;
     $pic = $accountInfo->picture;
+    //Random code for email id
+    $email_id = uniqid();
     $date = date('Y-m-d');
 
-    $sql = "SELECT id, email FROM users WHERE email = '$email' and oauth_provider = 'google'";
+    $sql = "SELECT id, email FROM users WHERE email = '$email' and oath_provider = 'google'";
     $result = $con->query($sql);
-    
+
     if ($result->num_rows > 0) {
-        $query = "UPDATE users SET oauth_id = '$id' , first_name = '$fname', last_name = '$lname',
-       picture= '$pic', modified_at =  '$date' WHERE email = '$email' ";
+        $query = "UPDATE user_details SET first_name = '$fname', last_name = '$lname',
+       picture = '$pic' WHERE usersemail = '$email' ";
 
         mysqli_query($con, $query);
 
@@ -49,13 +52,27 @@ if (isset($_GET['code'])) {
         $_SESSION["username"] = $email;
         header('Location: ../dashboard/index.php');
     } else {
-        # save the user nformation database
-        $query = "INSERT INTO `users`(`id`, `oauth_provider`, `oauth_id`, `first_name`, `last_name`, `email`, `picture`, `created_at`, `gender`, `verified`) 
-        VALUES ('$id','google','$id','$fname','$lname','$email', '$pic' ,'$date','$gender','yes')";
+        # save the user information database
+        $query = "INSERT INTO users (`id`, `oath_provider`, `oath_id`, `email`, `created`, `verified`) 
+        VALUES ('$id','google','$id', '$email', NULL , 'yes')";
+
+        $query2 = "INSERT INTO user_details (`usersemail`, `first_name`, `last_name`, `gender`, `picture`) 
+                                        VALUES ('$email','$fname','$lname','$gender','$pic')";
+
+        //Insert user default settings
+        $query3 = "INSERT INTO user_setting (`usersemail`) VALUES ('$email')";
+
+        //isert user doe email notifications
+        $query4 = "INSERT INTO newsletters (`id`, `email_id`, `name`, `email`) VALUES ('$id','$email_id','$fname','$email')";
+
+
         //Send  the query to the database
         mysqli_query($con, $query);
+        mysqli_query($con, $query2);
+        mysqli_query($con, $query3);
+        mysqli_query($con, $query4);
 
-        $_SESSION["loggedin"] = true;
+        $_SESSION["loggedin"] = TRUE;
         $_SESSION["username"] = $email;
         header('Location: ../dashboard/index.php');
     }
