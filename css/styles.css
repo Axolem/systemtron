@@ -392,6 +392,7 @@ select {
 
 .separator {
     border-right: 1px solid white;
+    opacity: var(--links);
 }
 
 .social-links a {
@@ -446,6 +447,7 @@ select {
     margin: auto;
     font-size: 12px;
     opacity: 0.6;
+    text-transform: capitalize;
 }
 
 /*----------contact page-------*/
@@ -488,27 +490,6 @@ select {
     margin: 2px;
     padding: 2px;
 }
-
-/*---Footer style---*/
-.container {
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-}
-
-.more-info li a {
-    display: flex;
-    margin: 10px;
-    padding: 5px;
-    color: blue;
-}
-
-.Nes {
-    color: aqua;
-}
-
-
-
 
 
 

@@ -13,7 +13,7 @@
                 <ul class="row">
                     <li><a href="http://localhost/project/systemtron/">home</a></li>
                     <li><a href="http://localhost/project/systemtron/about.php">about us</a></li>
-                    <li><a href="/Privacy Policy/Terms of use">privacy policy</a></li>
+                    <li><a href="https://www.privacypolicies.com/live/2511da50-2e95-47e0-9326-e51278726459">privacy policy</a></li>
                     <li><a href="http://localhost/project/systemtron/blog.php">blog</a></li>
                     <li><a href="http://localhost/project/systemtron/login.php">login</a></li>
                     <li><a href="http://localhost/project/systemtron/contact.php">contact us</a></li>
@@ -21,7 +21,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <p> &copy <?php echo date('Y') ?> Be your own boss</p>
 
         <P>views and opinions expressed in each episode are those of the contributors and do not necessarily

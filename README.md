@@ -23,3 +23,7 @@ Documentation: https://newsapi.org/docs/client-libraries/php
 Name: News API
 Email: beyourownbossdsw@gmail.com
 Password: _Uyp962hd8/kLuL
+
+Privacy Policy Generator
+Name : privacypolicies
+Link: https://app.privacypolicies.com/download/2511da50-2e95-47e0-9326-e51278726459
