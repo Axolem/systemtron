@@ -56,7 +56,7 @@ if (isset($_GET['code'])) {
         mysqli_query($con, $query);
 
         $_SESSION["loggedin"] = true;
-        $_SESSION["username"] = $email;;
+        $_SESSION["username"] = $email;
         header('Location: ../dashboard/index.php');
     }
 } else {

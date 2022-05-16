@@ -21,13 +21,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			if ($result && mysqli_num_rows($result) > 0) {
 				$user_data = mysqli_fetch_assoc($result);
 
-				if ($user_data['oauth_provider'] == "manual") {
-					if ($user_data['oauth_id'] === $password) {
-						$_SESSION['email'] = $email;
-						header("Location: ../dashboard/index.php");
-						die;
-					} else {
-						header("Location: http://localhost/project/systemtron/login.php?loginErr=Incorrect password or email.");
+				if ($user_data['oath_provider'] == "manual") {
+					if ($user_data['verified'] == 'yes') {
+						if ($user_data['oath_id'] === $password) {
+							$_SESSION['email'] = $email;
+							$_SESSION["username"] = $email;
+							$_SESSION["loggedin"] = true;
+							header("Location: ../dashboard/index.php");
+							die;
+						} else {
+							header("Location: http://localhost/project/systemtron/login.php?loginErr=Incorrect password or email.");
+							die;
+						}
+					} else{
+						header("Location: index.php?loginErr=Enter verification code.");
 						die;
 					}
 				} else {

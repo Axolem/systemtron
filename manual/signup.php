@@ -41,9 +41,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		}
 
 		//Check if the user already exist
-		$select = mysqli_query($con, "SELECT * FROM users WHERE email = '" . $email . "'");
-		if (mysqli_num_rows($select)) {
+		$select = mysqli_query($con, "SELECT * FROM users  WHERE email = '$email' ");
+		if (mysqli_num_rows($select) > 0) {
 			header("Location: ../login.php?inputErr=User already exists!");
+			die;
 		} else {
 			// Hash the password
 			$password = md5($password);
@@ -51,22 +52,39 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			$date = date('Y-m-d');
 			//Random code for email validation
 			$code = rand(1000, 9999);
+			//Random code for id
+			$id = $randnum = rand(1111111111, 9999999999);
+			//Random code for email id
+			$email_id = uniqid();
 
-			//Prepare the user information for the database
-			$query = "INSERT INTO `users`(`id`, `oauth_provider`, `oauth_id`, `first_name`, `last_name`, `email`, `created_at`, `ethnic_group`, `gender`, `code`, `verified`) 
-				VALUES ('5','manual','$password','$fname','$lname','$email','$date','$color','$gender', '$code','no')";
-			//Send  the query to the database
+			//Isert logind details
+			$query = "INSERT INTO `users`(`id`, `oath_provider`, `oath_id`, `email`, `created`, `updated`, `code`, `verified`)
+			VALUES('$id','manual','$password','$email', NULL, NULL,'$code','no')";
+
+			//inseting user information
+			$query2 = "INSERT INTO `user_details`(`usersemail`, `first_name`, `last_name`, `gender`, `ethinicity`) 
+			VALUES ('$email','$fname','$lname','$gender','$color')";
+
+			//Insert user default settings
+			$query3 = "INSERT INTO `user_setting`(`usersemail`) VALUES ('$email')";
+
+			//isert user doe email notifications
+			$query4 = "INSERT INTO `newsletters`(`id`, `email_id`, `name`, `email`) VALUES ('$id','$email_id','$name','$email')";
+
+			//Send  the queries to the database
 			mysqli_query($con, $query);
+			mysqli_query($con, $query2);
+			mysqli_query($con, $query3);
+			mysqli_query($con, $query4);
+
+			//Sending the code to the user
+			$subject = "Hey boss! You are one-step away";
+			$massage = "Your OTP is: $code";
+
+			sendEmail($email, $subject, $massage);
+			$_SESSION['email'] = $email;
+			header("Location: index.php");
 		}
-
-		$subject = "Hey boss! You are one-step away";
-		$massage = "Your OTP is:".$code;
-
-		sendEmail($email, $subject, $massage);
-		$_SESSION['email'] = $email;
-		header("Location: index.php");
-
-		die;
 	} else {
 		echo "Please enter some valid information!";
 	}

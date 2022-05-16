@@ -1,8 +1,8 @@
-<header>
-    <nav>
+<header class="header">
+    <nav class="nav">
         <div id="brand"><a href="/">BOB</a></div>
         <div class="page-links">
-            <ul>
+            <ul class="nav-ul">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="blog.php">Our Blog</a></li>
@@ -10,7 +10,7 @@
             </ul>
         </div>
         <div class="login-links">
-            <ul>
+            <ul class="nav-ul">
                 <li id="login"><a href="login.php"><i class="bi bi-person"></i></a></li>
             </ul>
         </div>

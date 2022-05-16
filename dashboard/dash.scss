@@ -53,6 +53,7 @@ body {
 
 .dash-user-name {
     font-size: 12px;
+    color: black;
 }
 
 .dash-icon{
@@ -227,10 +228,10 @@ body {
     margin: 0 55%;
 }
 
-.dash-table tr td input {
-    height: 25px;
+.dash-table tr td input, .dash-table tr td select {
+    height: 30px;
     width: 200px;
-    padding: 3px;
+    padding: 5px;
     outline: none;
     border-radius: 5px;
     border: 1px solid black;

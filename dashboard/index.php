@@ -9,8 +9,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 } else {
    include('handlers/connection.php');
 
-   $sql = "SELECT  `id`, `first_name`, `last_name`, `email`, `picture`, `created_at`, `modified_at`, `ethnic_group`, 
-   `emplopment_status`, `phone`, `gender`, `code`, `verified` FROM users WHERE email = '" . $_SESSION['username'] . "'";
+   $sql = "SELECT  * FROM users, user_details, user_setting WHERE email = '" . $_SESSION['username'] . "'";
    $result = $con->query($sql);
 
    if ($result->num_rows > 0) {
@@ -21,13 +20,12 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
          $surname = $row['last_name'];
          $email = $row['email'];
          $phone = $row['phone'];
-         $color = '';
-         $gender = '';
-         $status = $row['emplopment_status'];
+         $color = $row['ethinicity'];
+         $gender = $row['gender'];
+         $status = $row['emp_status'];
          $picture = $row['picture'];
-         $phoneNotes = 'yes';
-         $emailNotes = 'no';
-         $newsLetters = 'yes';
+         $phoneNotes = $row['phone_notifications'];
+         $emailNotes = $row['email_notifications'];
          $_SESSION['user_id'] = $id;
       }
    }
@@ -54,9 +52,9 @@ include('../config/header.php')
 
    <div class="dash-container">
       <div class="tabs">
-         <button class="tablink" onclick="openPage('Home', this, 'green')">Home</button>
+         <button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen">Home</button>
          <button class="tablink" onclick="openPage('Tools', this, 'green')">Tools</button>
-         <button class="tablink" onclick="openPage('Settings', this, 'green')" id="defaultOpen">Settings</button>
+         <button class="tablink" onclick="openPage('Settings', this, 'green')">Settings</button>
       </div>
       <!----------------------------------------------------------------------------------------------------------------
                                  Home
@@ -735,11 +733,13 @@ include('../config/header.php')
 ----------------------------------------------------------------------------->
       <div id="Settings" class="tabcontent">
          <h2 class="dash-h2">Settings </h2>
-         <span> <?php if(isset($_Get['response'])){
-            if($_Get['response']==1){
-               echo $_GET['msg'];}
-            else{echo $_GET['msg'];
-         }} ?></span>
+         <span class="dash-massage"> <?php if (!empty($_GET['response'])) {
+                     if ($_GET['response'] == 1) {
+                        echo $_GET['msg'];
+                     } else {
+                        echo $_GET['msg'];
+                     }
+                  } ?></span>
          <div class="img-holder">
             <img src="<?php if (!empty($picture)) {
                            echo $picture;
@@ -794,7 +794,7 @@ include('../config/header.php')
                      <td> <?php if (!empty($color)) {
                               echo '<input disabled type="text" name="color" value="' . $color . '"></td>';
                            } else {
-                              echo ' <select name="color" required value=  >
+                              echo ' <select name="color">
                            <option value="african">African</option>
                            <option value="coloured">Coloured</option>
                            <option value="white">White</option>
@@ -817,21 +817,15 @@ include('../config/header.php')
                <table class="dash-table">
                   <tr>
                      <td><label for="phoneN">Recieve phone notifications:</label></td>
-                     <td><input type="checkbox" name="phoneN" <?php if ($phoneNotes == 'yes') {
+                     <td><input type="checkbox" name="phoneN" <?php if ($phoneNotes == 'on') {
                                                                   echo "checked";
                                                                } ?>></td>
                   </tr>
                   <tr>
                      <td><label for="emailN">Recieve email notifications:</label></td>
-                     <td><input type="checkbox" name="emailN" <?php if ($emailNotes == 'yes') {
+                     <td><input type="checkbox" name="emailN" <?php if ($emailNotes == 'on') {
                                                                   echo "checked";
                                                                } ?>></td>
-                  </tr>
-                  <tr>
-                     <td><label for="subcribe">Subscribe to newsletters:</label></td>
-                     <td><input type="checkbox" name="newsletters" <?php if ($newsLetters == 'yes') {
-                                                                        echo "checked";
-                                                                     } ?>></td>
                   </tr>
                   <tr>
                      <td><button class="dash-btn green" name="updatePerson" type="submit">Update!</button></td>

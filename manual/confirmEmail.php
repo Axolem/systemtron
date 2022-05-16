@@ -11,16 +11,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $code = test_input($_POST['code']);
 
     if (!empty($email) && !empty($code)) {
-        $sql = "SELECT code FROM users Where email = '$email'";
+        $sql = "SELECT code, email FROM users Where email = '$email'";
         $result = $con->query($sql);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                if ($row['code'] == $code) {
+                if ($row['code'] == $code  && $row['email'] == $email) {
                     $sql = "UPDATE users SET verified='yes' WHERE email= '$email'";
                     if ($con->query($sql) === TRUE) {
                         $_SESSION["login"] = "OK";
                         $_SESSION["username"] = $email;
-                        header("Location: ../dashbord.php");
+                        header("Location: ../dashboard/index.php");
                     }
                 } else {
                     $_SESSION["email"] = $email;
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 }
             }
         } else {
-            header("Location: index.php?codeErr=Input values");
+            header("Location: index.php?codeErr=Input a value");
             exit();
         }
     }

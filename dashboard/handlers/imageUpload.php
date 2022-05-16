@@ -16,7 +16,7 @@ if (isset($_POST['uploadfile'])) {
     $folder = "../profiles/" . $newName;
     $path = 'profiles/' . $newName;
 
-    $sql = "UPDATE users SET picture = '$path' WHERE first_name = 'Axole' ";
+    $sql = "UPDATE user_details SET picture = '$path' WHERE usersemail = '$email'";
 
     mysqli_query($con, $sql);
 

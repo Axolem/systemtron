@@ -15,10 +15,10 @@
     <link rel="shortcut icon" href="http://localhost/project/systemtron/images/tabs.png" type="image/x-icon">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="dash.scss">
-    <link rel="stylesheet" href="css/profiles.css">
-    <link rel="stylesheet" href="css/styles.css"> <!--other pages stylesheet -->
-    <link rel="stylesheet" href="css/navbar.css"> <!-- nav stylesheet-->
-    <link rel="stylesheet" href="css/home.css"> <!--homepage stylesheet-->
+    <link rel="stylesheet" href="http://localhost/project/systemtron/css/profiles.css">
+    <link rel="stylesheet" href="http://localhost/project/systemtron/css/styles.css"> <!--other pages stylesheet -->
+    <link rel="stylesheet" href="http://localhost/project/systemtron/css/navbar.css"> <!-- nav stylesheet-->
+    <link rel="stylesheet" href="http://localhost/project/systemtron/css/home.css"> <!--homepage stylesheet-->
 </head>
 <body>
 <!-- Do not add any content below this line. -->

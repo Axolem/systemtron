@@ -1,16 +1,19 @@
 /* -----------Home page -------------*/
-body{
+body {
   background: black;
   color: white;
 }
+
 /* backgrod imunage*/
-.background{
+.background {
   position: relative;
 }
-.background img{
+
+.background img {
   max-width: 100%;
 }
-.background .welcome{
+
+.background .welcome {
   text-align: center;
   background: transparent !important;
   color: white;
@@ -19,109 +22,127 @@ body{
   position: absolute;
   left: 0;
   top: 20%;
-} 
-.background .welcome span{
-  font-size: 1.2em;background: transparent !important;
+}
+
+.background .welcome span {
+  font-size: 1.2em;
+  background: transparent !important;
 }
 
 /* main part of the homepage*/
-.sectionmain{
+.sectionmain {
   margin: 80px auto;
   padding: 0 30px;
-  
-} 
- .row2{
-   margin:100px auto;
 
- }
- .row2 p{
-   margin:auto;
-   text-align:center;
-   font-size:24px;
-   width:50%;
- }
- .image2{
-   margin:auto;
- }
-.sectionmain div h3{
-  font-weight:bold;
-  text-align:center;
-  margin-bottom:30px;
-  font-size:30px;
 }
-.sectionmain div p{
-  text-align:center;
+
+.row2 {
+  margin: 100px auto;
+
 }
+
+.row2 p {
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  width: 50%;
+}
+
+.image2 {
+  margin: auto;
+}
+
+.sectionmain div h3 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.sectionmain div p {
+  text-align: center;
+}
+
 /* for the images in the end */
-.img{
+.img {
   text-align: center;
   margin: 80px 0;
   white-space: nowrap;
 }
-.img li{
+
+.img li {
   display: inline-block;
   list-style-type: none;
   width: 40%;
   margin: 20px 3%;
   position: relative;
 }
-.img li:hover{
+
+.img li:hover {
   top: -4px;
 }
-.img li img{
+
+.img li img {
   max-width: 70%;
 }
+
 /* the last section on the page*/
-section .register{
-  background:white;
+section .register {
+  background: white;
   text-align: center;
   padding: 60px 20px;
   color: #4B4B4B;
 }
-section .register h2{
+
+section .register h2 {
   font-size: 36px;
 }
 
 
 section div.home2 {
-  display:inline block;
+  display: inline block;
   text-align: center;
   position: relative;
-  left:700px;
+  left: 700px;
   top: 100px;
-  line-height:27px;
-  color:#4B4B4B;
+  line-height: 27px;
+  color: #4B4B4B;
   font-size: 60px;
-  width:450px;
-}
-section.home4{
-  background:#F4F4F4;
- 
+  width: 450px;
 }
 
-.homeimage{
-  height:250px;
-  width:auto;
+section.home4 {
+  background: #F4F4F4;
+
+}
+
+.homeimage {
+  height: 250px;
+  width: auto;
   box-shadow: rgba(255, 255, 255, 0.15) 0px 5px 15px 0px;
 }
-section.home4 img{
-   position:relative;
-   right:-200px;
-   border-radius: 9px;
+
+section.home4 img {
+  position: relative;
+  right: -200px;
+  border-radius: 9px;
   border: 1px solid white;
-  margin:20px 0;
+  margin: 20px 0;
 }
-div.home3 h2{
+
+div.home3 h2 {
   text-align: center;
   font-weight: bold;
-  color:black;
+  color: black;
 }
-div.home3{
+
+div.home3 {
   text-align: center;
-  color:#4B4B4B;
+  color: #4B4B4B;
 }
-div.home3 li{
- list-style: none;
+
+div.home3 li {
+  list-style: none;
 }
 
 /* the login form in the end */
@@ -136,7 +157,6 @@ div.home3 li{
   border: 4px dashed #4B4B4B;
   outline: none;
 } */
-form input:valid{
+form input:valid {
   border: 1px solid #71d300;
 }
-

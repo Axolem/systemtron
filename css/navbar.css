@@ -7,20 +7,21 @@
   box-sizing: border-box;
 }
 
-header a {
+.header a {
   text-decoration: none;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    background-color: #1d1f1d;
-    height: 80px;
-    color: white;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 80px;
+  color: white;
 }
-.page-links{
-    justify-content: space-between;
+
+.page-links {
+  justify-content: space-between;
 }
 
 #brand {
@@ -35,7 +36,7 @@ nav{
   font-size: 2em;
 }
 
-ul {
+.nav-ul {
   list-style: none;
   height: 100%;
   display: flex;
@@ -43,35 +44,28 @@ ul {
   justify-content: space-around;
 }
 
-ul a {
-    color: white;
-  }
+.nav-ul a {
+  color: white;
+}
 
-ul li {
+.nav-ul li {
   padding: 5px;
   margin: 0 10px;
 }
 
-ul li:hover {
+.nav-ul li:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
 
-#login, #signup {
+#login,
+#signup {
   border-radius: 5px;
   padding: 5px 8px;
 }
 
 #login {
   border: 1px solid #498afb;
-}
-
-#signup {
-  border: 1px solid #ff3860;
-}
-
-#signup a {
-  color: #ff3860;
 }
 
 #login a {
@@ -127,14 +121,17 @@ ul li:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .page-links, .login-links {
+
+  .page-links,
+  .login-links {
     display: none;
   }
 
   #hamburger-icon {
     display: block;
   }
-  ul a {
+
+  .nav-ul a {
     color: black;
   }
 }
