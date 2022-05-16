@@ -18,6 +18,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 if ($row['code'] == $code  && $row['email'] == $email) {
                     $sql = "UPDATE users SET verified='yes' WHERE email= '$email'";
                     if ($con->query($sql) === TRUE) {
+
+                        $subject = "Hey boss! Welcom";
+                        $message = "You have successfully verified your account. Now we welcome you";
+
+                        sendEmail($email, $subject, $message);
+
                         $_SESSION["login"] = "OK";
                         $_SESSION["username"] = $email;
                         header("Location: ../dashboard/index.php");
