@@ -24,6 +24,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 				if ($user_data['oath_provider'] == "manual") {
 					if ($user_data['verified'] == 'yes') {
 						if ($user_data['oath_id'] === $password) {
+
+
+							$subject = "Hey boss! New login";
+							$message = "There was a login into you account at $date";
+
+							sendEmail($email, $subject, $message);
+
 							$_SESSION['email'] = $email;
 							$_SESSION["username"] = $email;
 							$_SESSION["loggedin"] = true;
@@ -33,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 							header("Location: http://localhost/project/systemtron/login.php?loginErr=Incorrect password or email.");
 							die;
 						}
-					} else{
+					} else {
 						header("Location: index.php?loginErr=Enter verification code.");
 						die;
 					}
