@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
-  background-color: #1d1f1d;
+  background-color: black;
   height: 80px;
   color: white;
 }
@@ -51,6 +51,7 @@
 .nav-ul li {
   padding: 5px;
   margin: 0 10px;
+  color: white;
 }
 
 .nav-ul li:hover {
@@ -73,9 +74,12 @@
 }
 
 #hamburger-icon {
-  margin: auto 0;
   display: none;
+  margin: auto 0;
   cursor: pointer;
+  background: black;
+  z-index: 100;
+  font-size: 14px;
 }
 
 #hamburger-icon div {
@@ -83,7 +87,7 @@
   height: 2px;
   background-color: white;
   margin: 8px 0;
-  transition: 0.4s;
+  transition: 1s;
 }
 
 .open .bar1 {
@@ -110,15 +114,20 @@
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 0;
   height: calc(100vh - 50px);
   width: 100%;
+  background: black;
 }
 
 .mobile-menu li {
   margin-bottom: 10px;
+  list-style-type: none;
+  padding: 1em 0;
 }
+.mobile-menu li a{
+  color: white;}
 
 @media only screen and (max-width: 600px) {
 

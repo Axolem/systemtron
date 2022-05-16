@@ -23,7 +23,7 @@
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="blog.php">Our Blog</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li id="login"><a href="/login"><i class="bi bi-person"></i></a></li>
+                <li id="login"><a href="login.php"><i class="bi bi-person"></i></a></li>
             </ul>
         </div>
     </nav>
