@@ -35,6 +35,7 @@ if (isset($_GET['code'])) {
     $email = $accountInfo->email;
     $gender = $accountInfo->gender;
     $pic = $accountInfo->picture;
+    $password = $_SESSION['token'];
     //Random code for email id
     $email_id = uniqid();
     $date = date('Y-m-d');
@@ -54,7 +55,7 @@ if (isset($_GET['code'])) {
     } else {
         # save the user information database
         $query = "INSERT INTO users (`id`, `oath_provider`, `oath_id`, `email`, `created`, `verified`) 
-        VALUES ('$id','google','$id', '$email', NULL , 'yes')";
+        VALUES ('$id','google','$password', '$email', NULL , 'yes')";
 
         $query2 = "INSERT INTO user_details (`usersemail`, `first_name`, `last_name`, `gender`, `picture`) 
                                         VALUES ('$email','$fname','$lname','$gender','$pic')";

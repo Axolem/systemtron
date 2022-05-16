@@ -4,6 +4,7 @@ require '../dashboard/facebook/vendor/autoload.php';
 include('../config/header.php');
 include('../config/navbar.php');
 include('../config/db_connect.php');
+include('..//manual/functions.php');
 session_start();
 $fb = new Facebook\Facebook([
     'app_id' => '439479227947560',
@@ -58,30 +59,61 @@ if (isset($accessToken)) {
         $email = $profile->getProperty('email'); //  To Get Facebook email
         $pic = $picture['url'];
         $password = $_SESSION['facebook_access_token'];
-        $date = date('Y-m-d');
+        $email_id = uniqid();
+        $date = date("l jS \of F Y h:i:s A");
 
-        $sql = "SELECT email FROM users WHERE oauth_provider = 'facebook'";
+        if (empty($email)) {
+            header('Location: http://localhost/project/systemtron/facebook/fb_login.php?loginErr=Account does not have an email. Try other methods.');
+            die();
+        }
+
+        $sql = "SELECT email FROM users WHERE oath_provider = 'facebook'";
         $result = $con->query($sql);
 
         if ($result->num_rows > 0) {
-            $query = "UPDATE `users` SET `id`='$id',`oauth_provider`='facebook',`oauth_id`='$password',`first_name`='$fname',`last_name`='$lname',
-        `email`='$email',`picture`='$pic',`modified_at`='$date',`gender`='$gender' WHERE 'email' = $email";
-            mysqli_query($con, $query);
+            $query = "UPDATE user_details SET first_name = '$fname', last_name = '$lname',
+            picture = '$pic' WHERE usersemail = '$email' ";
+
+            $subject = "Hey boss! New login";
+            $message = "There was a login into you account at $date";
+
+            sendEmail($email, $subject, $message);
 
             $_SESSION["loggedin"] = true;
             $_SESSION["username"] = $email;
             header('Location: ../dashboard/index.php');
         } else {
 
-            # save the user nformation database
-            $query = "INSERT INTO `users`(`id`, `oauth_provider`, `oauth_id`, `first_name`, `last_name`, `email`, `picture`, `created_at`, `gender`, `verified`) 
-        VALUES ('$id','google','$password','$fname','$lname','$email', '$pic' ,'$date','$gender','yes')";
-            //Send  the query to the database
-            mysqli_query($con, $query);
+            # save the user information database
+            $query = "INSERT INTO users (`id`, `oath_provider`, `oath_id`, `email`, `created`, `verified`) 
+            VALUES ('$id','facebook','$password', '$email', NULL, 'yes')";
 
-            $_SESSION["loggedin"] = true;
-            $_SESSION["username"] = $email;;
-            header('Location: ../dashboard/index.php');
+            $query2 = "INSERT INTO user_details (`usersemail`, `first_name`, `last_name`, `gender`, `picture`) 
+                                        VALUES ('$email','$fname','$lname','$gender','$pic')";
+
+            //Insert user default settings
+            $query3 = "INSERT INTO user_setting (`usersemail`) VALUES ('$email')";
+
+            //isert user doe email notifications
+            $query4 = "INSERT INTO newsletters (`id`, `email_id`, `name`, `email`) VALUES ('$id','$email_id','$fname','$email')";
+
+
+            //Send  the query to the database
+            if (
+                mysqli_query($con, $query) &&
+                mysqli_query($con, $query2) &&
+                mysqli_query($con, $query3) &&
+                mysqli_query($con, $query4)
+            ) {
+
+                $subject = "Hey boss! Welcome";
+                $message = "Welcome to BOB $name";
+                sendEmail($email, $subject, $message);
+
+                $_SESSION["loggedin"] = true;
+                $_SESSION["username"] = $email;;
+                header('Location: ../dashboard/index.php');
+            }
         }
     } catch (Facebook\Exceptions\FacebookResponseException $e) {
         // When Graph returns an error
@@ -105,6 +137,10 @@ if (isset($accessToken)) {
         <h2>You are about to log in with Facebook.</h2>
         <p>Continue?</p>
         <?php echo '<a href="' . $loginUrl . '"><img src="https://i.stack.imgur.com/oL5c2.png" alt=""></a>' ?>
+        <?php
+        if (!empty($_GET['loginErr'])) {
+            echo "<p class='error'>" . $_GET['loginErr'] . "</p> ";
+        } ?>
     </div>
 </div>
 
