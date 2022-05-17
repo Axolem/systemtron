@@ -46,7 +46,7 @@ include('config/navbar.php'); ?>
         <div class="about-content">
             <h2 class="contact-h2">OUR VALUES</h2>
             <div class="row">
-                <div class="inner-row">
+                <div class="inner-row padding-top">
                     <ul>
                         <li>
                             <p>Communication</p>
@@ -66,7 +66,7 @@ include('config/navbar.php'); ?>
                     </ul>
                 </div>
                 <div class="inner-row">
-                    <img class="about-image" src="images/receptionist.png" alt="">
+                    <img class="about-image" src="images/krakenimages-Y5bvRlcCx8k-unsplash.jpg" alt="">
                 </div>
             </div>
         </div>

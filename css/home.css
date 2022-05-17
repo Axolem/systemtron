@@ -157,6 +157,3 @@ div.home3 li {
   border: 4px dashed #4B4B4B;
   outline: none;
 } */
-form input:valid {
-  border: 1px solid #71d300;
-}
