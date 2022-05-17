@@ -376,41 +376,48 @@ select {
 }
 
 
-/* -------ABOUT US PAGE-------*/
-
-.about-image {
-    margin: auto;
+/* -------------------------ABOUT US PAGE---------------------*/
+.about-wrapper {
+    box-shadow: rgba(255, 255, 255, 0.448) 0px 5px 15px 0px;
+    border-radius: 10px;
+}
+.about-container{
+    padding-top: 0 !important;
 }
 
-.heads {
-    text-align: center;
+.about-content {
+    margin: 10% auto 10% auto;
+    padding: 5% 5%;
+    min-height: 70vh;
+}
+
+.about-image {
+    margin: 7% auto;
+    width: 100%;
+    box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
+}
+
+.inner-row {
+    width: 100%;
+    padding: 5%;
+    align-items: center;
+}
+
+.mine {
+    padding: 10% 0;
 }
 
 .map {
-    border: 1px solid rgb(165, 50, 144);
-    border-radius: 3%;
-    height: 32%;
-    width: 40%;
-    margin-left: 29%;
-    text-align: center;
+    padding: 0 5%;
+    border-radius: 5px;
 }
 
 .map>iframe {
     margin: auto;
     text-align: center;
+    width: 100%;
 }
 
-.mine {
-    width: 50%;
-}
-
-.about-body {
-    background-color: rgb(131, 131, 131);
-}
-
-.about-h2 {
-    color: rgb(89, 81, 145);
-}
 
 /*-------footer-----*/
 .underline {
@@ -503,7 +510,8 @@ select {
 }
 
 /*----------contact page-------*/
-.contact-container {
+.contact-container,
+.about-container {
     margin: auto;
     padding: 5% 5% 0 5%;
     text-align: center;
@@ -572,6 +580,7 @@ select {
     .contact-container h1 {
         margin-bottom: 2em;
     }
+
     .confirm-email {
         margin: 37% 8%;
         padding: 5% 2%;
@@ -589,4 +598,20 @@ select {
         display: inline;
         justify-content: space-between;
     }
+    .about-content {
+        margin: 10vh auto auto auto;
+        padding: 15% 0;
+        min-height: 70vh;
+    }
+
+    .about-image {
+        margin: 5% auto;
+        width: 70%;
+        box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
+    }
+
+    .mine {
+        padding: 2% 10%;
+    }
+
 }
