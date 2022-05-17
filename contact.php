@@ -2,7 +2,6 @@
 include('config/navbar.php'); ?>
 
 <div class="contact-container">
-	<h1>Contact Us</h1>
 	<div class="contact-wrapper row">
 		<div class="contact-info">
 			<div class="contact-info-content">
@@ -21,6 +20,7 @@ include('config/navbar.php'); ?>
 						<td><a class="link" href="https://goo.gl/maps/mJycrvBZHnszFjwi7">18 Falcon Street, Auckland Park 2006 Johannesburg 2092</a></td>
 					</tr>
 				</table>
+				<i class="bi bi-telephone-outbound"></i>
 			</div>
 
 		</div>
@@ -48,9 +48,6 @@ include('config/navbar.php'); ?>
 
 	</div>
 </div>
-<div class="underline"></div>
-
-
 
 <!-- This inserts the footer -->
 <?php include('config/footer.php') ?>
