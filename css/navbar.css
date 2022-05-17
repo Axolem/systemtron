@@ -18,6 +18,8 @@
   background-color: black;
   height: 80px;
   color: white;
+  box-shadow: rgb(93, 77, 77) 0px 13px 27px -5px, rgb(62, 55, 55) 0px 8px 16px -8px;
+
 }
 
 .page-links {

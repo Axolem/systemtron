@@ -31,7 +31,7 @@
         </P>
     </div>
 </footer>
-<script src="js/nav.js"></script>
+<script src="http://localhost/project/systemtron/js/nav.js"></script>
 </body>
 
 </html>
