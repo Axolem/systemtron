@@ -402,6 +402,10 @@ select {
     padding: 5%;
     align-items: center;
 }
+.inner-row ul li{
+    list-style-type: none;
+    margin: 10px auto;
+}
 
 .mine {
     padding: 10% 0;

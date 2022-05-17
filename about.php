@@ -47,11 +47,23 @@ include('config/navbar.php'); ?>
             <h2 class="contact-h2">OUR VALUES</h2>
             <div class="row">
                 <div class="inner-row">
-                    <p class="mine">
-                        You may have questions but we have got you covered. Our team of customer service professionals can communicate with you in the following languages:
-                        English, Xitsonga, isiZulu, and Sesotho. Be Your Own Boss is a national managed hosting provider, serving over 1,000 customers of varied sizes.
-                        The company strongly focuses on the commitment to their customer experience strategy.
-                    </p>
+                    <ul>
+                        <li>
+                            <p>Communication</p>
+                        </li>
+                        <li>
+                            <p>Access</p>
+                        </li>
+                        <li>
+                            <p>Knowledge</p>
+                        </li>
+                        <li>
+                            <p>Collaboration</p>
+                        </li>
+                        <li>
+                            <p>Mind-set</p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="inner-row">
                     <img class="about-image" src="images/receptionist.png" alt="">
