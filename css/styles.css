@@ -59,6 +59,7 @@
 .form-input:invalid {
     border-bottom: 1px solid rgba(255, 0, 0, 0.415);
 }
+
 .form-input:valid {
     border-bottom: 1px solid rgba(51, 255, 0, 0.415);
 }
@@ -379,7 +380,8 @@ select {
     box-shadow: rgba(255, 255, 255, 0.448) 0px 5px 15px 0px;
     border-radius: 10px;
 }
-.about-container{
+
+.about-container {
     padding-top: 0 !important;
 }
 
@@ -395,15 +397,18 @@ select {
     border-radius: 5px;
     box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
 }
-.padding-top{
+
+.padding-top {
     padding-top: 10% !important;
 }
+
 .inner-row {
     width: 100%;
     padding: 5%;
     align-items: center;
 }
-.inner-row ul li{
+
+.inner-row ul li {
     list-style-type: none;
     margin: 10px auto;
 }
@@ -548,7 +553,8 @@ select {
 .contact-info-table tr td {
     padding: 1em;
 }
-.bi-telephone-outbound{
+
+.bi-telephone-outbound {
     font-size: 5REM;
 }
 
@@ -589,10 +595,11 @@ select {
         margin: 37% 8%;
         padding: 5% 2%;
     }
-    .bi-telephone-outbound{
+
+    .bi-telephone-outbound {
         display: none;
     }
-    
+
 }
 
 @media (max-width: 1200px) {
@@ -606,6 +613,7 @@ select {
         display: inline;
         justify-content: space-between;
     }
+
     .about-content {
         margin: 10vh auto auto auto;
         padding: 15% 0;
