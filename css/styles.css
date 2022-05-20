@@ -13,9 +13,11 @@
 html::-webkit-scrollbar {
     width: 5px;
 }
+
 html::-webkit-scrollbar-track {
-   background-color: black;
- }
+    background-color: black;
+}
+
 html::-webkit-scrollbar-thumb {
     background-color: #2a2a72;
     background-image: linear-gradient(315deg, #2a2a72 0%, #0071b3 74%);
@@ -24,6 +26,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 /*--------------Universal styles-----------------*/
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .link {
     color: blue;
     text-decoration: none;
@@ -80,14 +87,64 @@ html::-webkit-scrollbar-thumb {
 
 
 /* ------------- login page ------------- */
-.login-container {
+
+.form-box {
+    width: 30vw;
+    height: 85vh;
+    position: relative;
     margin: 2% auto;
+    padding: 10px;
+    overflow: hidden;
 }
 
-.row {
-    display: flex;
+
+.button-box {
+    width: 200px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ffffff1f;
+    border-radius: 30px;
     justify-content: space-between;
 }
+
+.toggle-btn {
+    padding: 10px 29px;
+    cursor: pointer;
+    text-align: center;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: #7869ff;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group-login {
+    top: 150px;
+    left: 60px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-group-register {
+    top: 120px;
+    position: absolute;
+    width: 380px;
+    transition: .5s;
+    left: 500px;
+}
+
 
 .login-row {
     margin: 0 10%;
@@ -109,6 +166,15 @@ html::-webkit-scrollbar-thumb {
     text-decoration: none;
     font-size: 14px;
     text-align: right;
+}
+
+.small-text p {
+    text-align: center;
+    margin: 5px 0 !important;
+}
+
+.no-margin {
+    margin-top: 0 !important;
 }
 
 .login-form>label {
@@ -172,7 +238,7 @@ html::-webkit-scrollbar-thumb {
 .reg-col>input,
 select {
     height: 40px;
-    width: 210px;
+    width: 100%;
     margin-right: 25px;
     padding: 5px;
     outline: none;
@@ -201,6 +267,10 @@ select {
 .privacy a {
     text-decoration: none;
     color: rgba(128, 128, 128, 0.63)
+}
+
+.privacy label {
+    max-width: 80%;
 }
 
 .small-text>p {
@@ -614,6 +684,39 @@ select {
         display: none;
     }
 
+    .form-box {
+        width: 95vw;
+        height: 110vh;
+    }
+
+    .privacy label {
+        max-width: 80%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .input-group-login {
+        left: 50px;
+    }
+    
+    .input-group-register{
+        left: 400px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .form-box {
+        width: 45vw;
+        height: 100vh;
+    }
+    .reg-col>input,
+    select {
+        width: 100%;
+    }
+    .reg-col{
+        margin: 0 !important;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -622,7 +725,7 @@ select {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .row {
         display: inline;
         justify-content: space-between;
@@ -644,4 +747,12 @@ select {
         padding: 2% 10%;
     }
 
+    .reg-col>input,
+    select, .reg-btn, label {
+        width: 80%;
+    }
+    .form-box {
+        width: 95vw;
+        height: 100vh;
+    }
 }
