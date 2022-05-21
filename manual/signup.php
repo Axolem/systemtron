@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			//Random code for email validation
 			$code = rand(1000, 9999);
 			//Random code for id
-			$id = $randnum = rand(1111111111, 9999999999);
+			$id = rand(1111111111, 9999999999);
 			//Random code for email id
 			$email_id = uniqid();
 

@@ -13,7 +13,7 @@ include('config/navbar.php'); ?>
 					</tr>
 					<tr>
 						<td><i class="bi bi-telephone-inbound"></i></td>
-						<td><a class="link" href="tel:+27653 8779">+27 (015)653 8779</a></td>
+						<td><a class="link" href="tel:+27156538779">+27 (015) 653 8779</a></td>
 					</tr>
 					<tr>
 						<td><i class="bi bi-geo-alt"></i></td>
@@ -27,7 +27,7 @@ include('config/navbar.php'); ?>
 		<div class="contact-info">
 			<div class="contact-info-content">
 				<h2 class="contact-h2">Leave an eamil</h2>
-				<form class="contact" method="post" action="">
+				<form class="contact" method="post" action="manual/contact.php">
 					<table class="contact-info-table">
 						<tr>
 							<td><input class="form-input" id="email" type="email" name="email" placeholder="Your Email" required></td>
@@ -38,6 +38,11 @@ include('config/navbar.php'); ?>
 						<tr>
 							<td><textarea class="form-input" class="E-mail" rows=6 name="msg" placeholder="Message" required></textarea></td>
 						</tr>
+						<?php
+
+						if (!empty($_GET['massage'])) {
+							echo "<tr><td class='success'>" . $_GET['massage'] . "</td></tr> ";
+						} ?>
 						<tr>
 							<td><input class="button" class="button" type="submit" name="submit"></td>
 						</tr>
