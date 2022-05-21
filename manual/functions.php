@@ -33,7 +33,7 @@ function sendEmail($email, $subject, $massage)
 	$mail->setFrom($email, "B.O.B");
 	$mail->addAddress($email); //enter you email address
 	$mail->Subject = ($subject);
-	$mail->Body = $massage;
+	$mail->Body = $massage.'<br><p></p><strong>B.O.B</strong>.';
 
 	if ($mail->send()) {
 		$response = 1;

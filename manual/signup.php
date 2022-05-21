@@ -86,6 +86,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			header("Location: index.php");
 		}
 	} else {
-		echo "Please enter some valid information!";
+		header("Location: http://localhost/project/systemtron/login.php?inputErr=Please enter some valid information!");
 	}
 }
