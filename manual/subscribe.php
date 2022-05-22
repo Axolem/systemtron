@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     if (mysqli_query($con, $sql)) {
 
         $subject = "Hey boss! You are awesome!";
-        $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe?email=$email_id'>Unsubscribe</a>.";
+        $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe.php?email=$email_id'>Unsubscribe</a>.";
 
         sendEmail($email, $subject, $massage);
 
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         if (mysqli_num_rows($email_id) > 0) {
 
             $subject = "Hey boss! You are awesome!";
-            $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe?email=$email_id'>Unsubscribe</a>.";
+            $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe.php?email=$email_id'>Unsubscribe</a>.";
 
             sendEmail($email, $subject, $massage);
 
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         } else {
 
             $subject = "Hey boss! You are awesome!";
-            $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe?email=$email_id'>Unsubscribe</a>.";
+            $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe.php?email=$email_id'>Unsubscribe</a>.";
 
             sendEmail($email, $subject, $massage);
 
