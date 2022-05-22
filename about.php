@@ -13,13 +13,13 @@ include('config/navbar.php'); ?>
                 <div class="inner-row">
                     <img class="about-image" src="images/about.jfif" alt="">
                 </div>
-                    <div class="inner-row">
-                        <p class="mine">
-                            Be Your Own Boss is a national B2C company. The company mainly focuses on helping individuals who are over 18 with educational background to start their own businesses.
-                            Be Your Own Boss mainly targets South African people. The brand was founded in 2022, and since then it has been upholding the philosophy that
-                            "everyone can start their businesses and fight poverty". The business covers all the nine provinces of South Africa.
-                        </p>
-                    </div>
+                <div class="inner-row">
+                    <p class="mine">
+                        Be Your Own Boss is a national B2C company. The company mainly focuses on helping individuals who are over 18 with educational background to start their own businesses.
+                        Be Your Own Boss mainly targets South African people. The brand was founded in 2022, and since then it has been upholding the philosophy that
+                        "everyone can start their businesses and fight poverty". The business covers all the nine provinces of South Africa.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -35,9 +35,9 @@ include('config/navbar.php'); ?>
                         Be Your Own Boss is able to stay on top while bringing these opportunities to people. It aims to promptly offer outstanding ideas to those that meet the requirements.
                     </p>
                 </div>
-                    <div class="inner-row">
-                        <img class="about-image" src="images/mission.jfif" alt="">
-                    </div>
+                <div class="inner-row">
+                    <img class="about-image" src="images/mission.jfif" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -85,5 +85,7 @@ include('config/navbar.php'); ?>
 
 
 <!-- This inserts the footer -->
-<?php include('config/footer.php') ?>
+<?php 
+include 'popup.html';
+include('config/footer.php') ?>
 <!-- Do not add any content below this line. -->

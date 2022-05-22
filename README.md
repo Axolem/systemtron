@@ -38,3 +38,7 @@ Icons
 Name: Bootstrap icons
 Documentation: https://getbootstrap.com/docs/5.2/getting-started/introduction/
 Licence: https://getbootstrap.com/docs/5.2/about/license/
+
+Coockie Popup
+Name: FreePrivacyPolicy
+Documentation: https://www.FreePrivacyPolicy.com

@@ -651,7 +651,38 @@ select {
     font-size: 5REM;
 }
 
+.pop-up {
+    background-color: #2e2e2e7b;
+    width: 30%;
+    padding: 20px 30px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 75%;
+    top: 50%;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0.448) 0px 5px 15px 0px;
+}
+.pop-up form input{
+    margin: 10px auto;
+}
+.pop-up h2{
+    margin: 10px auto;
+}
+.pop-up form:first-child{
+    margin: 10px auto;
+}
 
+#close{
+    margin: 10px auto;
+}
+@media screen and (max-width: 700px) {
+    .pop-up {
+        width: 75%;
+        padding: 10px 20px;
+    }
+}
 
 
 

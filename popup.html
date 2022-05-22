@@ -1,72 +1,26 @@
-<html>
+<div class="pop-up" id="pop-up">
+  <center><h2>Subscribe to our newsletters</h2></center>
+  <form class="login-form conf-form " action="manual/subscribe.php" method="post">
+      <input type="text" placeholder="Enter name" name="name" required>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <br>
+      <input class='button' type="submit" value="Submit">
+  </form>
+  <div id="close"><i class="bi bi-x-circle"></i></div>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(
+      function open(event) {
+        document.querySelector("#pop-up").style.display = "block";
+      },
+      5000
+    )
+  });
 
-<body>
-  <p>Pop up </p>
-
-  <div class="pop-up">
-    <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter name" name="name" required>
-    <br>
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <br>
-    <id "sub"></id><input type="submit" value="Submit">
-  </div>
-  <script>
-    window.addEventListener("load", function () {
-      setTimeout(
-        function open(event) {
-          document.querySelector(".pop-up").style.display = "block";
-        },
-        2000
-      )
-    });
-
-    document.querySelector("#close").addEventListener(
-      "click", function () {
-        document.querySelector(".pop-up").style.display = "none";
-      }
-    );
-  </script>
-  <style>
-    .pop-up {
-      background-color: #f1f1f1;
-      width: 25%;
-      padding: 20px 30px;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50%;
-      border-radius: 18px;
-      text-align: center;
-      color: blue;
-      box-shadow: 0 4px 50px rgba(245, 234, 234, 0.514);
-      display: none;
+  document.querySelector("#close").addEventListener(
+    "click", function () {
+      document.querySelector(".pop-up").style.display = "none";
     }
-
-    .pop-up button {
-      display: block;
-      margin: 0 0 20px auto;
-      background-color: transparent;
-      font-size: 30px;
-      color: #d40083;
-      border: none;
-      outline: none;
-      cursor: pointer;
-    }
-
-    .pop-up h3 {
-      margin-bottom: 10px;
-    }
-
-    @media screen and (max-width: 700px) {
-      .pop-up {
-        width: 75%;
-        padding: 10px 20px;
-      }
-    }
-  </style>
-  
-</body>
-
-</html>
+  );
+</script>

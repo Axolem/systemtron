@@ -31,6 +31,27 @@
         </P>
     </div>
 </footer>
+<!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+<script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function() {
+        cookieconsent.run({
+            "notice_banner_type": "simple",
+            "consent_type": "implied",
+            "palette": "dark",
+            "language": "en",
+            "page_load_consent_levels": ["strictly-necessary", "functionality", "tracking", "targeting"],
+            "notice_banner_reject_button_hide": false,
+            "preferences_center_close_button_hide": false,
+            "page_refresh_confirmation_buttons": false,
+            "website_name": "Be Your Own Boss",
+            "website_privacy_policy_url": "https://www.privacypolicies.com/live/2511da50-2e95-47e0-9326-e51278726459"
+        });
+    });
+</script>
+
+<noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/" rel="nofollow noopener">Free Privacy Policy Generator website</a></noscript>
+<!-- End Cookie Consent -->
 <script src="http://localhost/project/systemtron/js/nav.js"></script>
 </body>
 

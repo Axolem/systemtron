@@ -7,9 +7,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $email = test_input($_POST['email']);
     $name = test_input($_POST['name']);
     $email_id = uniqid();
+    $id = rand(1111111111, 9999999999);
 
     // sql to delete a record
-    $sql = "INSERT INTO newsletters (`id`, `email_id`, `name`, `email`) VALUES (NULL,'$email_id','$name','$email')";
+    $sql = "INSERT INTO newsletters (`id`, `email_id`, `name`, `email`) VALUES ('$id','$email_id','$name','$email')";
 
     if (mysqli_query($con, $sql)) {
 
