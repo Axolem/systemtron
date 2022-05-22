@@ -131,7 +131,7 @@ include('../config/header.php')
                   </button>
                   <div class="home-options">
                      <ul class="card-wrapper">
-                        <!-- <li class="dash-card">
+                        <li class="dash-card">
                            <h3>Your 30 Second Elevator Pitch! </h3>
                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Lb0Yz_5ZYzI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                            <a href="https://www.youtube.com/embed/Lb0Yz_5ZYzI">Watch on youtube</a>
@@ -145,7 +145,7 @@ include('../config/header.php')
                            <img src='https://images.unsplash.com/photo-1556453903-3c0d9dcd09d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' alt=''>
                            <h3><a href="https://blog.hubspot.com/sales/elevator-pitch-examples">Lear more about elevator pitch</a></h3>
                            <p>An elevator pitch — also known as elevator speech — can better introduce professionals to your company.</p>
-                        </li> -->
+                        </li>
                      </ul>
                   </div>
                </div>
@@ -172,11 +172,6 @@ include('../config/header.php')
                      </button>
                      <div class="home-options">
                         <ul class="card-wrapper">
-                           <!-- <li class="dash-card">
-                              <h3>A Super Wonderful Headline</h3>
-                              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SBF0nZ_Kfag" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              <a href="">Watch on youtube</a>
-                           </li>
                            <li class="dash-card">
                               <h3>A Super Wonderful Headline</h3>
                               <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SBF0nZ_Kfag" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -191,7 +186,12 @@ include('../config/header.php')
                               <h3>A Super Wonderful Headline</h3>
                               <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SBF0nZ_Kfag" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                               <a href="">Watch on youtube</a>
-                           </li> -->
+                           </li>
+                           <li class="dash-card">
+                              <h3>A Super Wonderful Headline</h3>
+                              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SBF0nZ_Kfag" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <a href="">Watch on youtube</a>
+                           </li>
                         </ul>
                      </div>
 
@@ -734,12 +734,12 @@ include('../config/header.php')
       <div id="Settings" class="tabcontent">
          <h2 class="dash-h2">Settings </h2>
          <span class="success"> <?php if (!empty($_GET['response'])) {
-                     if ($_GET['response'] == 1) {
-                        echo $_GET['msg'];
-                     } else {
-                        echo $_GET['msg'];
-                     }
-                  } ?></span>
+                                    if ($_GET['response'] == 1) {
+                                       echo $_GET['msg'];
+                                    } else {
+                                       echo $_GET['msg'];
+                                    }
+                                 } ?></span>
          <div class="img-holder">
             <img src="<?php if (!empty($picture)) {
                            echo $picture;
