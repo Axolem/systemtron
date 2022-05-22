@@ -107,6 +107,7 @@ body {
     display: none;
     padding: 20px;
     max-height: fit-content;
+    margin-top: 15vh;
 }
 
 .dash-h2 {
@@ -242,11 +243,11 @@ body {
 }
 
 .danger:hover {
-    background-color: var(--danger);
+    background-color: red;
 }
 
 .green:hover{
-    background-color: var(--tabsColor);
+    background-color: green;
 }
 
 .card-wrapper {

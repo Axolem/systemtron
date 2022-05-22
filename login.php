@@ -17,7 +17,7 @@ include('config/navbar.php'); ?>
                                                                     } ?>>
                     <label for="password">Password:</label>
                     <input type="password" name="password" required>
-                    <a class="small-link" href="">Forgot your password?</a>
+                    <a class="small-link" href="forgot-password.php">Forgot your password?</a>
                     <?php
 
                     if (!empty($_GET['loginErr'])) {

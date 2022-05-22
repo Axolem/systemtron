@@ -4,8 +4,8 @@ include 'connection.php';
 include("functions.php");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    $email = $_POST['email'];
-    $name = $_POST['name'];
+    $email = test_input($_POST['email']);
+    $name = test_input($_POST['name']);
     $email_id = uniqid();
 
     // sql to delete a record

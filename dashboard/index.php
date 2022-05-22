@@ -733,7 +733,7 @@ include('../config/header.php')
 ----------------------------------------------------------------------------->
       <div id="Settings" class="tabcontent">
          <h2 class="dash-h2">Settings </h2>
-         <span class="dash-massage"> <?php if (!empty($_GET['response'])) {
+         <span class="success"> <?php if (!empty($_GET['response'])) {
                      if ($_GET['response'] == 1) {
                         echo $_GET['msg'];
                      } else {

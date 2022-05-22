@@ -24,8 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
                         sendEmail($email, $subject, $message);
 
-                        $_SESSION["login"] = "OK";
+                        $_SESSION['email'] = $email;
                         $_SESSION["username"] = $email;
+                        $_SESSION["loggedin"] = true;
                         header("Location: ../dashboard/index.php");
                     }
                 } else {
@@ -39,4 +40,5 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             exit();
         }
     }
+    mysqli_close($con);
 }

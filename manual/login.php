@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	//something was posted
 	$email =  test_input($_POST['email']);
 	$password =  test_input(md5($_POST['password']));
+	$date = date("l jS \of F Y h:i:s A");
 
 	if (!empty($email) && !empty($password)) {
 

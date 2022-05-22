@@ -38,7 +38,7 @@ if (isset($_GET['code'])) {
     $password = $_SESSION['token'];
     //Random code for email id
     $email_id = uniqid();
-    $date = date('Y-m-d');
+    $date = date("l jS \of F Y h:i:s A");
 
     $sql = "SELECT id, email FROM users WHERE email = '$email' and oath_provider = 'google'";
     $result = $con->query($sql);
