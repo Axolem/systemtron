@@ -20,8 +20,9 @@ body {
   padding: 5px;
   font-size: 40px;
   position: absolute;
-  left: 0;
   top: 20%;
+  left: 2%;
+  margin: 0 auto;
 }
 
 .background .welcome span {
@@ -36,16 +37,24 @@ body {
 
 }
 
-.row2 {
-  margin: 100px auto;
-
+.home-page-wrapper {
+  margin: 10% auto;
+  box-shadow: rgba(255, 255, 255, 0.448) 0px 5px 15px 0px;
+  min-height: 70vh;
+  padding: 5% 10% 10% 10%;
+  border-radius: 10px;
+  text-align: center;
+}
+.home-page-wrapper h2{
+  margin-bottom: 10%;
 }
 
-.row2 p {
+.row2  p, .sectionmain p {
   margin: auto;
   text-align: center;
-  font-size: 24px;
+  font-size: 1em;
   width: 50%;
+  line-height: 2.5em;
 }
 
 .image2 {
@@ -87,16 +96,6 @@ body {
 }
 
 /* the last section on the page*/
-section .register {
-  background: white;
-  text-align: center;
-  padding: 60px 20px;
-  color: #4B4B4B;
-}
-
-section .register h2 {
-  font-size: 36px;
-}
 
 
 section div.home2 {
@@ -113,12 +112,15 @@ section div.home2 {
 
 section.home4 {
   background: #F4F4F4;
-
+  padding: 10px;
+  border-radius: 10px;
 }
+
 
 .homeimage {
   height: 250px;
   width: auto;
+  margin: auto;
   box-shadow: rgba(255, 255, 255, 0.15) 0px 5px 15px 0px;
 }
 
@@ -144,6 +146,7 @@ div.home3 {
 div.home3 li {
   list-style: none;
 }
+
 .home-pop-up {
   width: max-content;
   margin: 0 auto;
@@ -152,19 +155,77 @@ div.home3 li {
   text-align: center;
   color: white;
 }
-.home-pop-up form input{
-  margin: 10px auto;
-}
-.home-pop-up h2{
-  margin: 10px auto;
-}
-.home-pop-up form:first-child{
+
+.home-pop-up form input {
   margin: 10px auto;
 }
 
-@media (max-width: 760px) {
+.home-pop-up h2 {
+  margin: 10px auto;
+}
+
+.home-pop-up form:first-child {
+  margin: 10px auto;
+}
+
+@media (max-width: 414px) {
+  .homeimage{
+    width: 80% !important;
+  }
+  section.home4 img {
+    position: relative;
+    left: 2% !important;
+  }
+  .welcome  {
+    position: relative;
+    top:0 !important;
+  }
+  .sectionmain div p{
+    margin-left: 10%;
+    margin-right: 10%; 
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
   .row2 p {
     width: 90%;
   }
-  
+
+  .background img {
+    display: none;
+  }
+
+  .background {
+    height: 100vh;
+  }
+
+  .background .welcome {
+    top: 5%;
+  }
+
+  .home4 img {
+    position: absolute;
+    border-radius: 9px;
+    border: 1px solid white;
+    margin: 20px auto;
+  }
+
+  .homeimage {
+    height: 200px;
+    width:65%;
+    margin: 2% auto;
+  }
+  .background .welcome {
+    top: 15%;
+  }
+  .hide {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+ section.home4 img {
+    position: relative;
+    left: 5%;
+  }
 }
