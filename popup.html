@@ -8,19 +8,3 @@
   </form>
   <div id="close"><i class="bi bi-x-circle"></i></div>
 </div>
-<script>
-  window.addEventListener("load", function () {
-    setTimeout(
-      function open(event) {
-        document.querySelector("#pop-up").style.display = "block";
-      },
-      5000
-    )
-  });
-
-  document.querySelector("#close").addEventListener(
-    "click", function () {
-      document.querySelector(".pop-up").style.display = "none";
-    }
-  );
-</script>

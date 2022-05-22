@@ -40,3 +40,18 @@ for (let i = 0; i < toggles.length; i++) {
     })
 }
 
+//Pop up js
+window.addEventListener("load", function () {
+    setTimeout(
+        function open(event) {
+            document.querySelector("#pop-up").style.display = "block";
+        },
+        2000
+    )
+});
+
+document.querySelector("#close").addEventListener(
+    "click", function () {
+        document.querySelector("#pop-up").style.display = "none";
+    }
+);
