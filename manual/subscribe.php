@@ -7,15 +7,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $email = test_input($_POST['email']);
     $name = test_input($_POST['name']);
     $email_id = uniqid();
-    $id = rand(1111111111, 9999999999);
+    $idE = rand(000000001, 9999999999);
 
     // sql to delete a record
-    $sql = "INSERT INTO newsletters (`id`, `email_id`, `name`, `email`) VALUES ('$id','$email_id','$name','$email')";
+    $sql = "INSERT INTO newsletters (`id`, `email_id`, `name`, `email`) VALUES ('$idE','$email_id','$name','$email')";
 
     if (mysqli_query($con, $sql)) {
 
         $subject = "Hey boss! You are awesome!";
-        $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe?email=$email_id'></a>.";
+        $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe?email=$email_id'>Unsubscribe</a>.";
 
         sendEmail($email, $subject, $massage);
 
@@ -23,10 +23,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     } else {
         $sql = "SELECT email_id FROM newsletters WHERE email = '$email'";
         $email_id = mysqli_query($con, $sql);
-        if ($email_id) {
+        if (mysqli_num_rows($email_id) > 0) {
 
             $subject = "Hey boss! You are awesome!";
-            $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe?email=$email_id'></a>.";
+            $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe?email=$email_id'>Unsubscribe</a>.";
 
             sendEmail($email, $subject, $massage);
 
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         } else {
 
             $subject = "Hey boss! You are awesome!";
-            $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe?email=$email_id'></a>.";
+            $massage = "Good day,<br>we wanted to notify you that you have successfully subscribed,<br> Mistake? <a href='http://localhost/project/systemtron/manual/unsubscribe?email=$email_id'>Unsubscribe</a>.";
 
             sendEmail($email, $subject, $massage);
 
