@@ -85,7 +85,7 @@ include('config/navbar.php'); ?>
 
 
 <!-- This inserts the footer -->
-<?php 
+<?php
 include 'popup.html';
 include('config/footer.php') ?>
 <!-- Do not add any content below this line. -->

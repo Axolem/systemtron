@@ -123,9 +123,6 @@ include('config/navbar.php'); ?>
             </form>
         </div>
     </div>
-
-
-
 </main>
 
 <!-- This inserts the footer -->

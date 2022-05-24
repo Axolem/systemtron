@@ -7,4 +7,3 @@ $_SESSION = array();
 header("Location: http://localhost/project/systemtron/index.php");
 exit();
 die();
-?>

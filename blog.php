@@ -1,198 +1,37 @@
 <?php include('config/header.php');
-include('config/navbar.php'); ?>
+include('config/navbar.php');
 
-<div class="latest-blog">
-    <h1 style="margin: 20px 0 0 30px; font-size: 50px;">Latest</h1>
-    <div class="lblog-cards">
-        <div class="row">
-            <div class="lblog-card">
-                <div class="lcard-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="lblog-card">
-                <div class="lcard-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="lblog-card">
-                <div class="lcard-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+$url = 'https://newsapi.org/v2/top-headlines?country=za&category=business&apiKey=93cf96b493b54eb8aa621eb1c73ef5d4';
+try{
+    $response = file_get_contents($url);
+}
+catch{
+    echo "API Error";
+}
+
+
+if (!empty($response)) {
+    $news = json_decode($response);
+    echo '<div class="latest-blog">
+    <div class="cards">';
+    foreach ($news->articles as $story) {
+        $pic = $story->urlToImage;
+        $title = $story->title;
+        $description = $story->description;
+        $link = $story->url;
+        $date = $story->publishedAt;
+        $author = $story->author;
+        echo '<div class="card">';
+        echo "<a href='$link'><img class='blog-img' src='$pic' alt='News thumbnail'></a>";
+        echo "<a href='$link'><p>$title</p></a>";
+        echo "<p>$description</p><p>$date</p><p class='category'>Business</p></div>";
+    }
+}else{
+    echo '<center><p>0 results, please reload the page.</p></center>';
+}
+?>
+
 </div>
-    
-
-
-<div class="cards-wrapper">
-    <button class="toggle">
-        <h2>Featured</h2>
-        <i class="bi bi-arrow-down-right"></i>
-    </button>
-    <div class="blog-cards">
-        <div class="row">
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <button class="toggle">
-        <h2>Top this week</h2>
-        <i class="bi bi-arrow-down-right"></i>
-    </button>
-    <div class="blog-cards">
-        <div class="row">
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <button class="toggle">
-        <h2>All stories</h2>
-        <i class="bi bi-arrow-down-right"></i>
-    </button>
-    <div class="blog-cards">
-        <div class="row">
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-image" style="background-image: url('images/blog/feranmi-ogundeko-quo9GYnP3UU-unsplash.jpg');"></div>
-                <div class="card-details">
-                    <span class="category">Finance</span><span class="card-date">15 April 2016</span>
-                    <p><a class="card-topic" href="">The end of Shoprite?</a> </p>
-                    <p class="card-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa tenetur pariatur quo a deleniti neque commodi minus temporibus laborum! Cum, voluptatum! Iusto soluta blanditiis labore, facilis pariatur iure ea.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <!-- This inserts the footer -->

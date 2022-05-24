@@ -344,128 +344,47 @@ select {
 }
 
 /* --------------- Blog page ----------------- */
-.cards-wrapper {
-    margin-bottom: 20px;
-    padding: 15px 40px;
-}
-
-.toggle {
-    color: black;
-    width: 100%;
-    display: flex;
-    font-weight: bold;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: transparent;
-    transition: all 2s ease-in-out;
-}
-
-.bi-arrow-down-right {
-    margin: auto 15px;
-    padding: auto;
-    font-size: 20px;
-}
-
-.blog-cards {
-    position: relative;
-    font-size: 14px;
-    color: black;
-    text-align: justify;
-    line-height: 20px;
-    height: 300px;
-    overflow: hidden;
-    transition: all 1s;
-    width: 100%;
-    margin-bottom: 70px;
-}
-
-.blog-card {
-    width: 25%;
-    height: 300px;
+.latest-blog{
     padding: 20px;
-    overflow: hidden;
+    margin: auto;
 }
 
-.blog-card>img,
-.card-image {
+.blog-img {
+    height: 200px;
     width: 100%;
-    height: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
 }
-
-.card-details {
-    padding: 0 5px;
-    margin-top: 10px;
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
-.card-details p {
-    margin-top: 10px;
-}
-
-.category {
-    background: rgba(0, 128, 0, 0.199);
-    padding: 2px 10px;
+.card {
+    background-color: dodgerblue;
+    color: white;
+    height: auto;
     border-radius: 10px;
-    margin: 15px 0;
+    box-shadow: rgba(255, 255, 255, 0.448) 0px 5px 15px 0px;;
+}
+.card a, .card p{
+    padding: 20px
+}
+.category{
+    width: max-content;
+    text-transform: uppercase;
+    background:rgba(255, 255, 255, 0.448);
+    color: blue;
 }
 
-.card-date {
-    margin: 10px;
-    font-size: 13px;
-}
 
-.card-topic {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
 
-.card-topic:hover {
-    text-decoration: underline;
-}
 
-.card-text {
-    overflow: hidden;
-}
 
-.lcard-image {
-    width: 100%;
-    height: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    border-radius: 10px;
-}
 
-.lblog-card {
-    width: 31%;
-    height: 300px;
-    padding: 10px;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: all 1s;
-}
 
-.lblog-card:hover {
-    box-shadow: 0px 0px 15px 1px rgb(151, 151, 151);
-}
 
-.lblog-cards {
-    padding: 10px;
-    position: relative;
-    font-size: 14px;
-    color: black;
-    text-align: justify;
-    line-height: 30px;
-    height: 350px;
-    overflow: hidden;
-    transition: all 1s;
-    width: 100%;
-    margin-bottom: 80px;
-}
+
 
 
 /* -------------------------ABOUT US PAGE---------------------*/
@@ -664,19 +583,23 @@ select {
     color: white;
     box-shadow: rgba(255, 255, 255, 0.448) 0px 5px 15px 0px;
 }
-.pop-up form input{
-    margin: 10px auto;
-}
-.pop-up h2{
-    margin: 10px auto;
-}
-.pop-up form:first-child{
+
+.pop-up form input {
     margin: 10px auto;
 }
 
-#close{
+.pop-up h2 {
     margin: 10px auto;
 }
+
+.pop-up form:first-child {
+    margin: 10px auto;
+}
+
+#close {
+    margin: 10px auto;
+}
+
 @media screen and (max-width: 700px) {
     .pop-up {
         width: 75%;
