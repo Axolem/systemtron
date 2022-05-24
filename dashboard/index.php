@@ -733,13 +733,13 @@ include('../config/header.php')
 ----------------------------------------------------------------------------->
       <div id="Settings" class="tabcontent">
          <h2 class="dash-h2">Settings </h2>
-         <span class="success"> <?php if (!empty($_GET['response'])) {
+         <?php if (!empty($_GET['response'])) {
                                     if ($_GET['response'] == 1) {
-                                       echo $_GET['msg'];
+                                       echo '<span class="success">'.$_GET["msg"].'</span> ';
                                     } else {
-                                       echo $_GET['msg'];
+                                       echo '<span class="success">'.$_GET["msg"].'</span> ';
                                     }
-                                 } ?></span>
+                                 } ?>
          <div class="img-holder">
             <img src="<?php if (!empty($picture)) {
                            echo $picture;
