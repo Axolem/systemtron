@@ -126,11 +126,11 @@ include('config/navbar.php'); ?>
           </div>
         </div>
         <div class="crad3">
-          <img src="mypic.jpg">
-          <h1>rachel green</h1>
-          <p><!--Student num--></p>
+          <img src="images/Junior.jpg">
+          <h1>Junior Maruping</h1>
+          <p>221023858</p>
           <div class="icons">
-            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
+            <a href="https://github.com/junior-03" target="_blank"><i class="bi bi-github"></a></i>
           </div>
         </div>
         <div class="crad3">
