@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,9 +17,14 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="dash.scss">
     <link rel="stylesheet" href="http://localhost/project/systemtron/css/profiles.css">
-    <link rel="stylesheet" href="http://localhost/project/systemtron/css/styles.css"> <!--other pages stylesheet -->
-    <link rel="stylesheet" href="http://localhost/project/systemtron/css/navbar.css"> <!-- nav stylesheet-->
-    <link rel="stylesheet" href="http://localhost/project/systemtron/css/home.css"> <!--homepage stylesheet-->
+    <link rel="stylesheet" href="http://localhost/project/systemtron/css/styles.css">
+    <!--other pages stylesheet -->
+    <link rel="stylesheet" href="http://localhost/project/systemtron/css/navbar.css"> 
+    <!-- nav stylesheet-->
+    <link rel="stylesheet" href="http://localhost/project/systemtron/css/home.css">
+    <!--homepage stylesheet-->
+
 </head>
+
 <body>
-<!-- Do not add any content below this line. -->
+    <!-- Do not add any content below this line. -->
