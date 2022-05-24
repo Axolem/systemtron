@@ -138,7 +138,7 @@ include('config/navbar.php'); ?>
           <h1>Thatohatsi Gadipedi</h1>
           <p>221028477</p>
           <div class="icons">
-            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
+            <a href="https://github.com/thatohatsig" target="_blank"><i class="bi bi-github"></a></i>
           </div>
         </div>
       </div>
