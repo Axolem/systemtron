@@ -118,7 +118,7 @@ include('config/navbar.php'); ?>
           </div>
         </div>
         <div class="crad3">
-          <img src="images/SomeDudeBlack-01.png">
+          <img src="images/20211224_153434.png">
           <h1>Axole Maranjana</h1>
           <p>220023913</p>
           <div class="icons">
@@ -176,25 +176,25 @@ include('config/navbar.php'); ?>
     btn3.style.background = "transparent";
   }
   btn3.onclick = function() {
-    slider.style.marginLeft = "-440px";
+    slider.style.marginLeft = "-200%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
   }
   btn4.onclick = function() {
-    slider.style.marginLeft = "-660px";
+    slider.style.marginLeft = "-300%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
   }
   btn5.onclick = function() {
-    slider.style.marginLeft = "-880px";
+    slider.style.marginLeft = "-400%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
   }
   btn6.onclick = function() {
-    slider.style.marginLeft = "-1020px";
+    slider.style.marginLeft = "-500%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
