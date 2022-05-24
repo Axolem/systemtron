@@ -253,8 +253,8 @@ div.home3 li {
   background: aliceblue;
 }
 
-.btn2, .btn4, .btn5, .btn6{
-  display: hidden;
+#btn3, #btn4, #btn5, #btn6{
+  display: none;
 }
 
 /*For small devices*/
