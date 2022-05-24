@@ -121,7 +121,7 @@ if (isset($accessToken)) {
         echo 'Graph returned an error: ' . $e->getMessage();
         session_destroy();
         // redirecting user back to app login page
-        header("Location: ./");
+        header("Location: ../login.php");
         exit;
     } catch (Facebook\Exceptions\FacebookSDKException $e) {
         // When validation fails or other local issues

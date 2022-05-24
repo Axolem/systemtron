@@ -1,6 +1,6 @@
 <header class="header">
     <nav class="nav">
-        <div id="brand"><a href="/">BOB</a></div>
+        <div id="brand"><a href="http://localhost/project/systemtron/index.php">BOB</a></div>
         <div class="page-links">
             <ul class="nav-ul">
                 <li><a href="http://localhost/project/systemtron/index.php">Home</a></li>

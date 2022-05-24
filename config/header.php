@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Tab Icon -->
     <link rel="shortcut icon" href="http://localhost/project/systemtron/images/tabs.png" type="image/x-icon">
-    <!-- Stylesheets -->
+    <!--other pages stylesheet -->
     <link rel="stylesheet" href="dash.scss">
     <link rel="stylesheet" href="http://localhost/project/systemtron/css/profiles.css">
     <link rel="stylesheet" href="http://localhost/project/systemtron/css/styles.css">
-    <!--other pages stylesheet -->
-    <link rel="stylesheet" href="http://localhost/project/systemtron/css/navbar.css"> 
     <!-- nav stylesheet-->
-    <link rel="stylesheet" href="http://localhost/project/systemtron/css/home.css">
+    <link rel="stylesheet" href="http://localhost/project/systemtron/css/navbar.css">
     <!--homepage stylesheet-->
+    <link rel="stylesheet" href="http://localhost/project/systemtron/css/home.css">
+
 
 </head>
 
