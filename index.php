@@ -134,9 +134,9 @@ include('config/navbar.php'); ?>
           </div>
         </div>
         <div class="crad3">
-          <img src="mypic.jpg">
-          <h1>rachel green</h1>
-          <p><!--Student num--></p>
+          <img src="images/mypic.jpg">
+          <h1>Thatohatsi Gadipedi</h1>
+          <p>221028477</p>
           <div class="icons">
             <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
           </div>
