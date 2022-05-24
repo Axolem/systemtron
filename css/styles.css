@@ -346,35 +346,64 @@ select {
 /* --------------- Blog page ----------------- */
 .latest-blog{
     padding: 20px;
-    margin: auto;
+    margin: 2em auto auto auto;
 }
 
 .blog-img {
     height: 200px;
     width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.blog-img:hover {
+    opacity: 0.8;
+    transition: all 0.8s ease-in-out; 
 }
 .cards {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    gap: 1rem;
+    gap: 1.9rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .card {
     background-color: dodgerblue;
-    color: white;
     height: auto;
     border-radius: 10px;
-    box-shadow: rgba(255, 255, 255, 0.448) 0px 5px 15px 0px;;
+    padding-bottom: 10px;
+    box-shadow: rgba(255, 255, 255, 0.448) 0px 5px 15px 0px;
+    transition: all 0.8s ease-in-out; 
 }
-.card a, .card p{
-    padding: 20px
+.blog-contents{
+    padding: 0 20px;
+    text-decoration: none;
 }
+.blog-link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 300;
+    transition: all 0.8s ease-in-out; 
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.blog-link:hover{
+    color: rgb(187, 187, 187);
+}
+.blog-disc{
+    height: 100px;
+    overflow: hidden;
+color: black;margin: 5px;}
 .category{
     width: max-content;
     text-transform: uppercase;
     background:rgba(255, 255, 255, 0.448);
     color: blue;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.card a:first-child{
+    padding: 0 !important;
 }
 
 

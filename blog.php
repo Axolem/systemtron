@@ -5,10 +5,9 @@ $url = 'https://newsapi.org/v2/top-headlines?country=za&category=business&apiKey
 try{
     $response = file_get_contents($url);
 }
-catch{
-    echo "API Error";
-}
-
+catch(Exception $e) {
+    echo 'Message: ' .$e->getMessage();
+  }
 
 if (!empty($response)) {
     $news = json_decode($response);
@@ -23,8 +22,8 @@ if (!empty($response)) {
         $author = $story->author;
         echo '<div class="card">';
         echo "<a href='$link'><img class='blog-img' src='$pic' alt='News thumbnail'></a>";
-        echo "<a href='$link'><p>$title</p></a>";
-        echo "<p>$description</p><p>$date</p><p class='category'>Business</p></div>";
+        echo "<div class='blog-contents'><a class='blog-link' href='$link'>$title</a>";
+        echo "<p class='blog-disc'>$description</p><div class='row'><p class='category'>Business</p><p>$date</p></div></div></div>";
     }
 }else{
     echo '<center><p>0 results, please reload the page.</p></center>';
