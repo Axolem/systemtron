@@ -11,16 +11,6 @@ CREATE TABLE newsletters (
   UNIQUE INDEX (id)
 );
 
-CREATE TABLE team (
-  id int(11) NOT NULL,
-  name varchar(25) NOT NULL,
-  surname varchar(25) NOT NULL,
-  email varchar(100) NOT NULL UNIQUE,
-  student_no int(11) NOT NULL,
-  PRIMARY KEY (id, email, student_no),
-  UNIQUE INDEX (id)
-);
-
 CREATE TABLE user_details (
   usersemail varchar(50) NOT NULL,
   first_name varchar(25) NOT NULL,
