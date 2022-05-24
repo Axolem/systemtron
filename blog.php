@@ -23,7 +23,8 @@ if (!empty($response)) {
         echo '<div class="card">';
         echo "<a href='$link'><img class='blog-img' src='$pic' alt='News thumbnail'></a>";
         echo "<div class='blog-contents'><a class='blog-link' href='$link'>$title</a>";
-        echo "<p class='blog-disc'>$description</p><div class='row'><p class='category'>Business</p><p>$date</p></div></div></div>";
+        echo "<p class='blog-disc'>$description</p>";
+        echo "<div class='row'><p class='category'>Business</p><p>$date</p></div></div></div>";
     }
 }else{
     echo '<center><p>0 results, please reload the page.</p></center>';

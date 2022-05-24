@@ -180,7 +180,7 @@ div.home3 li {
   margin: 75px auto;
   border-radius: 20px;
   overflow: hidden;
-  padding: 0 2%;
+  padding: 0;
 }
 .slider{
   display: inline-flex;
@@ -193,12 +193,12 @@ div.home3 li {
   margin-top: 40px;
 }
 .crad1 , .crad2 , .crad3{
-  width: 220px;
+  width: 215px;
   height: 300px;
   background: #202a33;
   border-radius: 20px;
   text-align: center;
-  margin: auto 25px;
+  margin: auto 20px;
 }
 .slider h1{
   font-size: 15px;

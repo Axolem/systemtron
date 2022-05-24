@@ -7,7 +7,7 @@
                 <a href=""><i class="bi bi-facebook"></i></a> <span class="separator"></span>
                 <a href=""><i class="bi bi-twitter"></i></a><span class="separator"></span>
                 <a href=""><i class="bi bi-instagram"></i></a><span class="separator"></span>
-                <a href=""><i class="bi bi-geo-alt"></i></a>
+                <a href=""><i class="bi bi-geo-alt"></i></a><span class="separator"></span>
                 <a href="https://github.com/Axolem/systemtron" target="_blank"><i class="bi bi-github"></a></i>
             </div>
             <div class="footer-page-links">
