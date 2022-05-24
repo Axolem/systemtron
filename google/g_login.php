@@ -2,6 +2,7 @@
 session_start();
 require_once "../dashboard/google/vendor/autoload.php";
 include "../config/db_connect.php";
+include "../manual/functions.php";
 
 
 //Google credentials to use the authentication API
