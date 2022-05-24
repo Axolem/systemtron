@@ -102,17 +102,17 @@ include('config/navbar.php'); ?>
           </div>
         </div>
         <div class="crad2">
-          <img src="mypic.jpg">
-          <h1>rachel green</h1>
-          <p><!--Student num--></p>
+          <img src="images/NesleyB.jpg">
+          <h1>Hlonipho Nersely Bila</h1>
+          <p>220080694</p>
           <div class="icons">
-            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
+            <a href="https://github.com/NesleyB" target="_blank"><i class="bi bi-github"></a></i>
           </div>
         </div>
         <div class="crad3">
-          <img src="mypic.jpg">
+          <img src="mypic.png">
           <h1>rachel green</h1>
-          <p><!--Student num--></p>
+          <p><!--student number--></p>
           <div class="icons">
             <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
           </div>
