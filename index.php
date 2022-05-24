@@ -110,15 +110,15 @@ include('config/navbar.php'); ?>
           </div>
         </div>
         <div class="crad3">
-<<<<<<< HEAD
+
           <img src="mypic.png">
           <h1>rachel green</h1>
           <p><!--student number--></p>
-=======
+
           <img src="images/ndzulamo.jpg">
           <h1>Ndzulamo Michelle Yingwani</h1>
           <p>220122253</p>
->>>>>>> 6dcde83d8fbe199d034bb0c9adc36d5bc4f6d74b
+
           <div class="icons">
             <a href="https://github.com/MichelleNdzu" target="_blank"><i class="bi bi-github"></a></i>
           </div>
