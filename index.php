@@ -126,7 +126,7 @@ include('config/navbar.php'); ?>
           </div>
         </div>
         <div class="crad3">
-          <img src="images/Junior.jpg">
+          <img src="images/Junior2.jpg">
           <h1>Junior Maruping</h1>
           <p>221023858</p>
           <div class="icons">
