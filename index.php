@@ -146,6 +146,10 @@ include('config/navbar.php'); ?>
     <div class="btns">
       <button id="btn1"></button>
       <button id="btn2"></button>
+      <button id="btn3"></button>
+      <button id="btn4"></button>
+      <button id="btn5"></button>
+      <button id="btn6"></button>
     </div>
   </div>
 </div>
@@ -153,6 +157,9 @@ include('config/navbar.php'); ?>
   var btn1 = document.getElementById('btn1');
   var btn2 = document.getElementById('btn2');
   var btn3 = document.getElementById('btn3');
+  var btn4 = document.getElementById('btn4');
+  var btn5 = document.getElementById('btn5');
+  var btn6 = document.getElementById('btn6');
   var slider = document.querySelector('.slider');
 
   btn1.onclick = function() {
@@ -163,7 +170,31 @@ include('config/navbar.php'); ?>
   }
 
   btn2.onclick = function() {
-    slider.style.marginLeft = "-520px";
+    slider.style.marginLeft = "-100%";
+    this.style.background = "aliceblue";
+    btn1.style.background = "transparent";
+    btn3.style.background = "transparent";
+  }
+  btn3.onclick = function() {
+    slider.style.marginLeft = "-440px";
+    this.style.background = "aliceblue";
+    btn1.style.background = "transparent";
+    btn3.style.background = "transparent";
+  }
+  btn4.onclick = function() {
+    slider.style.marginLeft = "-660px";
+    this.style.background = "aliceblue";
+    btn1.style.background = "transparent";
+    btn3.style.background = "transparent";
+  }
+  btn5.onclick = function() {
+    slider.style.marginLeft = "-880px";
+    this.style.background = "aliceblue";
+    btn1.style.background = "transparent";
+    btn3.style.background = "transparent";
+  }
+  btn6.onclick = function() {
+    slider.style.marginLeft = "-1020px";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";

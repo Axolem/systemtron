@@ -108,11 +108,11 @@ html::-webkit-scrollbar-thumb {
 /* ------------- login page ------------- */
 
 .form-box {
-    width: 30vw;
-    height: 85vh;
+    width: 32vw;
+    height: 95vh;
     position: relative;
-    margin: 2% auto;
-    padding: 10px;
+    margin: 2% auto 0 auto;
+    padding: 5px;
     overflow: hidden;
 }
 
@@ -161,7 +161,7 @@ html::-webkit-scrollbar-thumb {
     position: absolute;
     width: 380px;
     transition: .5s;
-    left: 500px;
+    left: 480px;
 }
 
 
@@ -251,7 +251,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .reg-col>label {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .reg-col>input,
@@ -275,8 +275,8 @@ select {
     color: white;
     font-weight: bold;
     font-size: 18px;
-    margin: 25px auto;
-    width: 100%;
+    margin: 25px auto 0 auto;
+    width: 95%;
 }
 
 .privacy {

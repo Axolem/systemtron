@@ -168,69 +168,7 @@ div.home3 li {
   margin: 10px auto;
 }
 
-@media (max-width: 414px) {
-  .homeimage{
-    width: 80% !important;
-  }
-  section.home4 img {
-    position: relative;
-    left: 2% !important;
-  }
-  .welcome  {
-    position: relative;
-    top:0 !important;
-  }
-  .sectionmain div p{
-    margin-left: 10%;
-    margin-right: 10%; 
-    width: 80%;
-  }
-}
-
-@media (max-width: 768px) {
-  .row2 p {
-    width: 90%;
-  }
-
-  .background img {
-    display: none;
-  }
-
-  .background {
-    height: 100vh;
-  }
-
-  .background .welcome {
-    top: 5%;
-  }
-
-  .home4 img {
-    position: absolute;
-    border-radius: 9px;
-    border: 1px solid white;
-    margin: 20px auto;
-  }
-
-  .homeimage {
-    height: 200px;
-    width:65%;
-    margin: 2% auto;
-  }
-  .background .welcome {
-    top: 15%;
-  }
-  .hide {
-    display: none;
-  }
-}
-@media (max-width: 1024px) {
- section.home4 img {
-    position: relative;
-    left: 5%;
-  }
-}
-
-
+/*Team slider*/
 .outer-con{
   width: 100%;
   height: 500px;
@@ -294,9 +232,7 @@ div.home3 li {
 .icons{
   margin-bottom: 12px;
 }
-.slider a{
-  
-}
+
 .btns{
   margin: auto;
   text-align: center;
@@ -316,3 +252,75 @@ div.home3 li {
 .btns button:nth-child(1){
   background: aliceblue;
 }
+
+.btn2, .btn4, .btn5, .btn6{
+  display: hidden;
+}
+
+/*For small devices*/
+
+@media (max-width: 414px) {
+  .homeimage{
+    width: 80% !important;
+  }
+  section.home4 img {
+    position: relative;
+    left: 2% !important;
+  }
+  .welcome  {
+    position: relative;
+    top:0 !important;
+  }
+  .sectionmain div p{
+    margin-left: 10%;
+    margin-right: 10%; 
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .row2 p {
+    width: 90%;
+  }
+
+  .background img {
+    display: none;
+  }
+
+  .background {
+    height: 100vh;
+  }
+
+  .background .welcome {
+    top: 5%;
+  }
+
+  .home4 img {
+    position: absolute;
+    border-radius: 9px;
+    border: 1px solid white;
+    margin: 20px auto;
+  }
+
+  .homeimage {
+    height: 200px;
+    width:65%;
+    margin: 2% auto;
+  }
+  .background .welcome {
+    top: 15%;
+  }
+  .hide {
+    display: none;
+  }
+  .btn2, .btn4, .btn5, .btn6{
+    display: initial;
+  }
+}
+@media (max-width: 1024px) {
+ section.home4 img {
+    position: relative;
+    left: 5%;
+  }
+}
+
