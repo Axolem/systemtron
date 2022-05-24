@@ -55,7 +55,6 @@ include('config/navbar.php'); ?>
     </div>
   </div>
 
-
   <section class="home4">
     <div class="home3">
       <p>
@@ -64,9 +63,9 @@ include('config/navbar.php'); ?>
       <p>BOB is diverse and skillfull enough to help anyone of any age.Once in youll never regret it.</p>
       <li><a class="link" href="login.php">Register</a></li>
     </div>
-    <img class='hide' src="images/homeimg.jpg" alt="bob-students"></li>
-    <img class='hide' src="images/youth.jpg" alt="bob-images"></li>
-    <img src="images/hstudents.jpg" alt="bob-image"></li>
+    <img class='hide' src="images/homeimg.jpg" alt="bob-students">
+    <img class='hide' src="images/youth.jpg" alt="bob-images">
+    <img src="images/hstudents.jpg" alt="bob-image">
   </section>
 </main>
 
@@ -89,8 +88,87 @@ include('config/navbar.php'); ?>
   </div>
 </section>
 
+<div class="home-page-wrapper">
+  <center><h2>Meet the Team</h2></center>
+  <div class="outer-con">
+    <div class="inner-con">
+      <div class="slider">
+        <div class="crad1">
+          <img src="mypic.jpg">
+          <h1>rachel green</h1>
+          <p><!--Student num--></p>
+          <div class="icons">
+            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
+          </div>
+        </div>
+        <div class="crad2">
+          <img src="mypic.jpg">
+          <h1>rachel green</h1>
+          <p><!--Student num--></p>
+          <div class="icons">
+            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
+          </div>
+        </div>
+        <div class="crad3">
+          <img src="mypic.jpg">
+          <h1>rachel green</h1>
+          <p><!--Student num--></p>
+          <div class="icons">
+            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
+          </div>
+        </div>
+        <div class="crad3">
+          <img src="images/SomeDudeBlack-01.png">
+          <h1>Axole Maranjana</h1>
+          <p>220023913</p>
+          <div class="icons">
+            <a href="https://github.com/Axolem" target="_blank"><i class="bi bi-github"></a></i>
+          </div>
+        </div>
+        <div class="crad3">
+          <img src="mypic.jpg">
+          <h1>rachel green</h1>
+          <p><!--Student num--></p>
+          <div class="icons">
+            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
+          </div>
+        </div>
+        <div class="crad3">
+          <img src="mypic.jpg">
+          <h1>rachel green</h1>
+          <p><!--Student num--></p>
+          <div class="icons">
+            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btns">
+      <button id="btn1"></button>
+      <button id="btn2"></button>
+    </div>
+  </div>
+</div>
+<script>
+  var btn1 = document.getElementById('btn1');
+  var btn2 = document.getElementById('btn2');
+  var btn3 = document.getElementById('btn3');
+  var slider = document.querySelector('.slider');
 
+  btn1.onclick = function() {
+    slider.style.marginLeft = "0";
+    this.style.background = "aliceblue";
+    btn2.style.background = "transparent";
+    btn3.style.background = "transparent";
+  }
 
+  btn2.onclick = function() {
+    slider.style.marginLeft = "-520px";
+    this.style.background = "aliceblue";
+    btn1.style.background = "transparent";
+    btn3.style.background = "transparent";
+  }
+</script>
 
 <!-- This inserts the footer -->
 <?php include('config/footer.php') ?>
