@@ -53,4 +53,3 @@ server: https://supportindeed.com/phpMyAdmin4/
 name: 4108961_beyourownboss
 pass: 9w[/Nttb0Ahurp),
 
-Axole
