@@ -42,3 +42,13 @@ Licence: https://getbootstrap.com/docs/5.2/about/license/
 Coockie Popup
 Name: FreePrivacyPolicy
 Documentation: https://www.FreePrivacyPolicy.com
+
+Hosting Details
+Provider: https://cp1.awardspace.net/
+Email: beyourownbossdsw@gmail.com
+Pass: connection.php1
+
+Database
+server: https://supportindeed.com/phpMyAdmin4/
+name: 4108961_beyourownboss
+pass: 9w[/Nttb0Ahurp),
