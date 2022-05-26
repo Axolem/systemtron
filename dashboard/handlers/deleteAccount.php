@@ -1,9 +1,5 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "project";
 
 if (isset($_POST['delete'])) {
     include("connection.php");

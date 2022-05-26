@@ -52,3 +52,7 @@ Database
 server: https://supportindeed.com/phpMyAdmin4/
 name: 4108961_beyourownboss
 pass: 9w[/Nttb0Ahurp),
+
+Website link
+short: https://bit.ly/bOb12]
+long: http://bobdsw.atwebpages.com
