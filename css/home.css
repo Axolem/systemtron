@@ -266,7 +266,7 @@ div.home3 li {
   }
   section.home4 img {
     position: relative;
-    left: 2% !important;
+    left: 8% !important;
   }
   .welcome  {
     position: relative;
@@ -276,6 +276,9 @@ div.home3 li {
     margin-left: 10%;
     margin-right: 10%; 
     width: 80%;
+  }
+  #btn3, #btn4, #btn5, #btn6{
+    display: initial;
   }
 }
 
@@ -294,6 +297,9 @@ div.home3 li {
 
   .background .welcome {
     top: 5%;
+  }
+  #btn3, #btn4, #btn5, #btn6{
+    display: initial;
   }
 
   .home4 img {
@@ -314,8 +320,12 @@ div.home3 li {
   .hide {
     display: none;
   }
-  .btn2, .btn4, .btn5, .btn6{
+  #btn3, #btn4, #btn5, #btn6{
     display: initial;
+  }
+  .crad1 , .crad2 , .crad3{
+    width: 225px;
+    margin: auto 35px;
   }
 }
 @media (max-width: 1024px) {

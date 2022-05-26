@@ -170,31 +170,31 @@ btn1.onclick = function () {
 }
 
 btn2.onclick = function () {
-    slider.style.marginLeft = "-100%";
+    slider.style.marginLeft = "-90%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
 }
 btn3.onclick = function () {
-    slider.style.marginLeft = "-200%";
+    slider.style.marginLeft = "-180%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
 }
 btn4.onclick = function () {
-    slider.style.marginLeft = "-300%";
+    slider.style.marginLeft = "-270%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
 }
 btn5.onclick = function () {
-    slider.style.marginLeft = "-400%";
+    slider.style.marginLeft = "-370%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
 }
 btn6.onclick = function () {
-    slider.style.marginLeft = "-500%";
+    slider.style.marginLeft = "-460%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
