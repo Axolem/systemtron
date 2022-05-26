@@ -89,7 +89,9 @@ include('config/navbar.php'); ?>
 </section>
 
 <div class="home-page-wrapper">
-  <center><h2>Meet the Team</h2></center>
+  <center>
+    <h2>Meet the Team</h2>
+  </center>
   <div class="outer-con">
     <div class="inner-con">
       <div class="slider">
@@ -155,50 +157,50 @@ include('config/navbar.php'); ?>
 </div>
 <script>
   var btn1 = document.getElementById('btn1');
-var btn2 = document.getElementById('btn2');
-var btn3 = document.getElementById('btn3');
-var btn4 = document.getElementById('btn4');
-var btn5 = document.getElementById('btn5');
-var btn6 = document.getElementById('btn6');
-var slider = document.querySelector('.slider');
+  var btn2 = document.getElementById('btn2');
+  var btn3 = document.getElementById('btn3');
+  var btn4 = document.getElementById('btn4');
+  var btn5 = document.getElementById('btn5');
+  var btn6 = document.getElementById('btn6');
+  var slider = document.querySelector('.slider');
 
-btn1.onclick = function () {
+  btn1.onclick = function() {
     slider.style.marginLeft = "0";
     this.style.background = "aliceblue";
     btn2.style.background = "transparent";
     btn3.style.background = "transparent";
-}
+  }
 
-btn2.onclick = function () {
+  btn2.onclick = function() {
     slider.style.marginLeft = "-90%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
-}
-btn3.onclick = function () {
+  }
+  btn3.onclick = function() {
     slider.style.marginLeft = "-180%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
-}
-btn4.onclick = function () {
+  }
+  btn4.onclick = function() {
     slider.style.marginLeft = "-270%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
-}
-btn5.onclick = function () {
+  }
+  btn5.onclick = function() {
     slider.style.marginLeft = "-370%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
-}
-btn6.onclick = function () {
+  }
+  btn6.onclick = function() {
     slider.style.marginLeft = "-460%";
     this.style.background = "aliceblue";
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
-}
+  }
 </script>
 <!-- This inserts the footer -->
 <?php include('config/footer.php') ?>

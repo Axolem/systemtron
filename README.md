@@ -44,15 +44,16 @@ Name: FreePrivacyPolicy
 Documentation: https://www.FreePrivacyPolicy.com
 
 Hosting Details
-Provider: https://cp1.awardspace.net/
+Provider: https://admin.alwaysdata.com/
 Email: beyourownbossdsw@gmail.com
 Pass: connection.php1
 
 Database
-server: https://supportindeed.com/phpMyAdmin4/
-name: 4108961_beyourownboss
-pass: 9w[/Nttb0Ahurp),
+External server: https://phpmyadmin.alwaysdata.com/
+Internal server: mysql-bobdsw.alwaysdata.net
+name: bobdsw_worker
+pass: connection.php1
 
 Website link
-short: https://bit.ly/bOb12]
-long: http://bobdsw.atwebpages.com
+short: https://bit.ly/Bob123
+long: https://bobdsw.alwaysdata.net/

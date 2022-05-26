@@ -45,11 +45,13 @@ body {
   border-radius: 10px;
   text-align: center;
 }
-.home-page-wrapper h2{
+
+.home-page-wrapper h2 {
   margin-bottom: 10%;
 }
 
-.row2  p, .sectionmain p {
+.row2 p,
+.sectionmain p {
   margin: auto;
   text-align: center;
   font-size: 1em;
@@ -169,11 +171,12 @@ div.home3 li {
 }
 
 /*Team slider*/
-.outer-con{
+.outer-con {
   width: 100%;
   height: 500px;
 }
-.inner-con{
+
+.inner-con {
   width: 95%;
   height: 350px;
   position: relative;
@@ -182,17 +185,22 @@ div.home3 li {
   overflow: hidden;
   padding: 0;
 }
-.slider{
+
+.slider {
   display: inline-flex;
   transition: all 1s;
 }
-.slider img{
+
+.slider img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-top: 40px;
 }
-.crad1 , .crad2 , .crad3{
+
+.crad1,
+.crad2,
+.crad3 {
   width: 215px;
   height: 300px;
   background: #202a33;
@@ -200,47 +208,54 @@ div.home3 li {
   text-align: center;
   margin: auto 20px;
 }
-.slider h1{
+
+.slider h1 {
   font-size: 15px;
   text-transform: capitalize;
   margin: 5px 0;
   color: aliceblue;
 }
-.icons i{
+
+.icons i {
   display: inline-block;
   margin: 13px 10px;
   font-size: 14px;
   cursor: pointer;
 }
-.icons i:nth-child(1){
-  background-image: linear-gradient(to right , #5188fd , #49c5ff);
+
+.icons i:nth-child(1) {
+  background-image: linear-gradient(to right, #5188fd, #49c5ff);
   color: white;
   padding: 12px 15px;
   border-radius: 50%;
 }
-.icons i:nth-child(2){
-  background-image: linear-gradient(to right , #cc00ff , #ff49b3);
+
+.icons i:nth-child(2) {
+  background-image: linear-gradient(to right, #cc00ff, #ff49b3);
   color: white;
   padding: 12px 13px;
   border-radius: 50%;
 }
-.icons i:nth-child(3){
-  background-image: linear-gradient(to right , #8c00ff , #ff55b8);
+
+.icons i:nth-child(3) {
+  background-image: linear-gradient(to right, #8c00ff, #ff55b8);
   color: white;
   padding: 12px;
   border-radius: 50%;
 }
-.icons{
+
+.icons {
   margin-bottom: 12px;
 }
 
-.btns{
+.btns {
   margin: auto;
   text-align: center;
   justify-items: center;
   align-items: center;
 }
-.btns button{
+
+.btns button {
   border: 2px solid aliceblue;
   width: 12px;
   height: 12px;
@@ -250,34 +265,45 @@ div.home3 li {
   margin: 0 6px;
   cursor: pointer;
 }
-.btns button:nth-child(1){
+
+.btns button:nth-child(1) {
   background: aliceblue;
 }
 
-#btn3, #btn4, #btn5, #btn6{
+#btn3,
+#btn4,
+#btn5,
+#btn6 {
   display: none;
 }
 
 /*For small devices*/
 
 @media (max-width: 414px) {
-  .homeimage{
+  .homeimage {
     width: 80% !important;
   }
+
   section.home4 img {
     position: relative;
     left: 8% !important;
   }
-  .welcome  {
+
+  .welcome {
     position: relative;
-    top:0 !important;
+    top: 0 !important;
   }
-  .sectionmain div p{
+
+  .sectionmain div p {
     margin-left: 10%;
-    margin-right: 10%; 
+    margin-right: 10%;
     width: 80%;
   }
-  #btn3, #btn4, #btn5, #btn6{
+
+  #btn3,
+  #btn4,
+  #btn5,
+  #btn6 {
     display: initial;
   }
 }
@@ -298,7 +324,11 @@ div.home3 li {
   .background .welcome {
     top: 5%;
   }
-  #btn3, #btn4, #btn5, #btn6{
+
+  #btn3,
+  #btn4,
+  #btn5,
+  #btn6 {
     display: initial;
   }
 
@@ -311,27 +341,36 @@ div.home3 li {
 
   .homeimage {
     height: 200px;
-    width:65%;
+    width: 65%;
     margin: 2% auto;
   }
+
   .background .welcome {
     top: 15%;
   }
+
   .hide {
     display: none;
   }
-  #btn3, #btn4, #btn5, #btn6{
+
+  #btn3,
+  #btn4,
+  #btn5,
+  #btn6 {
     display: initial;
   }
-  .crad1 , .crad2 , .crad3{
+
+  .crad1,
+  .crad2,
+  .crad3 {
     width: 225px;
     margin: auto 35px;
   }
 }
+
 @media (max-width: 1024px) {
- section.home4 img {
+  section.home4 img {
     position: relative;
     left: 5%;
   }
 }
-
