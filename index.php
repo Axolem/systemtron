@@ -98,7 +98,7 @@ include('config/navbar.php'); ?>
           <h1>Bethuel Ofentse Makgopa</h1>
           <p>221066447</p>
           <div class="icons">
-            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></a></i>
+            <a href="https://github.com/BMakgopa" target="_blank"><i class="bi bi-github"></a></i>
           </div>
         </div>
         <div class="crad2">
