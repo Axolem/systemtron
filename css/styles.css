@@ -327,7 +327,6 @@ select {
 }
 
 .fb-wapper {
-    padding: auto;
     box-shadow: rgba(255, 255, 255, 0.448) 0px 5px 15px 0px;
     border-radius: 10px;
     padding: 5%;
@@ -344,7 +343,7 @@ select {
 }
 
 /* --------------- Blog page ----------------- */
-.latest-blog{
+.latest-blog {
     padding: 20px;
     margin: 2em auto auto auto;
 }
@@ -354,10 +353,12 @@ select {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
+
 .blog-img:hover {
     opacity: 0.8;
-    transition: all 0.8s ease-in-out; 
+    transition: all 0.8s ease-in-out;
 }
+
 .cards {
     max-width: 1200px;
     margin: 0 auto;
@@ -365,44 +366,54 @@ select {
     gap: 1.9rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
 .card {
     background-color: dodgerblue;
     height: auto;
     border-radius: 10px;
     padding-bottom: 10px;
     box-shadow: rgba(255, 255, 255, 0.448) 0px 5px 15px 0px;
-    transition: all 0.8s ease-in-out; 
+    transition: all 0.8s ease-in-out;
 }
-.blog-contents{
+
+.blog-contents {
     padding: 0 20px;
     text-decoration: none;
 }
-.blog-link{
+
+.blog-link {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 300;
-    transition: all 0.8s ease-in-out; 
+    transition: all 0.8s ease-in-out;
 }
-.card:hover{
+
+.card:hover {
     transform: scale(1.1);
 }
-.blog-link:hover{
+
+.blog-link:hover {
     color: rgb(187, 187, 187);
 }
-.blog-disc{
+
+.blog-disc {
     height: 100px;
     overflow: hidden;
-color: black;margin: 5px;}
-.category{
+    color: black;
+    margin: 5px;
+}
+
+.category {
     width: max-content;
     text-transform: uppercase;
-    background:rgba(255, 255, 255, 0.448);
+    background: rgba(255, 255, 255, 0.448);
     color: blue;
     padding: 5px 10px;
     border-radius: 10px;
 }
-.card a:first-child{
+
+.card a:first-child {
     padding: 0 !important;
 }
 
@@ -620,6 +631,9 @@ color: black;margin: 5px;}
     margin: 10px auto;
 }
 
+
+
+/*For small screens*/
 @media screen and (max-width: 700px) {
     .pop-up {
         width: 75%;
@@ -627,12 +641,6 @@ color: black;margin: 5px;}
     }
 }
 
-
-
-
-
-
-/*For small screens*/
 @media only screen and (max-width: 600px) {
     .footer-container p {
         width: 90%;
@@ -674,6 +682,17 @@ color: black;margin: 5px;}
 
     .privacy label {
         max-width: 80%;
+    }
+    .fb-holder {
+        margin: 10% auto;
+        text-align: center;
+        padding: 0 3%;
+    }
+    .fb-wapper>a>img {
+        text-align: center;
+        width: 50%;
+        height: 30px;
+        border-radius: 5px;
     }
 }
 

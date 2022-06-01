@@ -137,7 +137,7 @@ if (isset($accessToken)) {
     <div class="fb-wapper">
         <h2>You are about to log in with Facebook.</h2>
         <p>Continue?</p>
-        <?php echo '<a href="' . $loginUrl . '"><img src="https://i.stack.imgur.com/oL5c2.png" alt=""></a>' ?>
+        <?php echo '<a href="' . $loginUrl . '"><img src="https://icon-library.com/images/login-with-facebook-icon/login-with-facebook-icon-26.jpg" alt=""></a>' ?>
         <?php
         if (!empty($_GET['loginErr'])) {
             echo "<p class='error'>" . $_GET['loginErr'] . "</p> ";
