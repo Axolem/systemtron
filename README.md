@@ -42,18 +42,3 @@ Licence: https://getbootstrap.com/docs/5.2/about/license/
 Coockie Popup
 Name: FreePrivacyPolicy
 Documentation: https://www.FreePrivacyPolicy.com
-
-Hosting Details
-Provider: https://admin.alwaysdata.com/
-Email: beyourownbossdsw@gmail.com
-Pass: connection.php1
-
-Database
-External server: https://phpmyadmin.alwaysdata.com/
-Internal server: mysql-bobdsw.alwaysdata.net
-name: bobdsw
-pass: connection.php1
-
-Website link
-short: https://bit.ly/Bob123
-long: https://bobdsw.alwaysdata.net/
