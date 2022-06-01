@@ -4,11 +4,11 @@
         <div class="footer-link-wrapper">
             <a href="http://localhost/project/systemtron/index.php" class="footer-h4">BOB</a>
             <div class="social-links">
-                <a href=""><i class="bi bi-facebook"></i></a> <span class="separator"></span>
-                <a href=""><i class="bi bi-twitter"></i></a><span class="separator"></span>
-                <a href=""><i class="bi bi-instagram"></i></a><span class="separator"></span>
-                <a href=""><i class="bi bi-geo-alt"></i></a><span class="separator"></span>
-                <a href="https://github.com/Axolem/systemtron" target="_blank"><i class="bi bi-github"></a></i>
+                <a href="https://www.facebook.com/Entrepreneur/" target="_blank"><i class="bi bi-facebook"></i></a> <span class="separator"></span>
+                <a href="https://twitter.com/entrepreneur" target="_blank"><i class="bi bi-twitter"></i></a><span class="separator"></span>
+                <a href="https://www.instagram.com/entrepreneur/" target="_blank"><i class="bi bi-instagram"></i></a><span class="separator"></span>
+                <a href="https://goo.gl/maps/mJycrvBZHnszFjwi7" target="_blank"><i class="bi bi-geo-alt"></i></a><span class="separator"></span>
+                <a href="https://github.com/Axolem/systemtron" target="_blank" target="_blank"><i class="bi bi-github"></a></i>
             </div>
             <div class="footer-page-links">
                 <ul class="row">
