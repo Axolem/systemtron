@@ -74,6 +74,9 @@
 #login a {
   color: #498afb;
 }
+.bi-person{
+  font-size: 1.4em;
+}
 
 #hamburger-icon {
   display: none;
