@@ -78,12 +78,12 @@ include('../config/header.php')
                   <div class="home-options">
                      <ul class="card-wrapper">
                         <li class="dash-card">
-                           <img src='https://images.unsplash.com/photo-1611916656173-875e4277bea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+                           <img src='assets/photo-1611916656173-875e4277bea6.jpg' alt='https://images.unsplash.com/photo-1611916656173-875e4277bea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400'>
                            <h3><a href="https://www.doingbusiness.org.za/doing-business/doing-business-indicators/starting-a-business-indicator/">Starting a Business in SA</a></h3>
                            <p>Doing Business first indicator is Starting a Business. This indicator deals with the number of procedures, time taken and associated costs for starting and operating a business. </p>
                         </li>
                         <li class="dash-card">
-                           <img src='https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVzaW5lc3MlMjBpZGVhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60' alt=''>
+                           <img src='assets/photo-1474631245212-32dc3c8310c6.webp' alt='https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVzaW5lc3MlMjBpZGVhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'>
                            <h3><a href="">Need a Business Idea?</a></h3>
                            <p>To start one of these home-based businesses, you don't need a lot of funding -- just energy, passion and the drive to succeed.</p>
                         </li>
@@ -107,17 +107,17 @@ include('../config/header.php')
                   <div class="home-options">
                      <ul class="card-wrapper">
                         <li class="dash-card">
-                           <img src='https://smallbusinesscoach.co.za/wp-content/uploads/2022/03/Small-Business-Coach-Slider-1-scaled.jpg' alt=''>
+                           <img src='assets/Small-Business-Coach-Slider-1-scaled.jpg' alt='https://smallbusinesscoach.co.za/wp-content/uploads/2022/03/Small-Business-Coach-Slider-1-scaled.jpg'>
                            <h3><a href="https://smallbusinesscoach.co.za/start-up-business-coaching/">Start-up Business Coaching</a></h3>
                            <p>IMCSA Accredited Business Coaches (IMC737) to Coach You on Growing Your Start-up to the Next Level</p>
                         </li>
                         <li class="dash-card">
-                           <img src='https://vusithembekwayo.com/wp-content/uploads/2019/04/vusi-img-12.png' alt=''>
+                           <img src='assets/vusi-img-12.png' alt='https://vusithembekwayo.com/wp-content/uploads/2019/04/vusi-img-12.png'>
                            <h3><a href="https://vtonlineshop.com/products/leadership-course">Leadership & Management Courses</a></h3>
                            <p>Many of you have asked that I mentor you. Well, I listened and present you one up… </p>
                         </li>
                         <li class="dash-card">
-                           <img src='https://images.unsplash.com/photo-1613230485186-2e7e0fca1253?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+                           <img src='assets/photo-1613230485186-2e7e0fca1253.jpg' alt='https://images.unsplash.com/photo-1613230485186-2e7e0fca1253?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400'>
                            <h3><a href="https://intro.co/entrepreneur">More mentors and experts</a></h3>
                            <p>Book world class experts and get 1:1 advice over a video call</p>
                         </li>
@@ -134,15 +134,15 @@ include('../config/header.php')
                         <li class="dash-card">
                            <h3>Your 30 Second Elevator Pitch! </h3>
                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Lb0Yz_5ZYzI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                           <a href="https://www.youtube.com/embed/Lb0Yz_5ZYzI">Watch on youtube</a>
+                           <a href="https://www.youtube.com/Lb0Yz_5ZYzI">Watch on youtube</a>
                         </li>
                         <li class="dash-card">
                            <h3>The Perfect Elevator Pitch</h3>
                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/r-iETptU7JY" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                           <a href="https://www.youtube.com/embed/r-iETptU7JY">Watch on youtube</a>
+                           <a href="https://www.youtube.com/r-iETptU7JY">Watch on youtube</a>
                         </li>
                         <li class="dash-card">
-                           <img src='https://images.unsplash.com/photo-1556453903-3c0d9dcd09d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' alt=''>
+                           <img src='assets/photo-1556453903-3c0d9dcd09d0.webp' alt='https://images.unsplash.com/photo-1556453903-3c0d9dcd09d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'>
                            <h3><a href="https://blog.hubspot.com/sales/elevator-pitch-examples">Lear more about elevator pitch</a></h3>
                            <p>An elevator pitch — also known as elevator speech — can better introduce professionals to your company.</p>
                         </li>
@@ -162,7 +162,18 @@ include('../config/header.php')
                         <i class="bi bi-plus dash-option-icon"></i>
                      </button>
                      <div class="home-options">
-                        <p>Lorem ipsum dolor sit am fuga aucorporis consequuntur!</p>
+                        <ul class="card-wrapper">
+                           <li class="dash-card">
+                              <h3>A Super Wonderful Headline</h3>
+                              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/dJQn4DqzMVQ" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <a href="">Watch on youtube</a>
+                           </li>
+                           <li class="dash-card">
+                              <img src='assets/austin-distel-744oGeqpxPQ-unsplash.jpg' alt=''>
+                              <h3><a href="https://blog.hubspot.com/sales/growth-strategy">Shaping a Business Growth Strategy: 7 Key Steps That Work</a></h3>
+                              <p>A concrete growth strategy is more than a marketing strategy, it's a crucial cog in your business machine. Without one, you're at the mercy of a fickle consumer base and market fluctuations. </p>
+                           </li>
+                        </ul>
                      </div>
 
 
@@ -175,22 +186,22 @@ include('../config/header.php')
                            <li class="dash-card">
                               <h3>A Super Wonderful Headline</h3>
                               <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SBF0nZ_Kfag" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              <a href="">Watch on youtube</a>
+                              <a href="https://www.youtube.com/SBF0nZ_Kfag">Watch on youtube</a>
                            </li>
                            <li class="dash-card">
-                              <h3>A Super Wonderful Headline</h3>
-                              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SBF0nZ_Kfag" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              <a href="">Watch on youtube</a>
+                              <h3>How to Develop a Company Sales Strategy & Marketing Strategy Plan for Your Business</h3>
+                              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/w16x-EX2zU0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <a href="https://www.youtube.com/w16x-EX2zU0">Watch on youtube</a>
                            </li>
                            <li class="dash-card">
-                              <h3>A Super Wonderful Headline</h3>
-                              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SBF0nZ_Kfag" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              <a href="">Watch on youtube</a>
+                              <h3>The 3 Most Important Skills In Sales</h3>
+                              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/QQQe1aDy4fE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <a href="https://www.youtube.com/QQQe1aDy4fE">Watch on youtube</a>
                            </li>
                            <li class="dash-card">
-                              <h3>A Super Wonderful Headline</h3>
-                              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/SBF0nZ_Kfag" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              <a href="">Watch on youtube</a>
+                              <h3>Business Plan Writing 101: Wharton Entrepreneurship Series</h3>
+                              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/zlrb_X6fYZ0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <a href="https://youtu.be/zlrb_X6fYZ0">Watch on youtube</a>
                            </li>
                         </ul>
                      </div>
@@ -201,7 +212,18 @@ include('../config/header.php')
                         <i class="bi bi-plus dash-option-icon"></i>
                      </button>
                      <div class="home-options">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ut adipisci, rerum beatae tenetur nostrum amet odio quibusdam fuga autem impedit sequi cupiditate iste dolor excepturi dolorum tempore corporis consequuntur!</p>
+                        <ul class="card-wrapper">
+                           <li class="dash-card">
+                              <h3>The Secret Behind Coca-Cola Marketing Strategy</h3>
+                              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/XhMVWzVXNNk" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <a href="https://youtu.be/XhMVWzVXNNk">Watch on youtube</a>
+                           </li>
+                           <li class="dash-card">
+                              <img src='assets/merakist-jyoSxjUE22g-unsplash.jpg' alt=''>
+                              <h3><a href="https://blog.hubspot.com/marketing/small-business-marketing-guide">42 Ideas for Your 2021 Small Business Marketing Strategy</a></h3>
+                              <p>Marketing is meant to raise brand awareness and build a pipeline of qualified leads that turn into sales. With a small business, getting the word out can be challenging due to less visibility and lack of resources (like budget or time). However, there are key strategies that can help you scale your small business's marketing efforts.</p>
+                           </li>
+                        </ul>
                      </div>
                   </div>
                </div>
@@ -214,17 +236,17 @@ include('../config/header.php')
                   </div>
                   <ul class="card-wrapper">
                      <li class="dash-card">
-                        <h3>A Super Wonderful Headline</h3>
-                        <iframe width="100%" height="auto" src="ht.com/embed/SBF0nZ_Kfag" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <a href="">Watch on youtube</a>
+                        <h3>Franchise that are profitable in SA</h3>
+                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/fBrIzDFHNfk" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <a href="https://www.youtube.com/fBrIzDFHNfk">Watch on youtube</a>
                      </li>
                      <li class="dash-card">
-                        <h3>A Super Wonderful Headline</h3>
-                        <iframe width="100%" height="auto" src="httpcom/embed/SBF0nZ_Kfag" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <a href="">Watch on youtube</a>
+                        <img src='https://images.unsplash.com/photo-1565461133566-e35e9e120d5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' alt=''>
+                        <h3><a href="https://whichfranchise.co.za/">List of Franchises in SA</a></h3>
+                        <p> whichfranchise.co.za is the leading website for franchise information, advice and opportunities in South Africa, and hence one of the top franchisee recruitment websites. </p>
                      </li>
                      <li class="dash-card">
-                        <img src='https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' alt=''>
+                        <img src='assets/photo-1434030216411-0b793f4b4173.webp' alt='https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'>
                         <h3><a href="https://www.franchisedirect.co.za/the-ultimate-guide-franchising-in-south-africa/">Guide to franchising in SA</a></h3>
                         <p>In this day and age, numerous organizations are prime contender for franchising, paying little mind to their size. </p>
                      </li>
@@ -734,12 +756,12 @@ include('../config/header.php')
       <div id="Settings" class="tabcontent">
          <h2 class="dash-h2">Settings </h2>
          <?php if (!empty($_GET['response'])) {
-                                    if ($_GET['response'] == 1) {
-                                       echo '<span class="success">'.$_GET["msg"].'</span> ';
-                                    } else {
-                                       echo '<span class="success">'.$_GET["msg"].'</span> ';
-                                    }
-                                 } ?>
+            if ($_GET['response'] == 1) {
+               echo '<span class="success">' . $_GET["msg"] . '</span> ';
+            } else {
+               echo '<span class="success">' . $_GET["msg"] . '</span> ';
+            }
+         } ?>
          <div class="img-holder">
             <img src="<?php if (!empty($picture)) {
                            echo $picture;
