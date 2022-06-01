@@ -30,7 +30,7 @@ function openPage(pageName, elmnt, color) {
   for (let i=0; i < toggles.length; i++) {
     toggles[i].addEventListener('click', ()=>{
         if(parseInt(conentDivs[i].style.height) != conentDivs[i].scrollHeight){conentDivs[i].style.height = conentDivs[i].scrollHeight + 'px'; 
-        toggles[i].style.color = "#d40083"; 
+        toggles[i].style.color = "#09c748"; 
         icons[i].classList.remove('bi-plus'); 
         icons[i].classList.add('bi-dash');
         }
