@@ -42,3 +42,7 @@ Licence: https://getbootstrap.com/docs/5.2/about/license/
 Coockie Popup
 Name: FreePrivacyPolicy
 Documentation: https://www.FreePrivacyPolicy.com
+
+Task management
+Name: Trello
+website: https://trello.com/invite/b/URQzVNu2/af4eca6d7b48e29db85b737911a2a679/dsw-website-project
