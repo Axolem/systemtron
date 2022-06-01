@@ -10,7 +10,7 @@ include('config/navbar.php'); ?>
                 <button type='button' onclick='register()' class='toggle-btn'>Register</button>
             </div>
             <div id='loginTab' class='input-group-login'>
-                <form class="login-form" action="manual/login.php" method="post">
+                <form class="login-form" action="manual/login.php" method="POST">
                     <label class="no-margin" for="email">Email:</label>
                     <input type="email" name="email" required value=<?php if (!empty($_GET['email'])) {
                                                                         echo $_GET['email'];
@@ -44,7 +44,7 @@ include('config/navbar.php'); ?>
                 </div>
 
             </div>
-            <form id='registerTab' class='input-group-register' action="manual/signup.php" method="post">
+            <form id='registerTab' class='input-group-register' action="manual/signup.php" method="POST">
                 <div class="reg-container">
                     <div class="row">
                         <div class="col reg-col">

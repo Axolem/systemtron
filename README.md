@@ -51,7 +51,7 @@ Pass: connection.php1
 Database
 External server: https://phpmyadmin.alwaysdata.com/
 Internal server: mysql-bobdsw.alwaysdata.net
-name: bobdsw_worker
+name: bobdsw
 pass: connection.php1
 
 Website link

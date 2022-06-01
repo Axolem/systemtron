@@ -817,13 +817,13 @@ include('../config/header.php')
                <table class="dash-table">
                   <tr>
                      <td><label for="phoneN">Recieve phone notifications:</label></td>
-                     <td><input type="checkbox" name="phoneN" <?php if ($phoneNotes == 'on') {
+                     <td><input type="checkbox" name="phoneN" <?php if ($phoneNotes == 'yes') {
                                                                   echo "checked";
                                                                } ?>></td>
                   </tr>
                   <tr>
                      <td><label for="emailN">Recieve email notifications:</label></td>
-                     <td><input type="checkbox" name="emailN" <?php if ($emailNotes == 'on') {
+                     <td><input type="checkbox" name="emailN" <?php if ($emailNotes == 'yes') {
                                                                   echo "checked";
                                                                } ?>></td>
                   </tr>

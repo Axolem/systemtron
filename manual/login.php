@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 							die;
 						}
 					} else {
-						header("Location: index.php?loginErr=Enter verification code.");
+						header("Location: index.php?codeErr=Enter verification code.");
 						die;
 					}
 				} else {
@@ -58,4 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		header("Location: http://localhost/project/systemtron/login.php?loginErr=Please input all fields");
 		die;
 	}
+} else {
+	header("Location: http://localhost/project/systemtron/login.php?loginErr=Please input all fields");
+	die;
 }
