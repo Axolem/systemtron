@@ -26,7 +26,7 @@ include('config/navbar.php'); ?>
 		</div>
 		<div class="contact-info">
 			<div class="contact-info-content">
-				<h2 class="contact-h2">Leave an eamil</h2>
+				<h2 class="contact-h2">Leave an email</h2>
 				<form class="contact" method="post" action="manual/contact.php">
 					<table class="contact-info-table">
 						<tr>
