@@ -1,13 +1,13 @@
 <?php include('config/header.php');
 include('config/navbar.php');
 
-$url = 'https://newsapi.org/v2/top-headlines?country=za&category=business&apiKey=93cf96b493b54eb8aa621eb1c73ef5d4';
-try{
-    $response = file_get_contents($url);
-}
-catch(Exception $e) {
-    echo 'Message: ' .$e->getMessage();
-  }
+$country = 'za';
+$category = 'business'; 
+//$key = 'a67c0f93a6be4ca19992e28a7a38553f'; 
+$key = '93cf96b493b54eb8aa621eb1c73ef5d4';
+$url = "https://newsapi.org/v2/top-headlines?country=$country&category=$category&apiKey=$key";
+
+$response = file_get_contents($url);
 
 if (!empty($response)) {
     $news = json_decode($response);
@@ -21,12 +21,12 @@ if (!empty($response)) {
         $date = $story->publishedAt;
         $author = $story->author;
         echo '<div class="card">';
-        echo "<a href='$link'><img class='blog-img' src='$pic' alt='News thumbnail'></a>";
-        echo "<div class='blog-contents'><a class='blog-link' href='$link'>$title</a>";
+        echo "<a href='$link' target='_blank'><img class='blog-img' src='$pic' alt='News thumbnail'></a>";
+        echo "<div class='blog-contents'><a class='blog-link' target='_blank' href='$link'>$title</a>";
         echo "<p class='blog-disc'>$description</p>";
         echo "<div class='row'><p class='category'>Business</p><p>$date</p></div></div></div>";
     }
-}else{
+} else {
     echo '<center><p>0 results, please reload the page.</p></center>';
 }
 ?>
