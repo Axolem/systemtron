@@ -101,6 +101,7 @@ include('config/navbar.php'); ?>
           <p>221066447</p>
           <div class="icons">
             <a href="https://github.com/BMakgopa" target="_blank"><i class="bi bi-github"></a></i>
+            <a href="mailto:221066447@student.uj.ac.za"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
         <div class="crad2">
@@ -109,6 +110,7 @@ include('config/navbar.php'); ?>
           <p>220080694</p>
           <div class="icons">
             <a href="https://github.com/NesleyB" target="_blank"><i class="bi bi-github"></a></i>
+            <a href="mailto:220080694@student.uj.ac.za"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
         <div class="crad3">
@@ -117,6 +119,7 @@ include('config/navbar.php'); ?>
           <p>220122253</p>
           <div class="icons">
             <a href="https://github.com/MichelleNdzu" target="_blank"><i class="bi bi-github"></a></i>
+            <a href="mailto:220122253@student.uj.ac.za"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
         <div class="crad3">
@@ -125,6 +128,7 @@ include('config/navbar.php'); ?>
           <p>220023913</p>
           <div class="icons">
             <a href="https://github.com/Axolem" target="_blank"><i class="bi bi-github"></a></i>
+            <a href="mailto:220023913@student.uj.ac.za"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
         <div class="crad3">
@@ -133,6 +137,7 @@ include('config/navbar.php'); ?>
           <p>221023858</p>
           <div class="icons">
             <a href="https://github.com/junior-03" target="_blank"><i class="bi bi-github"></a></i>
+            <a href="mailto:221023858@student.uj.ac.za"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
         <div class="crad3">
@@ -141,6 +146,7 @@ include('config/navbar.php'); ?>
           <p>221028477</p>
           <div class="icons">
             <a href="https://github.com/thatohatsig" target="_blank"><i class="bi bi-github"></a></i>
+            <a href="mailto:221028477@student.uj.ac.za"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
       </div>
