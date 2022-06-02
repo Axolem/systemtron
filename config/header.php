@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="http://localhost/project/systemtron/images/tabs.png" type="image/x-icon">
     <!--other pages stylesheet -->
     <link rel="stylesheet" href="dash.scss">
-    <link rel="stylesheet" href="http://localhost/project/systemtron/css/profiles.css">
+    <!-- <link rel="stylesheet" href="http://localhost/project/systemtron/css/profiles.css"> -->
     <link rel="stylesheet" href="http://localhost/project/systemtron/css/styles.css">
     <!-- nav stylesheet-->
     <link rel="stylesheet" href="http://localhost/project/systemtron/css/navbar.css">
