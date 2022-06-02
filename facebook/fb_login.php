@@ -4,7 +4,7 @@ require '../dashboard/facebook/vendor/autoload.php';
 include('../config/header.php');
 include('../config/navbar.php');
 include('../config/db_connect.php');
-include('..//manual/functions.php');
+include('../manual/functions.php');
 session_start();
 $fb = new Facebook\Facebook([
     'app_id' => '439479227947560',
@@ -12,7 +12,7 @@ $fb = new Facebook\Facebook([
     'default_graph_version' => 'v2.5',
 ]);
 $helper = $fb->getRedirectLoginHelper();
-$permissions = ['email']; // optional
+$permissions = ['email'];
 try {
     if (isset($_SESSION['facebook_access_token'])) {
         $accessToken = $_SESSION['facebook_access_token'];
@@ -21,11 +21,13 @@ try {
     }
 } catch (Facebook\Exceptions\facebookResponseException $e) {
     // When Graph returns an error
-    echo 'Graph returned an error: ' . $e->getMessage();
+    $e->getMessage();
+    header("Location: fb_login.php?loginErr=$e");
     exit;
 } catch (Facebook\Exceptions\FacebookSDKException $e) {
     // When validation fails or other local issues
-    echo 'Facebook SDK returned an error: ' . $e->getMessage();
+    $e->getMessage();
+    header("Location: fb_login.php?loginErr=$e");
     exit;
 }
 if (isset($accessToken)) {
@@ -42,7 +44,7 @@ if (isset($accessToken)) {
         // setting default access token to be used in script
         $fb->setDefaultAccessToken($_SESSION['facebook_access_token']);
     }
-    // redirect the user to the profile page if it has "code" GET variable
+    // redirect the user to the dashbord if it has "code" GET variable
     if (isset($_GET['code'])) {
         header('Location: http://localhost/project/systemtron/dashboard/index.php');
     }
@@ -52,11 +54,11 @@ if (isset($accessToken)) {
         $requestPicture = $fb->get('/me/picture?redirect=false&height=200'); //getting user picture
         $picture = $requestPicture->getGraphUser();
         $profile = $profile_request->getGraphUser();
-        $id = $profile->getProperty('id');           // To Get Facebook ID
-        $fname = $profile->getProperty('first_name');   // To Get Facebook first name
-        $lname = $profile->getProperty('last_name'); // To Get Facebook Last name
-        $gender = $profile->getProperty('gender'); // To Get Facebook user gender
-        $email = $profile->getProperty('email'); //  To Get Facebook email
+        $id = $profile->getProperty('id');           // To Get Facebook ID (getField)
+        $fname = $profile->getProperty('first_name');   // To Get Facebook first name(getField)
+        $lname = $profile->getProperty('last_name'); // To Get Facebook Last name(getField)
+        $gender = $profile->getProperty('gender'); // To Get Facebook user gender(getField)
+        $email = $profile->getProperty('email'); //  To Get Facebook email(getField)
         $pic = $picture['url'];
         $password = $_SESSION['facebook_access_token'];
         $email_id = uniqid();
@@ -95,7 +97,7 @@ if (isset($accessToken)) {
             //Insert user default settings
             $query3 = "INSERT INTO user_setting (`usersemail`) VALUES ('$email')";
 
-            //isert user doe email notifications
+            //isert user data email notifications
             $query4 = "INSERT INTO newsletters (`id`, `email_id`, `name`, `email`) VALUES ('$id','$email_id','$fname','$email')";
 
 
@@ -118,18 +120,18 @@ if (isset($accessToken)) {
         }
     } catch (Facebook\Exceptions\FacebookResponseException $e) {
         // When Graph returns an error
-        echo 'Graph returned an error: ' . $e->getMessage();
+        $e->getMessage();
         session_destroy();
         // redirecting user back to app login page
-        header("Location: ../login.php");
+        header("Location: fb_login.php?loginErr=$e");
         exit;
     } catch (Facebook\Exceptions\FacebookSDKException $e) {
         // When validation fails or other local issues
-        echo 'Facebook SDK returned an error: ' . $e->getMessage();
+        $e->getMessage();
+        header("Location: fb_login.php?loginErr=$e");
         exit;
     }
 } else {
-    // replace your website URL same as added in the developers.Facebook.com/apps e.g. if you used http instead of https and you used            
     $loginUrl = $helper->getLoginUrl('http://localhost/project/systemtron/facebook/fb_login.php', $permissions);
 }
 ?>
