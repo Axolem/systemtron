@@ -12,6 +12,7 @@ Button: https://i.stack.imgur.com/oL5c2.png
 Google login
 Documentation: https://github.com/googleapis/google-api-php-client 
                 & https://developers.google.com/identity/protocols/oauth2/web-server
+Templete: https://code.tutsplus.com/tutorials/create-a-google-login-page-in-php--cms-33214
 
 
 Email for the project
