@@ -2,7 +2,7 @@
 include('config/navbar.php');
 
 $country = 'za';
-$category = 'business'; 
+$category = 'business';
 //$key = 'a67c0f93a6be4ca19992e28a7a38553f'; 
 $key = '93cf96b493b54eb8aa621eb1c73ef5d4';
 $url = "https://newsapi.org/v2/top-headlines?country=$country&category=$category&apiKey=$key";

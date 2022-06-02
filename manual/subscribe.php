@@ -47,7 +47,7 @@ try {
     }
 } catch (Exception $ex) {
     $subject = "Hey boss! You are awesome!";
-    $massage = "Good day,<br>we wanted to notify you that you are already subscribed>.";
+    $massage = "Good day,<br>We wanted to notify you that you are already subscribed.";
 
     sendEmail($email, $subject, $massage);
 

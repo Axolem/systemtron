@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="http://localhost/project/systemtron/css/navbar.css">
     <!--homepage stylesheet-->
     <link rel="stylesheet" href="http://localhost/project/systemtron/css/home.css">
-
-
 </head>
 
 <body>
