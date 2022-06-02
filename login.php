@@ -100,7 +100,9 @@ include('config/navbar.php'); ?>
                     </div>
                     <div class="row">
                         <div class="col reg-col">
-                            <label for="password">Password:</label>
+                            <label for="password">Password:<i class="bi tooltip bi-info-circle"><span class="tooltiptext">
+                                        Password should be 8 or more characters, mixed and matched caps, symbols, and numbers.
+                                    </span></i></label>
                             <input type="password" name="password" required>
                         </div>
                         <div class="col reg-col">
