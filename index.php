@@ -149,6 +149,7 @@ include('config/navbar.php'); ?>
             <a href="mailto:221028477@student.uj.ac.za"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
+
       </div>
     </div>
     <div class="btns">
@@ -159,6 +160,12 @@ include('config/navbar.php'); ?>
       <button id="btn5"></button>
       <button id="btn6"></button>
     </div>
+  </div>
+  <!-- Project docs -->
+  <div class="row">
+    <a class="link" href="https://github.com/Axolem/systemtron/blob/main/Docs/Documentation%20for%20DSW%20Project.docx" target="_blank">Documentation</a>
+    <a class="link" href="https://github.com/Axolem/systemtron/blob/main/README.md" target="_blank">Read me</a>
+    <a class="link" href="https://github.com/Axolem/systemtron/blob/main/Docs/Systemtron%20Team%20Names.xlsx" target="_blank">Team names</a>
   </div>
 </div>
 <script>
