@@ -45,7 +45,7 @@ include('../config/header.php')
                      }
                      ?> " class="dash-icon">
          <p class="dash-user-name"><?php echo $name . " " . $surname; ?></p>
-         <a href="logout.php" class="dash-btn"><i class="bi bi-box-arrow-right"></i>
+         <a href="handlers/logout.php" class="dash-btn"><i class="bi bi-box-arrow-right"></i>
          </a>
       </div>
    </div>

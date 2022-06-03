@@ -20,6 +20,7 @@ if (isset($_POST['delete'])) {
             $massage = "Good day,<br>we wanted to notify you that you have deleted your account.<br>If it was not you please reply to this email, otherwise take care. <br><p></p><strong>B.O.B</strong>.";
 
             sendEmail($email, $subject, $massage);
+            include('logout.php');
             header('Location: ../../index.php');
             die();
         } else {
