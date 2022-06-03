@@ -1,5 +1,20 @@
-<?php include('config/header.php');
-include('config/navbar.php'); ?>
+<?php
+// Initialize the session
+session_start();
+// Check if the user is logged in, if yes then redirect him to dashboard
+try {
+    if (!empty($_SESSION['loggedin'])) {
+        if (isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == true) {
+            header("location: dashboard/index.php");
+            exit;
+        }
+    }
+} catch (Exception $e) {
+    $e->getMessage();
+}
+include('config/header.php');
+include('config/navbar.php');
+?>
 
 <main>
     <div id='login-form' class='login-page'>
