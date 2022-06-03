@@ -22,9 +22,9 @@ password: connection.php
 
 News API
 Name: News API
-Documentation: https://newsapi.org/docs/client-libraries/php
-Email: beyourownbossdsw@gmail.com
-Password: _Uyp962hd8/kLuL
+Documentation: https://mediastack.com/documentation
+Email: axolemaranjana4@gmail.com
+Password: Arm$hmPEYMF6$La
 
 Privacy Policy Generator
 Name : privacypolicies

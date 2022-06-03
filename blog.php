@@ -1,34 +1,40 @@
 <?php include('config/header.php');
 include('config/navbar.php');
 
-$country = 'za';
-$category = 'business';
-//$key = 'a67c0f93a6be4ca19992e28a7a38553f'; 
-$key = '93cf96b493b54eb8aa621eb1c73ef5d4';
-$url = "https://newsapi.org/v2/top-headlines?country=$country&category=$category&apiKey=$key";
+$queryString = http_build_query([
+    'access_key' => '9739c1895252101f3bd3bd97b6173cc8',
+    'categories' => 'business',
+    'sort' => 'popularity',
+    'languages' => 'en',
+    'country' => 'za'
+]);
 
-$response = file_get_contents($url);
+$ch = curl_init(sprintf('%s?%s', 'http://api.mediastack.com/v1/news', $queryString));
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-if (!empty($response)) {
-    $news = json_decode($response);
-    echo '<div class="latest-blog">
+$json = curl_exec($ch);
+
+curl_close($ch);
+
+$apiResult = json_decode($json);
+
+
+echo '<div class="latest-blog">
     <div class="cards">';
-    foreach ($news->articles as $story) {
-        $pic = $story->urlToImage;
-        $title = $story->title;
-        $description = $story->description;
-        $link = $story->url;
-        $date = $story->publishedAt;
-        $author = $story->author;
-        echo '<div class="card">';
-        echo "<a href='$link' target='_blank'><img class='blog-img' src='$pic' alt='News thumbnail'></a>";
-        echo "<div class='blog-contents'><a class='blog-link' target='_blank' href='$link'>$title</a>";
-        echo "<p class='blog-disc'>$description</p>";
-        echo "<div class='row'><p class='category'>Business</p><p>$date</p></div></div></div>";
-    }
-} else {
-    echo '<center><p>0 results, please reload the page.</p></center>';
+foreach ($apiResult->data as $story) {
+    $pic = $story->image;
+    $title = $story->title;
+    $description = $story->description;
+    $link = $story->url;
+    $date = $story->published_at;
+    $author = $story->author;
+    echo '<div class="card">';
+    echo "<a href='$link' target='_blank'><img class='blog-img' src='$pic' alt='News thumbnail'></a>";
+    echo "<div class='blog-contents'><a class='blog-link' target='_blank' href='$link'>$title</a>";
+    echo "<p class='blog-disc'>$description</p>";
+    echo "<div class='row'><p class='category'>Business</p><p>$date</p></div></div></div>";
 }
+
 ?>
 
 </div>
