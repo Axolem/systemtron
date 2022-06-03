@@ -11,8 +11,8 @@ if (isset($_POST['delete'])) {
     if ($email === $confirmEmail) {
         // sql to delete a record
         $sql = "DELETE FROM users WHERE email = '$email' And id ='$id' ";
-        $sql2 = "DELETE FROM users_details WHERE email = '$email' ";
-        $sql3 = "DELETE FROM users_setting WHERE email = '$email' ";
+        $sql2 = "DELETE FROM user_details WHERE email = '$email' ";
+        $sql3 = "DELETE FROM user_setting WHERE email = '$email' ";
 
         if (mysqli_query($con, $sql) && mysqli_query($con, $sql2) && mysqli_query($con, $sql3)) {
 
