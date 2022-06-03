@@ -14,38 +14,38 @@ Licence: https://www.freepikcompany.com/legal?_gl=1*1wk87ff*test_ga*MTcwMjk0Mjky
 - Templete: https://code.tutsplus.com/tutorials/create-a-google-login-page-in-php--cms-33214
 
 
-- ### Email for the project
+### Email for the project
 - Name: Gmail 
 - Email: beyourownbossdsw@gmail.com
 - password: connection.php
 
-News API
-Name: News API
-Documentation: https://mediastack.com/documentation
-Email: axolemaranjana4@gmail.com
-Password: Arm$hmPEYMF6$La
+### News API
+- Name: News API
+- Documentation: https://mediastack.com/documentation
+- Email: axolemaranjana4@gmail.com
+- Password: Arm$hmPEYMF6$La
 
-Privacy Policy Generator
-Name : privacypolicies
-Documentation: https://app.privacypolicies.com/download/2511da50-2e95-47e0-9326-e51278726459
-Licence: https://www.privacypolicies.com/our-terms-of-use/
+### Privacy Policy Generator
+- Name : privacypolicies
+- Documentation: https://app.privacypolicies.com/download/2511da50-2e95-47e0-9326-e51278726459
+- Licence: https://www.privacypolicies.com/our-terms-of-use/
 
-Gradient color
-Name: EggGradients
-Documentation: https://www.eggradients.com/linear-gradients?2dd4a736_page=2
+### Gradient color
+- Name: EggGradients
+- Documentation: https://www.eggradients.com/linear-gradients?2dd4a736_page=2
 
-Icons
-Name: Bootstrap icons
-Documentation: https://getbootstrap.com/docs/5.2/getting-started/introduction/
-Licence: https://getbootstrap.com/docs/5.2/about/license/
+### Icons
+- Name: Bootstrap icons
+- Documentation: https://getbootstrap.com/docs/5.2/getting-started/introduction/
+- Licence: https://getbootstrap.com/docs/5.2/about/license/
 
-#Coockie Popup
-#Name: FreePrivacyPolicy
-#Documentation: https://www.FreePrivacyPolicy.com
+### Coockie Popup
+- Name: FreePrivacyPolicy
+- Documentation: https://www.FreePrivacyPolicy.com
 
-#Task management
-#Name: Trello
-#website: https://trello.com/invite/b/URQzVNu2/af4eca6d7b48e29db85b737911a2a679/dsw-website-project
-#Board: https://trello.com/b/URQzVNu2/dsw-website-project
+### Task management
+- Name: Trello
+- website: https://trello.com/invite/b/URQzVNu2/af4eca6d7b48e29db85b737911a2a679/dsw-website-project
+- Board: https://trello.com/b/URQzVNu2/dsw-website-project
 
-#Presentation slides: https://1drv.ms/p/s!AoJ_doKsWXG7jlmbCRHShShXOxjB?e=8HZLr3
+##### Presentation slides: https://1drv.ms/p/s!AoJ_doKsWXG7jlmbCRHShShXOxjB?e=8HZLr3
