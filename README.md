@@ -3,21 +3,21 @@
 Tab icon link: <a href="https://www.flaticon.com/free-icons/tab" title="tab icons">Tab icons created by Stockio - Flaticon</a>
 Licence: https://www.freepikcompany.com/legal?_gl=1*1wk87ff*test_ga*MTcwMjk0MjkyOS4xNjQ0MTQzMjg4*test_ga_523JXC6VL7*MTY1MjgwNjUyNS40LjAuMTY1MjgwNjUyNS42MA..*fp_ga*MTcwMjk0MjkyOS4xNjQ0MTQzMjg4*fp_ga_1ZY8468CQB*MTY1MjgwNjUyNS40LjAuMTY1MjgwNjUyNS42MA..&_ga=2.132148614.9408256.1652806525-1702942929.1644143288#nav-flaticon
 
--Facebook login
--Documentation: https://developers.facebook.com/docs/graph-api/reference/user/
+- Facebook login
+- Documentation: https://developers.facebook.com/docs/graph-api/reference/user/
 - Templete: https://www.cloudways.com/blog/add-facebook-login-in-php/
 - Button: https://i.stack.imgur.com/oL5c2.png
 
-Google login
-Documentation: https://github.com/googleapis/google-api-php-client 
+- Google login
+- Documentation: https://github.com/googleapis/google-api-php-client 
                 & https://developers.google.com/identity/protocols/oauth2/web-server
-Templete: https://code.tutsplus.com/tutorials/create-a-google-login-page-in-php--cms-33214
+- Templete: https://code.tutsplus.com/tutorials/create-a-google-login-page-in-php--cms-33214
 
 
-Email for the project
-Name: Gmail 
-Email: beyourownbossdsw@gmail.com
-password: connection.php
+- ### Email for the project
+- Name: Gmail 
+- Email: beyourownbossdsw@gmail.com
+- password: connection.php
 
 News API
 Name: News API
