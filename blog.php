@@ -4,8 +4,9 @@ include('config/navbar.php');
 $country = 'za';
 $category = 'business';
 //$key = 'a67c0f93a6be4ca19992e28a7a38553f'; 
-$key = '93cf96b493b54eb8aa621eb1c73ef5d4';
-$url = "https://newsapi.org/v2/top-headlines?country=$country&category=$category&apiKey=$key";
+//$key = '93cf96b493b54eb8aa621eb1c73ef5d4';
+$key = '1914e2631f804299be808aad03c9914c';
+$url = "https://newsapi.org/v2/everything?q=tesla&from=2022-05-03&sortBy=publishedAt&apiKey=1914e2631f804299be808aad03c9914cb";
 
 $response = file_get_contents($url);
 
