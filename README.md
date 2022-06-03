@@ -48,3 +48,5 @@ Task management
 Name: Trello
 website: https://trello.com/invite/b/URQzVNu2/af4eca6d7b48e29db85b737911a2a679/dsw-website-project
 Board: https://trello.com/b/URQzVNu2/dsw-website-project
+
+#Presentation slides: https://1drv.ms/p/s!AoJ_doKsWXG7jlmbCRHShShXOxjB?e=8HZLr3
